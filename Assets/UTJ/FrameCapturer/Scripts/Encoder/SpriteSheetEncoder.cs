@@ -36,7 +36,8 @@ namespace UTJ.FrameCapturer
             m_ctx = fcAPI.fcPngCreateContext(ref pngConfig);
             int pathIndex = outPath.LastIndexOf("/", StringComparison.InvariantCulture) + 1;
             CaptureType = outPath.Substring( pathIndex);
-            m_outPath = Path.Combine(outPath.Substring(0, pathIndex), m_config.modelName);
+            m_outPath = Path.Combine(outPath.Substring(0, pathIndex), m_config.modelName + "/");
+            Directory.CreateDirectory(m_outPath);
             m_currentframe = 0;
             sheet = new byte[m_config.numFramesInAnimation][];
 

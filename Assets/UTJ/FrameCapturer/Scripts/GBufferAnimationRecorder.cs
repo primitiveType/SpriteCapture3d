@@ -57,7 +57,7 @@ namespace UTJ.FrameCapturer
         protected override void Start()
         {
             base.Start();
-
+            TurnTable.transform.localScale = Vector3.one;
             StartCoroutine(InternalExportCoroutine());
         }
 
@@ -96,51 +96,62 @@ namespace UTJ.FrameCapturer
 
         private IEnumerator InternalExportCoroutine()
         {
-            currentModelName = Animator.gameObject.name;
-            int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
-            Debug.Log($"Clip Count : {clipCount}");
-            for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
+            foreach (Transform child in TurnTable.transform)
             {
-                Debug.Log($"Capturing animation {clipIndex}");
-                float frameDelay = 0.0f;
-                AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
-                frameDelay = clip.length / (float) (NumFramesInAnimation);
+                child.transform.position = Vector3.zero;
+                child.transform.localScale = Vector3.one;
+                child.transform.rotation = Quaternion.identity;
+                child.gameObject.SetActive(false);
+            }
 
-                // try
-                // {
-                //     clip = Animator.GetCurrentAnimatorClipInfo(0)[clipIndex].clip;
-                //     frameDelay = clip.length / (float) (NumFramesInAnimation);
-                // }
-                // catch
-                // {
-                //     Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
-                //     yield break;
-                // }
-
-                float numFramesF = clip.frameRate * clip.length;
-                NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
-                currentClipName = clip.name;
-                yield return CalculateBounds(clipIndex);
-                SetCameraSizeToBounds();
-                SetupCameraResolution();
-                SetupEncoderConfig();
-                BeginRecording();
-                int captured = 0;
-                for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
+            foreach (Transform child in TurnTable.transform)
+            {
+                child.gameObject.SetActive(true);
+                Animator = child.GetComponentInChildren<Animator>();
+                if (Animator == null)
                 {
-                    foreach (var frame in EnumerateClipFrames(clipIndex))
+                    child.gameObject.SetActive(false);
+                    continue;//capture without animation?
+                }
+                currentModelName = Animator.gameObject.name;
+                int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
+                Debug.Log($"Clip Count : {clipCount}");
+                for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
+                {
+                    Debug.Log($"Capturing animation {clipIndex}");
+                    float frameDelay = 0.0f;
+                    AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
+
+                    float numFramesF = clip.frameRate * clip.length;
+                    NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
+                    currentClipName = clip.name;
+                    yield return CalculateBounds(clipIndex);
+                    SetCameraSizeToBounds();
+                    SetupCameraResolution();
+                    SetupEncoderConfig();
+                    BeginRecording();
+                    int captured = 0;
+                    for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
                     {
-                        captured++;
-                        m_capture = true;
-                        var captured1 = captured;
-                        // Debug.Log("Waiting for capture");
-                        yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
+                        foreach (var frame in EnumerateClipFrames(clipIndex))
+                        {
+                            yield return new WaitForEndOfFrame();
+                            captured++;
+                            m_capture = true;
+                            var captured1 = captured;
+                            // Debug.Log("Waiting for capture");
+                            yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
+                        }
+
+                        TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
                     }
 
-                    TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                    Debug.Log($"Finished with animation {currentClipName}");
+                    EndRecording();
                 }
 
-                EndRecording();
+                Debug.Log($"Finished with model {currentModelName}");
+                child.gameObject.SetActive(false);
             }
 
             Debug.Log("All done");
@@ -152,12 +163,10 @@ namespace UTJ.FrameCapturer
             AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
             frameDelay = clip.length / (float) (NumFramesInAnimation);
 
-            float elapsed = 0;
             for (int capture = 0; capture < NumFramesInAnimation; capture++)
             {
                 Animator.speed = 0.0f;
-                Animator.Play(currentClipName, -1, elapsed);
-                elapsed += frameDelay;
+                Animator.Play(currentClipName, -1, frameDelay * capture);
                 yield return null;
             }
         }
@@ -212,6 +221,7 @@ namespace UTJ.FrameCapturer
                 {
                     foreach (var skm in skinnedMeshRenderers)
                     {
+                        yield return new WaitForEndOfFrame();
                         //docs say this should include the bounds of every frame of animation, but appears to not be true.
                         var skmBounds = skm.bounds;
                         bounds.Encapsulate(skmBounds);
@@ -236,9 +246,13 @@ namespace UTJ.FrameCapturer
             var maxSizeY = FourDBounds.extents.y;
             var maxSizeZ = FourDBounds.extents.z;
             var maxSize = Mathf.Max(Mathf.Max(maxSizeX, maxSizeY), maxSizeZ);
+            Camera.orthographic = true;
             Camera.orthographicSize = maxSize;
             Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 1000);
             Camera.transform.LookAt(FourDBounds.center);
+            var orthoMatrix = Camera.projectionMatrix;
+            Camera.orthographic = false;//has to be false for normal maps.
+            Camera.projectionMatrix = orthoMatrix;//trick it to use orthographic
         }
 
 
