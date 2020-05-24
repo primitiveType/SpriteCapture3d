@@ -1965,8 +1965,10 @@ MonoBehaviour:
         width: 300
         height: 300
         channels: 3
-      animator: {fileID: 766434167}
       frameSize: 300
+      numFramesInAnimation: 0
+      animationName: 
+      modelName: 
   m_fbComponents:
     frameBuffer: 1
     fbColor: 1

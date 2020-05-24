@@ -191,13 +191,18 @@ namespace UTJ.FrameCapturer
         [Serializable]
         public struct fcSpriteSheetConfig
         {
-            [HideInInspector]
+            // [HideInInspector]
             public fcPngConfig pngConfig;
             // C# ext
-            [HideInInspector]
-            public Animator animator;
+            // [HideInInspector]
+            //public Animator animator;
             [HideInInspector]
             public int frameSize;
+            [HideInInspector]
+            public int numFramesInAnimation;
+
+            public string animationName;
+            public string modelName;
 
             public static fcSpriteSheetConfig default_value
             {

@@ -14,7 +14,6 @@ namespace UTJ.FrameCapturer
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             var type = property.FindPropertyRelative("format");
-            Debug.Log(type.intValue);
              EditorGUILayout.PropertyField(type);    
             
             EditorGUI.indentLevel++;
@@ -36,7 +35,7 @@ namespace UTJ.FrameCapturer
                     EditorGUILayout.PropertyField(property.FindPropertyRelative("mp4EncoderSettings"), true);
                     break;
                 case MovieEncoder.Type.SpriteSheet:
-                    EditorGUILayout.PropertyField(property.FindPropertyRelative("pngEncoderSettings"), true);
+                    EditorGUILayout.PropertyField(property.FindPropertyRelative("spritesheetEncoderSettings"), true);
                     break;
             }
 

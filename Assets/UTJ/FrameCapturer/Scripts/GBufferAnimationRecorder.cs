@@ -10,25 +10,27 @@ namespace UTJ.FrameCapturer
     public class GBufferAnimationRecorder : RecorderBase
     {
         private int NumFramesInAnimation = 8;
-        public int PixelsPerMeter=200;
+        public int PixelsPerMeter = 200;
         public GameObject TurnTable;
         public Animator Animator;
 
         #region fields
 
-        [SerializeField] MovieEncoderConfigs m_encoderConfigs = new MovieEncoderConfigs(MovieEncoder.Type.SpriteSheet);
-        [SerializeField] FrameBufferConponents m_fbComponents = FrameBufferConponents.defaultValue;
+        [SerializeField]
+        private MovieEncoderConfigs m_encoderConfigs = new MovieEncoderConfigs(MovieEncoder.Type.SpriteSheet);
 
-        [SerializeField] Shader m_shCopy;
-        Material m_matCopy;
-        Mesh m_quad;
-        CommandBuffer m_cbCopyFB;
-        CommandBuffer m_cbCopyGB;
-        CommandBuffer m_cbClearGB;
-        CommandBuffer m_cbCopyVelocity;
-        RenderTexture[] m_rtFB; //use as temp render textures?
-        RenderTexture[] m_rtGB;
-        List<BufferRecorder> m_recorders = new List<BufferRecorder>();
+        [SerializeField] private FrameBufferConponents m_fbComponents = FrameBufferConponents.defaultValue;
+
+        [SerializeField] private Shader m_shCopy;
+        private Material m_matCopy;
+        private Mesh m_quad;
+        private CommandBuffer m_cbCopyFB;
+        private CommandBuffer m_cbCopyGB;
+        private CommandBuffer m_cbClearGB;
+        private CommandBuffer m_cbCopyVelocity;
+        private RenderTexture[] m_rtFB; //use as temp render textures?
+        private RenderTexture[] m_rtGB;
+        private List<BufferRecorder> m_recorders = new List<BufferRecorder>();
         protected bool m_capture = false;
 
         [SerializeField] private int NumRotationsToCapture = 8;
@@ -55,34 +57,32 @@ namespace UTJ.FrameCapturer
         protected override void Start()
         {
             base.Start();
-            // float x = (100f - 100f / (Screen.width / frameSize)) / 100f;
-            // float y = (100f - 100f / (Screen.height / frameSize)) / 100f;
-            //
-            // Camera.rect = new Rect(x, y, 1, 1);
-            Debug.Log($"Camera is {Camera.pixelWidth}x{Camera.pixelHeight}");
-            AnimationClip clip = Animator.GetCurrentAnimatorClipInfo(0)[0].clip;
-            float numFramesF = clip.frameRate * clip.length;
-//            Debug.Log($"{numFramesF} frames calculated.");
-            NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
-            // Rows = Mathf.RoundToInt(Mathf.Sqrt(NumFramesInAnimation));
-            // Columns = Rows;
-            //     Debug.Log($"using dimensions {Rows} x {Columns} .");
+
             StartCoroutine(InternalExportCoroutine());
         }
 
+        private int FrameSize { get; set; }
+
         private void SetupCameraResolution()
         {
-            var frameSize = (int) (PixelsPerMeter * Camera.orthographicSize * 2);
-            var config = m_encoderConfigs.spritesheetEncoderSettings;
-            config.frameSize = frameSize;
+            FrameSize = (int) (PixelsPerMeter * Camera.orthographicSize * 2);
 
-            m_encoderConfigs.spritesheetEncoderSettings = config;
-            
-            Screen.SetResolution(frameSize, frameSize, FullScreenMode.Windowed);
+            Screen.SetResolution(FrameSize, FrameSize, FullScreenMode.Windowed);
             Camera.farClipPlane = 100000;
             Camera.allowDynamicResolution = false;
-            Camera.targetTexture = new RenderTexture(frameSize, frameSize, 32);
+            Camera.targetTexture = new RenderTexture(FrameSize, FrameSize, 32);
             Camera.targetTexture.filterMode = FilterMode.Point;
+        }
+
+        private int SetupEncoderConfig()
+        {
+            var config = m_encoderConfigs.spritesheetEncoderSettings;
+            config.frameSize = FrameSize;
+            config.numFramesInAnimation = NumFramesInAnimation;
+            config.animationName = currentClipName;
+            config.modelName = currentModelName;
+            m_encoderConfigs.spritesheetEncoderSettings = config;
+            return FrameSize;
         }
 
         protected override void Update()
@@ -91,72 +91,90 @@ namespace UTJ.FrameCapturer
             // base.Update();
         }
 
+        private string currentClipName { get; set; }
+        private string currentModelName { get; set; }
+
         private IEnumerator InternalExportCoroutine()
         {
-            float frameDelay = 0.0f;
-            AnimationClip clip = null;
-            try
+            currentModelName = Animator.gameObject.name;
+            int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
+            Debug.Log($"Clip Count : {clipCount}");
+            for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
             {
-                clip = Animator.GetCurrentAnimatorClipInfo(0)[0].clip;
+                Debug.Log($"Capturing animation {clipIndex}");
+                float frameDelay = 0.0f;
+                AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
                 frameDelay = clip.length / (float) (NumFramesInAnimation);
-            }
-            catch
-            {
-                Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
-                yield break;
-            }
 
-            yield return CalculateBounds();
-            SetCameraSizeToBounds();
-            SetupCameraResolution();
-            BeginRecording();
-            float elapsed = 0.0f;
-            int captured = 0;
-            for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
-            {
-                elapsed = 0;
-                for (int capture = 0; capture < NumFramesInAnimation; capture++)
+                // try
+                // {
+                //     clip = Animator.GetCurrentAnimatorClipInfo(0)[clipIndex].clip;
+                //     frameDelay = clip.length / (float) (NumFramesInAnimation);
+                // }
+                // catch
+                // {
+                //     Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
+                //     yield break;
+                // }
+
+                float numFramesF = clip.frameRate * clip.length;
+                NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
+                currentClipName = clip.name;
+                yield return CalculateBounds(clipIndex);
+                SetCameraSizeToBounds();
+                SetupCameraResolution();
+                SetupEncoderConfig();
+                BeginRecording();
+                int captured = 0;
+                for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
                 {
-                    captured++;
-                    if (Animator == null)
+                    foreach (var frame in EnumerateClipFrames(clipIndex))
                     {
-                        //Camera.clearFlags = CameraClearFlags.SolidColor;
-                    }
-                    else
-                    {
-                        if (Animator.GetCurrentAnimatorStateInfo(0).IsName(clip.name))
-                        {
-                            Animator.Play(clip.name, -1, elapsed);
-                            Animator.speed = 0.0f;
-                        }
-                        else
-                        {
-                            Debug.LogError("The animator state must be the same name as the clip.");
-                        }
-
-                        yield return new WaitForEndOfFrame();
+                        captured++;
+                        m_capture = true;
+                        var captured1 = captured;
+                        // Debug.Log("Waiting for capture");
+                        yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
                     }
 
-                    elapsed += frameDelay;
-                    m_capture = true;
-                    var captured1 = captured;
-                    yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
+                    TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
                 }
 
-                Debug.Log($"Finished sheet {perspective} . Captured {captured} so far.");
-                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                EndRecording();
             }
 
+            Debug.Log("All done");
+        }
+
+        private IEnumerable EnumerateClipFrames(int clipIndex)
+        {
+            float frameDelay = 0.0f;
+            AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
+            frameDelay = clip.length / (float) (NumFramesInAnimation);
+
+            float elapsed = 0;
+            for (int capture = 0; capture < NumFramesInAnimation; capture++)
+            {
+                Animator.speed = 0.0f;
+                Animator.Play(currentClipName, -1, elapsed);
+                elapsed += frameDelay;
+                yield return null;
+            }
         }
 
         private Bounds FourDBounds { get; set; }
 
-        private IEnumerator CalculateBounds()
+        private IEnumerator CalculateBounds(int clipIndex)
         {
             AnimationClip clip = null;
             float frameDelay = 0f;
             float elapsedFramesInTime = 0f;
-            var tester = TurnTable.AddComponent<BoxCollider>();
+            var tester = TurnTable.GetComponent<BoxCollider>();
+            if (!tester)
+            {
+                tester = TurnTable.AddComponent<BoxCollider>();
+            }
+
             tester.size = Vector3.zero;
             List<SkinnedMeshRenderer> skinnedMeshRenderers = new List<SkinnedMeshRenderer>();
             foreach (var child in TurnTable.GetComponentsInChildren<MeshRenderer>())
@@ -190,44 +208,23 @@ namespace UTJ.FrameCapturer
 
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
             {
-                for (int capture = 0; capture < NumFramesInAnimation; capture++)
+                foreach (var frame in EnumerateClipFrames(clipIndex))
                 {
-                    if (Animator == null)
+                    foreach (var skm in skinnedMeshRenderers)
                     {
-                        Camera.clearFlags = CameraClearFlags.SolidColor;
+                        //docs say this should include the bounds of every frame of animation, but appears to not be true.
+                        var skmBounds = skm.bounds;
+                        bounds.Encapsulate(skmBounds);
                     }
-                    else
-                    {
-                        if (Animator.GetCurrentAnimatorStateInfo(0).IsName(clip.name))
-                        {
-                            Animator.Play(clip.name, -1, elapsedFramesInTime);
-                            Animator.speed = 0.0f;
-                        }
-                        else
-                        {
-                            Debug.LogError("The animator state must be the same name as the clip.");
-                        }
 
-                       // bounds.Encapsulate(TurnTable.GetComponent<Collider>().bounds);
-
-                        foreach (var skm in skinnedMeshRenderers)
-                        {
-                            var skmBounds =
-                                skm.bounds; //docs say this should include the bounds of every frame of animation, but appears to not be true.
-                            Debug.Log($"{skmBounds.center} : {skmBounds.size}");
-                            bounds.Encapsulate(skmBounds);
-                            Debug.Log($"{bounds.center} : {bounds.size}");
-                        }
-
-                        tester.center = bounds.center;
-                        tester.size = bounds.size;
-                        elapsedFramesInTime += frameDelay;
-                        yield return new WaitForSeconds(0.01f);
-                    }
+                    tester.center = bounds.center;
+                    tester.size = bounds.size;
+                    elapsedFramesInTime += frameDelay;
                 }
-                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
 
+                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
             }
+
 
             FourDBounds = bounds;
             Debug.Log($"Bounds size: {FourDBounds.size.ToString()}");
@@ -247,7 +244,7 @@ namespace UTJ.FrameCapturer
 
         public override bool BeginRecording()
         {
-            //if (m_recording) { return false; }
+//if (m_recording) { return false; }
             if (m_shCopy == null)
             {
                 Debug.LogError("GBufferRecorder: copy shader is missing!");
@@ -263,6 +260,7 @@ namespace UTJ.FrameCapturer
             {
                 m_matCopy.EnableKeyword("OFFSCREEN");
             }
+
             else
             {
                 m_matCopy.DisableKeyword("OFFSCREEN");
@@ -270,6 +268,7 @@ namespace UTJ.FrameCapturer
 
             int captureWidth = cam.pixelWidth;
             int captureHeight = cam.pixelHeight;
+
             GetCaptureResolution(ref captureWidth, ref captureHeight);
             if (m_encoderConfigs.format == MovieEncoder.Type.MP4 ||
                 m_encoderConfigs.format == MovieEncoder.Type.WebM)
@@ -406,7 +405,6 @@ namespace UTJ.FrameCapturer
             }
 
             base.BeginRecording();
-
             Debug.Log("GBufferRecorder: BeginRecording()");
             return true;
         }
@@ -481,13 +479,13 @@ namespace UTJ.FrameCapturer
         #region impl
 
 #if UNITY_EDITOR
-        void Reset()
+        private void Reset()
         {
             m_shCopy = fcAPI.GetFrameBufferCopyShader();
         }
 #endif // UNITY_EDITOR
 
-        IEnumerator OnPostRender()
+        private IEnumerator OnPostRender()
         {
             if (m_recording && m_capture)
             {
