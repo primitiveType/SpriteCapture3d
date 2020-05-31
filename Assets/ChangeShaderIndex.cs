@@ -7,10 +7,13 @@ public class ChangeShaderIndex : MonoBehaviour
 {
     public int Max = 8;
 
+    [SerializeField] private GameObject materialGameObject;
+
     private Material m_MyMat;
-    private Material MyMat => m_MyMat != null ? m_MyMat : m_MyMat = GetComponent<Renderer>().sharedMaterial;
+    private Material MyMat => m_MyMat != null ? m_MyMat : m_MyMat = materialGameObject.GetComponent<Renderer>().sharedMaterial;
 
     private Camera mainCam;
+    private static readonly int Perspective = Shader.PropertyToID("Perspective");
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +29,8 @@ public class ChangeShaderIndex : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float index = MyMat.GetFloat("Index");
-        MyMat.SetFloat("Index", GetFacingIndex());
+        float index = MyMat.GetFloat(Perspective);
+        MyMat.SetFloat(Perspective, GetFacingIndex());
         // transform.LookAt(mainCam.transform);
     }
 
@@ -51,6 +54,7 @@ public class ChangeShaderIndex : MonoBehaviour
         var resultingAngle = (angle + offset);
         Debug.Log(resultingAngle);
         var index = (resultingAngle / 360f) * Max;
-        return Max - (index);//invert because rotation direction is wrong
+        var answer = Max - index;
+        return answer;//invert because rotation direction is wrong
     }
 }
