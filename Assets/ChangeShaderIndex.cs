@@ -18,6 +18,11 @@ public class ChangeShaderIndex : MonoBehaviour
         mainCam = Camera.main;
     }
 
+    public void TestFunction(string testParam)
+    {
+        
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

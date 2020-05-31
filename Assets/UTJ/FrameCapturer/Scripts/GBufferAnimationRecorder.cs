@@ -1,14 +1,134 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Threading;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Rendering;
+using UnityEngine.Serialization;
+
+
+public static class AnimationGenerator
+{
+    public static string CreationPath = "./Capture/";
+    private static string TemplateFileName => "Assets/Animation_template.txt";
+    private static string TemplateText { get; set; }
+
+    public static void CreateAnimation(string path, string modelName, string animationName, int numFrames, float duration)
+    {
+        if (TemplateText == null)
+        {
+            TemplateText = File.ReadAllText(TemplateFileName);
+        }
+
+        string fullAnimationName = $"{modelName}_{animationName}";
+
+        string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
+        animationFile = animationFile.Replace("$NUM_FRAMES_PLUS_ONE", (numFrames + 1).ToString());
+        animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
+        Directory.CreateDirectory(path);
+        File.WriteAllText(Path.Combine(path, animationName + ".asset"), animationFile);
+    }
+
+    public static string GetFileName(string model, string animation, int perspective, string extension)
+    {
+        if (!extension.StartsWith("."))
+        {
+            extension = $".{extension}";
+        }
+
+        return Path.Combine(GetDirectory(model), $"{model}_{animation}_{perspective:0000}{extension}");
+    }
+
+    public static string GetDirectory(string model)
+    {
+        return Path.Combine(CreationPath, model);
+    }
+}
+
+public static class TextureArrayGenerator
+{
+    public static string outputPath => "Assets/SpriteOutputs";
+    public static void Create(string namePrefix, string path)
+    {
+        Debug.Log($"Creating texture array at path {path}");
+        DirectoryInfo di = new DirectoryInfo(path);
+        List<string> filepaths = new List<string>();
+        List<Texture2D> textures = new List<Texture2D>();
+        foreach (var file in di.EnumerateFiles())
+        {
+            if (file.Name.StartsWith(namePrefix))
+            {
+                filepaths.Add(file.FullName);
+                Texture2D newTex = new Texture2D(2,2);
+                newTex.LoadImage(File.ReadAllBytes(file.FullName));
+                textures.Add(newTex);
+            }
+        }
+        
+        Create(textures, outputPath, namePrefix);
+    }
+    public static void Create(List<Texture2D> textures, string path, string animationName)
+    {
+        DirectoryInfo di = new DirectoryInfo(path);
+        if (!Directory.Exists(di.FullName))
+        {
+            di.Create();
+            // Directory.CreateDirectory(path);
+        }
+        
+
+        Debug.Log("Creating texture2d array");
+        // List<Texture2D> textures = new List<Texture2D>();
+        // foreach (Object o in Selection.objects)
+        // {
+        //     if (o.GetType() == typeof(Texture2D))
+        //     {
+        //         textures.Add((Texture2D) o);
+        //     }
+        // }
+
+        if (textures.Count == 0)
+        {
+            Debug.Log("No textures in selection.");
+            return;
+        }
+
+        //string path = "Assets/Texture2d/test.asset";
+        // Create Texture2DArray
+        Texture2DArray texture2DArray = new
+            Texture2DArray(textures[0].width,
+                textures[0].height, textures.Count,
+                TextureFormat.RGBA32, true, false);
+        // Apply settings
+        texture2DArray.filterMode = FilterMode.Bilinear;
+        texture2DArray.wrapMode = TextureWrapMode.Repeat;
+        // Loop through ordinary textures and copy pixels to the
+        // Texture2DArray
+        for (int i = 0; i < textures.Count; i++)
+        {
+            texture2DArray.SetPixels(textures[i].GetPixels(0),
+                i, 0);
+        }
+
+        // Apply our changes
+        texture2DArray.Apply();
+        if (path.Length != 0)
+        {
+            AssetDatabase.CreateAsset(texture2DArray, Path.Combine(path, $"{animationName}_Array.Asset"));
+        }
+    }
+}
 
 namespace UTJ.FrameCapturer
 {
     public class GBufferAnimationRecorder : RecorderBase
     {
+        [SerializeField] public AnimationMaterialDictionary animationDictionary;
+
         private int NumFramesInAnimation = 8;
         public int PixelsPerMeter = 200;
         public GameObject TurnTable;
@@ -56,7 +176,9 @@ namespace UTJ.FrameCapturer
 
         protected override void Start()
         {
-            base.Start();
+            TextureArrayGenerator.Create("CHIMERA_LEGACY_walk_RM_Alpha", "E:/Projects/SpriteCapture - Copy/Capture/CHIMERA_LEGACY");
+            
+             base.Start();
             TurnTable.transform.localScale = Vector3.one;
             StartCoroutine(InternalExportCoroutine());
         }
@@ -111,8 +233,9 @@ namespace UTJ.FrameCapturer
                 if (Animator == null)
                 {
                     child.gameObject.SetActive(false);
-                    continue;//capture without animation?
+                    continue; //capture without animation?
                 }
+
                 currentModelName = Animator.gameObject.name;
                 int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
@@ -125,6 +248,14 @@ namespace UTJ.FrameCapturer
                     float numFramesF = clip.frameRate * clip.length;
                     NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
                     currentClipName = clip.name;
+                    AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
+                        currentModelName, currentClipName, NumFramesInAnimation, clip.length);
+                    animationDictionary.AddPropertyBlock(currentModelName, currentClipName ,NumFramesInAnimation, 1);
+
+                    // var block = AnimationMaterialPropertyBlock.CreateInstance();
+                    // var block = ScriptableObject.CreateInstance<AnimationMaterialPropertyBlock>();
+                    // block.AnimationName = "test;";
+                    // block.name = "tester";
                     yield return CalculateBounds(clipIndex);
                     SetCameraSizeToBounds();
                     SetupCameraResolution();
@@ -251,8 +382,8 @@ namespace UTJ.FrameCapturer
             Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 1000);
             Camera.transform.LookAt(FourDBounds.center);
             var orthoMatrix = Camera.projectionMatrix;
-            Camera.orthographic = false;//has to be false for normal maps.
-            Camera.projectionMatrix = orthoMatrix;//trick it to use orthographic
+            Camera.orthographic = false; //has to be false for normal maps.
+            Camera.projectionMatrix = orthoMatrix; //trick it to use orthographic
         }
 
 

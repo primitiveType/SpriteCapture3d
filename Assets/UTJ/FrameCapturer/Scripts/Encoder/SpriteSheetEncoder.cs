@@ -14,9 +14,21 @@ namespace UTJ.FrameCapturer
         int m_currentframe;
 
 
-        public override void Release() { m_ctx.Release(); }
-        public override bool IsValid() { return m_ctx; }
-        public override Type type { get { return Type.Png; } }
+        public override void Release()
+        {
+            m_ctx.Release();
+        }
+
+        public override bool IsValid()
+        {
+            return m_ctx;
+        }
+
+        public override Type type
+        {
+            get { return Type.Png; }
+        }
+
         // public int Rows { get; set; }
         // public int Columns { get; set; }
         private byte[][] sheet;
@@ -31,11 +43,11 @@ namespace UTJ.FrameCapturer
                 return;
             }
 
-            m_config = (fcAPI.fcSpriteSheetConfig)config;
+            m_config = (fcAPI.fcSpriteSheetConfig) config;
             var pngConfig = m_config.pngConfig;
             m_ctx = fcAPI.fcPngCreateContext(ref pngConfig);
             int pathIndex = outPath.LastIndexOf("/", StringComparison.InvariantCulture) + 1;
-            CaptureType = outPath.Substring( pathIndex);
+            CaptureType = outPath.Substring(pathIndex);
             m_outPath = Path.Combine(outPath.Substring(0, pathIndex), m_config.modelName + "/");
             Directory.CreateDirectory(m_outPath);
             m_currentframe = 0;
@@ -61,28 +73,32 @@ namespace UTJ.FrameCapturer
             int bytesPerPixel = frame.Length / (m_config.frameSize * m_config.frameSize);
             if (m_ctx)
             {
-                 sheet[m_currentframe % m_config.numFramesInAnimation] = frame;
-                 
-                 //int channels = System.Math.Min(m_config.pngConfig.channels, (int)format & 7);
-                // fcAPI.fcPngExportPixels(m_ctx, path, frame , m_config.frameSize , m_config.frameSize , format, channels);
+                sheet[m_currentframe % m_config.numFramesInAnimation] = frame;
 
+                //int channels = System.Math.Min(m_config.pngConfig.channels, (int)format & 7);
+                // fcAPI.fcPngExportPixels(m_ctx, path, frame , m_config.frameSize , m_config.frameSize , format, channels);
             }
+
             ++m_currentframe;
-            
+
             if (m_currentframe % m_config.numFramesInAnimation == 0)
             {
-                Debug.Log($"Apparent {bytesPerPixel} bytes per pixel");                 
-                string path = $"{m_outPath}{m_config.modelName}_{m_config.animationName}_{CaptureType}_{currentSheet.ToString("0000")}.png";
-
-                int channels = System.Math.Min(m_config.pngConfig.channels, (int)format & 7);
-                Debug.Log($"Saving sheet {currentSheet} with {m_config.numFramesInAnimation} anim frames. FrameSize is {m_config.frameSize}. Channels : {channels}. Format {format}");
+                Debug.Log($"Apparent {bytesPerPixel} bytes per pixel");
+                //  string path = $"{m_outPath}{m_config.modelName}_{m_config.animationName}_{CaptureType}_{currentSheet.ToString("0000")}.png";
+                string path = AnimationGenerator.GetFileName(m_config.modelName, $"{m_config.animationName}_{CaptureType}", currentSheet, ".png");
+                int channels = System.Math.Min(m_config.pngConfig.channels, (int) format & 7);
+                Debug.Log(
+                    $"Saving sheet {currentSheet} {CaptureType} with {m_config.numFramesInAnimation} anim frames. FrameSize is {m_config.frameSize}. Channels : {channels}. Format : {format}");
                 var allBytes = Combine(sheet);
-                fcAPI.fcPngExportPixels(m_ctx, path, allBytes , m_config.frameSize, m_config.frameSize * m_config.numFramesInAnimation, format, channels);
+                fcAPI.fcPngExportPixels(m_ctx, path, allBytes, m_config.frameSize,
+                    m_config.frameSize * m_config.numFramesInAnimation, format, channels);
+                TextureArrayGenerator.Create($"{m_config.modelName}_{m_config.animationName}_{CaptureType}", AnimationGenerator.GetDirectory(m_config.modelName));
+
                 currentSheet++;
                 sheet = new byte[m_config.numFramesInAnimation][];
             }
         }
-        
+
         private static byte[] Combine(byte[][] arrays)
         {
             byte[] bytes = new byte[arrays.Sum(a => a.Length)];
@@ -96,12 +112,11 @@ namespace UTJ.FrameCapturer
 
             return bytes;
         }
-     
-        
+
+
         public override void AddAudioSamples(float[] samples)
         {
             // not supported
         }
-
     }
 }
