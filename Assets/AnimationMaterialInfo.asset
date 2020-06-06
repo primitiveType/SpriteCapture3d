@@ -1,0 +1,2052 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5ed81596bf4962b32c2357ed34ea19, type: 3}
+  m_Name: AnimationMaterialInfo
+  m_EditorClassIdentifier: 
+  PropertyBlocksByModelAnimation:
+  - rows: 22
+    columns: 1
+    animationName: testmodel_testAnimation
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackL
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackR
+  - rows: 78
+    columns: 1
+    animationName: CHIMERA_LEGACY_death
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_getHit1
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_getHit2
+  - rows: 60
+    columns: 1
+    animationName: CHIMERA_LEGACY_idle
+  - rows: 35
+    columns: 1
+    animationName: CHIMERA_LEGACY_ramAttack
+  - rows: 35
+    columns: 1
+    animationName: CHIMERA_LEGACY_ramAttackForward
+  - rows: 35
+    columns: 1
+    animationName: CHIMERA_LEGACY_ramAttackForward_RM
+  - rows: 55
+    columns: 1
+    animationName: CHIMERA_LEGACY_RamBiteComboAttack
+  - rows: 55
+    columns: 1
+    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward
+  - rows: 55
+    columns: 1
+    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward_RM
+  - rows: 24
+    columns: 1
+    animationName: CHIMERA_LEGACY_run
+  - rows: 24
+    columns: 1
+    animationName: CHIMERA_LEGACY_run_RM
+  - rows: 55
+    columns: 1
+    animationName: CHIMERA_LEGACY_snakeBiteAttack
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: CHIMERA_LEGACY_walk_RM
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttack
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward_RM
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left_RM
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right_RM
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward
+  - rows: 45
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward_RM
+  - rows: 65
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2HitComboAttack
+  - rows: 60
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2HitComboAttackForward
+  - rows: 60
+    columns: 1
+    animationName: CYCLOPS_LEGACY_2HitComboAttackForward_RM
+  - rows: 100
+    columns: 1
+    animationName: CYCLOPS_LEGACY_3HitComboAttack
+  - rows: 90
+    columns: 1
+    animationName: CYCLOPS_LEGACY_3HitComboAttackForward
+  - rows: 90
+    columns: 1
+    animationName: CYCLOPS_LEGACY_3HitComboAttackForward_RM
+  - rows: 109
+    columns: 1
+    animationName: CYCLOPS_LEGACY_death
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit1
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit2
+  - rows: 35
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit2_RM
+  - rows: 35
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit3
+  - rows: 35
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit4
+  - rows: 35
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit4_RM
+  - rows: 55
+    columns: 1
+    animationName: CYCLOPS_LEGACY_getHit5
+  - rows: 300
+    columns: 1
+    animationName: CYCLOPS_LEGACY_idleLookAround
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_leftHandAttack
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_leftHandAttackForward
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_leftHandAttackForward_RM
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_rightHandAttack
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_rightHandAttackForward
+  - rows: 40
+    columns: 1
+    animationName: CYCLOPS_LEGACY_rightHandAttackForward_RM
+  - rows: 60
+    columns: 1
+    animationName: CYCLOPS_LEGACY_roar
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: CYCLOPS_LEGACY_walk_RM
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_Bite
+  - rows: 50
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_Bite3HitCombo
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlBiteThreat
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlBiteThreat_RM
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlNormal
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlNormal_RM
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThreat
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThreat_RM
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThrowSpiderWebThreat
+  - rows: 20
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThrowSpiderWebThreat_RM
+  - rows: 46
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_deathNormal
+  - rows: 45
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_deathThreat
+  - rows: 60
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_idleLookAroundNormal
+  - rows: 60
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_idleLookAroundThreat
+  - rows: 60
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_idleNormal
+  - rows: 60
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_idleThreat
+  - rows: 27
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteNormal
+  - rows: 27
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteNormal_RM
+  - rows: 27
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteThreat
+  - rows: 27
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteThreat_RM
+  - rows: 15
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_throwSpiderWebNormal
+  - rows: 15
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_throwSpiderWebThreat
+  - rows: 55
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboForwardUnarmed
+  - rows: 50
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboForwardUnarmed_RM
+  - rows: 50
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboForwardWeapon
+  - rows: 50
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboForwardWeapon_RM
+  - rows: 55
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboSpecialForwardWeapon
+  - rows: 55
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboSpecialForwardWeapon_RM
+  - rows: 55
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboSpecialWeapon
+  - rows: 50
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboUnarmed
+  - rows: 50
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_2HitComboWeapon
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_3HitComboForwardWeapon
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_3HitComboForwardWeapon_RM
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_3HitComboWeapon
+  - rows: 90
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboForwardUnarmed
+  - rows: 90
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboForwardUnarmed_RM
+  - rows: 85
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboForwardWeapon
+  - rows: 85
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboForwardWeapon_RM
+  - rows: 90
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboUnarmed
+  - rows: 85
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_4HitComboWeapon
+  - rows: 56
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_deathUnarmed
+  - rows: 56
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_deathWeapon
+  - rows: 20
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_defenseBlockedUnarmed
+  - rows: 20
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_defenseBlockedWeapon
+  - rows: 20
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_getHitUnarmed
+  - rows: 20
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_getHitWeapon
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_idleDefenseUnarmed
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_idleDefenseWeapon
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_idleUnarmed
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_idleWeapon
+  - rows: 24
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_runUnarmed
+  - rows: 24
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_runUnarmed_RM
+  - rows: 24
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_runWeapon
+  - rows: 24
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_runWeapon_RM
+  - rows: 45
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_spinningTailAttack
+  - rows: 45
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_spinningTailAttackForward_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeLUnarmed
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeLUnarmed_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeLWeapon
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeLWeapon_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeRUnarmed
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeRUnarmed_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeRWeapon
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_strafeRWeapon_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walking2HitComboWeapon
+  - rows: 60
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walking4HitComboUnarmed
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walkUnarmed
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walkUnarmed_RM
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walkWeapon
+  - rows: 30
+    columns: 1
+    animationName: DRAGONIDE_LEGACY_walkWeapon_RM
+  - rows: 20
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Bite
+  - rows: 62
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Death
+  - rows: 20
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_GetHitFront
+  - rows: 20
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_GetHitLeft
+  - rows: 20
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_GetHitRight
+  - rows: 85
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Howl
+  - rows: 60
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_IdleAggressive
+  - rows: 60
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_IdleBreathe
+  - rows: 300
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_IdleLookAround
+  - rows: 25
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_JumpBite
+  - rows: 25
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_jumpBite_RM
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Run
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Run_RM
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunBite
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunBite_RM
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Walk
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Walk_RM
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_WalkTurnR_RM
+  - rows: 60
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Resting
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunTurnL
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunTurnR_RM
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunTurnR
+  - rows: 16
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_RunTurnL_RM
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_WalkTurnL
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_WalkTurnL_RM
+  - rows: 60
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_Sleeping
+  - rows: 45
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_GoBackUp
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_GoToRest
+  - rows: 30
+    columns: 1
+    animationName: FANTASY_WOLF_LEGACY_WalkTurnR
+  - rows: 55
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_2HitComboAttack
+  - rows: 55
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_2HitComboAttackForward
+  - rows: 55
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_2HitComboAttackForward_RM
+  - rows: 80
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_3HitComboAttack
+  - rows: 80
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_3HitComboAttackForward
+  - rows: 80
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_3HitComboAttackForward_RM
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack1
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack1Forward
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack1Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack2
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack2Forward
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack2Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack3
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack3Forward
+  - rows: 35
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_attack3Forward_RM
+  - rows: 70
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_death
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_getHit1
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_getHit2
+  - rows: 60
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_idle
+  - rows: 80
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_roarTaunt
+  - rows: 24
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_run
+  - rows: 24
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_run_RM
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_strafeLeft
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_strafeLeft_RM
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_strafeRight
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_strafeRight_RM
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: FAT_OGRE_LEGACY_walk_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack1
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack1Forward
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack1Forward_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2Forward
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2Forward_RM
+  - rows: 50
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitCombo
+  - rows: 50
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitComboForward
+  - rows: 50
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitComboForward_RM
+  - rows: 80
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBite
+  - rows: 80
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBiteForward
+  - rows: 80
+    columns: 1
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBiteForward_RM
+  - rows: 65
+    columns: 1
+    animationName: GHOUL_LEGACY_death
+  - rows: 25
+    columns: 1
+    animationName: GHOUL_LEGACY_getHit1
+  - rows: 25
+    columns: 1
+    animationName: GHOUL_LEGACY_getHit2
+  - rows: 35
+    columns: 1
+    animationName: GHOUL_LEGACY_grabBite
+  - rows: 60
+    columns: 1
+    animationName: GHOUL_LEGACY_idle
+  - rows: 40
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpattack
+  - rows: 40
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpattack_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpBackwards
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpBackwards_RM
+  - rows: 35
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpForward
+  - rows: 35
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpForward_RM
+  - rows: 55
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpGrabBite
+  - rows: 55
+    columns: 1
+    animationName: GHOUL_LEGACY_jumpGrabBite_RM
+  - rows: 24
+    columns: 1
+    animationName: GHOUL_LEGACY_run
+  - rows: 24
+    columns: 1
+    animationName: GHOUL_LEGACY_run_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_strafeLeft
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_strafeLeft_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_strafeRight
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_strafeRight_RM
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: GHOUL_LEGACY_walk_RM
+  - rows: 47
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_death
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeBackwards
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeBackwards_RM
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeLeft
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeLeft_RM
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeRight
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_dodgeRight_RM
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_getHitFront
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_getHitLeft
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_getHitRight
+  - rows: 60
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_idle
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_jumpBite
+  - rows: 25
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_jumpBite_RM
+  - rows: 18
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_run
+  - rows: 18
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_run_RM
+  - rows: 60
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_taunt
+  - rows: 30
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_walk_RM
+  - rows: 15
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_Bite
+  - rows: 35
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_BiteForward
+  - rows: 35
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_BiteForward_RM
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_crawl
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_crawl_RM
+  - rows: 56
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_death
+  - rows: 20
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_getHitFront
+  - rows: 25
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_getHitLeft
+  - rows: 25
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_getHitRight
+  - rows: 60
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_idle
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_jumpBite
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_jumpBite_RM
+  - rows: 20
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_spitVenom
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn180Left
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn180Left_RM
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn180Right
+  - rows: 30
+    columns: 1
+    animationName: GIANT_VIPER_LEGACY_turn180Right_RM
+  - rows: 35
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboDaggers
+  - rows: 35
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboForwardDaggers
+  - rows: 35
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboForwardDaggers_RM
+  - rows: 35
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboForwardSwordShield
+  - rows: 35
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboForwardSwordShield_RM
+  - rows: 40
+    columns: 1
+    animationName: GOBLIN_LEGACY_2HitComboSwordShield
+  - rows: 55
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboDaggers
+  - rows: 55
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboForwardDaggers
+  - rows: 55
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboForwardDaggers_RM
+  - rows: 55
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboForwardSwordShield
+  - rows: 55
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboForwardSwordShield_RM
+  - rows: 50
+    columns: 1
+    animationName: GOBLIN_LEGACY_3HitComboSwordShield
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1Daggers
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1ForwardDaggers
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1ForwardDaggers_RM
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1ForwardSwordShield
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1ForwardSwordShield_RM
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack1SwordShield
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2Daggers
+  - rows: 28
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2ForwardDaggers
+  - rows: 27
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2ForwardDaggers_RM
+  - rows: 28
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2ForwardSwordShield
+  - rows: 28
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2ForwardSwordShield_RM
+  - rows: 28
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack2SwordShield
+  - rows: 25
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3Daggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3ForwardDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3ForwardDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3ForwardSwordShield
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3ForwardSwordShield_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_attack3SwordShield
+  - rows: 15
+    columns: 1
+    animationName: GOBLIN_LEGACY_blockDaggers
+  - rows: 15
+    columns: 1
+    animationName: GOBLIN_LEGACY_blockSwordShield
+  - rows: 56
+    columns: 1
+    animationName: GOBLIN_LEGACY_deathDaggers
+  - rows: 56
+    columns: 1
+    animationName: GOBLIN_LEGACY_deathSlingshot
+  - rows: 56
+    columns: 1
+    animationName: GOBLIN_LEGACY_deathSwordShield
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_getHitDaggers
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_getHitSlingshot
+  - rows: 20
+    columns: 1
+    animationName: GOBLIN_LEGACY_getHitSwordShield
+  - rows: 60
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleAimSlingshot
+  - rows: 15
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleProtectedDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleProtectedSwordShield
+  - rows: 60
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleSlingshot
+  - rows: 40
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleSlingshotToAimSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_idleSwordShield
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runDaggers
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runDaggers_RM
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runSlingshot
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runSlingshot_RM
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runSwordShield
+  - rows: 24
+    columns: 1
+    animationName: GOBLIN_LEGACY_runSwordShield_RM
+  - rows: 25
+    columns: 1
+    animationName: GOBLIN_LEGACY_shootSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftSlingshot_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftSwordShield
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeLeftSwordShield_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightDaggers
+  - rows: 29
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightSlingshot_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightSwordShield
+  - rows: 29
+    columns: 1
+    animationName: GOBLIN_LEGACY_strafeRightSwordShield_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsSlingshot_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsSwordShield
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkBackwardsSwordShield_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardSlingshot_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardSwordShield
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkForwardSwordShield_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalDaggers
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalDaggers_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalSlingshot
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalSlingshot_RM
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalSwordShield
+  - rows: 30
+    columns: 1
+    animationName: GOBLIN_LEGACY_walkNormalSwordShield_RM
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_A
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_A_Forward
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_A_Forward_RM
+  - rows: 60
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_B
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_C_Forward
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_2HitCombo_C_Forward_RM
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_3HitCombo
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_3HitComboForward
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_3HitComboForward_RM
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack1
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack1Forward
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack1Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack2
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack3
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack3Forward
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack3Forward_RM
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack4
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack4Forward
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack4Forward_RM
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_attack5
+  - rows: 71
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_death
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_getHitHeavy
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_getHitHeavy_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_getHitLight
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_getHitMedium
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_getHitMedium_RM
+  - rows: 60
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_idle
+  - rows: 65
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_roar
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft_RM
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90AttackRight
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90AttackRight_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ICE_LEGACY_walk_RM
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward_RM
+  - rows: 60
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_B
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward_RM
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_3HitCombo
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_3HitComboForward
+  - rows: 85
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_3HitComboForward_RM
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack1
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack1Forward
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack1Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack2
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack3
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack3Forward
+  - rows: 40
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack3Forward_RM
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack4
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack4Forward
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack4Forward_RM
+  - rows: 55
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_attack5
+  - rows: 71
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_death
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_getHitHeavy
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_getHitHeavy_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_getHitLight
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_getHitMedium
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_getHitMedium_RM
+  - rows: 60
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_idle
+  - rows: 65
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_roar
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft_RM
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight
+  - rows: 50
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90Left
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90Left_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90Right
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_walk_RM
+  - rows: 220
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_construct
+  - rows: 230
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_explode
+  - rows: 10
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_idle
+  - rows: 220
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_construct
+  - rows: 230
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_explode
+  - rows: 10
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_idle
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack_RM
+  - rows: 85
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack
+  - rows: 85
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack_RM
+  - rows: 90
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_death
+  - rows: 18
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_falling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyBackwardsStationary
+  - rows: 20
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormal
+  - rows: 40
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormalToFalling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationary
+  - rows: 50
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationaryToFalling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyLeftStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyNormal
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyRightStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationaryClawsAttack
+  - rows: 16
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop
+  - rows: 16
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop_RM
+  - rows: 25
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit1
+  - rows: 25
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit2
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_glide
+  - rows: 20
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_hitTheGround
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_idle
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_jumpToFly
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_landing
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack_RM
+  - rows: 18
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_swooping
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk_RM
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack_RM
+  - rows: 85
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack
+  - rows: 85
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack_RM
+  - rows: 90
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_death
+  - rows: 18
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_falling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyBackwardsStationary
+  - rows: 20
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyGetHitNormal
+  - rows: 40
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyGetHitNormalToFalling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyGetHitStationary
+  - rows: 50
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyGetHitStationaryToFalling
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyLeftStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyNormal
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyRightStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyStationary
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_flyStationaryClawsAttack
+  - rows: 16
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_gallop
+  - rows: 16
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_gallop_RM
+  - rows: 25
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_getHit1
+  - rows: 25
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_getHit2
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_glide
+  - rows: 20
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_hitTheGround
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_idle
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_jumpToFly
+  - rows: 60
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_landing
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_leftClawsAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_leftClawsAttack_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_rightClawsAttack
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_rightClawsAttack_RM
+  - rows: 18
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_swooping
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_turn90Left
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_turn90Left_RM
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_turn90Right
+  - rows: 35
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_turn90Right_RM
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_walk
+  - rows: 30
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_walk_RM
+  - rows: 60
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_2HitCombo
+  - rows: 55
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_2HitComboForward
+  - rows: 55
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_2HitComboForward_RM
+  - rows: 74
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_3HitCombo
+  - rows: 75
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_3HitComboForward
+  - rows: 75
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_3HitComboForward_RM
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack1
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack1Forward
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack1Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack2
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack2Forward
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack2Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack3
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack3Forward
+  - rows: 35
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_attack3Forward_RM
+  - rows: 68
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_death
+  - rows: 25
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_getHitFront
+  - rows: 25
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_getHitLeft
+  - rows: 25
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_getHitRight
+  - rows: 60
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_idle
+  - rows: 24
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_run
+  - rows: 24
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_run_RM
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkBackwards
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkBackwards_RM
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkForward
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkForward_RM
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkLeft
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkLeft_RM
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkRight
+  - rows: 30
+    columns: 1
+    animationName: HOBGOBLIN_LEGACY_walkRight_RM
+  - rows: 40
+    columns: 1
+    animationName: HYDRA_LEGACY_3toxicSpitCombo
+  - rows: 40
+    columns: 1
+    animationName: HYDRA_LEGACY_bite3HitCombo
+  - rows: 40
+    columns: 1
+    animationName: HYDRA_LEGACY_bite3HitComboForward
+  - rows: 40
+    columns: 1
+    animationName: HYDRA_LEGACY_bite3HitComboForward_RM
+  - rows: 79
+    columns: 1
+    animationName: HYDRA_LEGACY_bite6HitCombo
+  - rows: 101
+    columns: 1
+    animationName: HYDRA_LEGACY_death
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_getHitFront1
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_getHitFront2
+  - rows: 35
+    columns: 1
+    animationName: HYDRA_LEGACY_getHitLeft
+  - rows: 35
+    columns: 1
+    animationName: HYDRA_LEGACY_getHitRight
+  - rows: 60
+    columns: 1
+    animationName: HYDRA_LEGACY_idleBreathe
+  - rows: 180
+    columns: 1
+    animationName: HYDRA_LEGACY_idleLookAround
+  - rows: 99
+    columns: 1
+    animationName: HYDRA_LEGACY_roarSpreadToxicBreath
+  - rows: 24
+    columns: 1
+    animationName: HYDRA_LEGACY_run
+  - rows: 24
+    columns: 1
+    animationName: HYDRA_LEGACY_run_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Left
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Left3toxicSpitCombo
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Left3toxicSpitCombo_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Left_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45LeftBite3HitCombo
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45LeftBite3HitCombo_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Right
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Right3toxicSpitCombo
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Right3toxicSpitCombo_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45Right_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45RightBite3HitCombo
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_turn45RightBite3HitCombo_RM
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: HYDRA_LEGACY_walk_RM
+  - rows: 40
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo1
+  - rows: 45
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo1Forward
+  - rows: 45
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo1Forward_RM
+  - rows: 50
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo2
+  - rows: 55
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo2Forward
+  - rows: 55
+    columns: 1
+    animationName: KOBOLD_Legacy_2HitCombo2Forward_RM
+  - rows: 62
+    columns: 1
+    animationName: KOBOLD_Legacy_3HitCombo
+  - rows: 70
+    columns: 1
+    animationName: KOBOLD_Legacy_3HitComboForward
+  - rows: 70
+    columns: 1
+    animationName: KOBOLD_Legacy_3HitComboForward_RM
+  - rows: 80
+    columns: 1
+    animationName: KOBOLD_Legacy_4HitCombo
+  - rows: 90
+    columns: 1
+    animationName: KOBOLD_Legacy_4HitComboForward
+  - rows: 90
+    columns: 1
+    animationName: KOBOLD_Legacy_4HitComboForward_RM
+  - rows: 20
+    columns: 1
+    animationName: KOBOLD_Legacy_attack1
+  - rows: 20
+    columns: 1
+    animationName: KOBOLD_Legacy_attack1Forward
+  - rows: 20
+    columns: 1
+    animationName: KOBOLD_Legacy_attack1Forward_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack2
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack2Forward
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack2Forward_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack3
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack3Forward
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_attack3Forward_RM
+  - rows: 35
+    columns: 1
+    animationName: KOBOLD_Legacy_attack4
+  - rows: 35
+    columns: 1
+    animationName: KOBOLD_Legacy_attack4Forward_RM
+  - rows: 60
+    columns: 1
+    animationName: KOBOLD_Legacy_death
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_dodgeLeft
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_dodgeLeft_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_dodgeRight
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_dodgeRight_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_getHitFront
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_getHitLeft
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_getHitRight
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_idleCombat
+  - rows: 24
+    columns: 1
+    animationName: KOBOLD_Legacy_runNormal
+  - rows: 24
+    columns: 1
+    animationName: KOBOLD_Legacy_runNormal_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkBackwardsCombat
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkBackwardsCombat_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkForwardCombat
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkForwardCombat_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkLeftCombat
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkLeftCombat_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkNormal
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkNormal_RM
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkRightCombat
+  - rows: 30
+    columns: 1
+    animationName: KOBOLD_Legacy_walkRightCombat_RM
+  - rows: 35
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_2HitComboForwardSpear
+  - rows: 35
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_2HitComboForwardSpear_RM
+  - rows: 35
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_2HitComboSpear
+  - rows: 50
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_3HitComboForwardSpear
+  - rows: 50
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_3HitComboForwardSpear_RM
+  - rows: 45
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_3HitComboSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack1ForwardSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack1ForwardSpear_RM
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack1Spear
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack2ForwardSpear
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack2ForwardSpear_RM
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack2Spear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack3ForwardSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack3ForwardSpear_RM
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_attack3Spear
+  - rows: 69
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_deathSpear
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_getHit1Spear
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_getHit2Spear
+  - rows: 60
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_idleSpear
+  - rows: 60
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_roarSpear
+  - rows: 24
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_runSpear
+  - rows: 24
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_runSpear_RM
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_strafeLeftSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_strafeLeftSpear_RM
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_strafeRightSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_strafeRightSpear_RM
+  - rows: 45
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_throwSpear
+  - rows: 20
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_tongueAttackSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_walklSpear
+  - rows: 30
+    columns: 1
+    animationName: LIZARD_WARRIOR_LEGACY_walklSpear_RM
+  - rows: 45
+    columns: 1
+    animationName: MANTICORA_LEGACY_2HitComboClawsAttackForward
+  - rows: 45
+    columns: 1
+    animationName: MANTICORA_LEGACY_2HitComboClawsAttackForward_RM
+  - rows: 25
+    columns: 1
+    animationName: MANTICORA_LEGACY_2HitComboStingerAttackCombat
+  - rows: 45
+    columns: 1
+    animationName: MANTICORA_LEGACY_3HitComboClawsBiteAttackForward
+  - rows: 45
+    columns: 1
+    animationName: MANTICORA_LEGACY_3HitComboClawsBiteAttackForward_RM
+  - rows: 65
+    columns: 1
+    animationName: MANTICORA_LEGACY_4HitComboClawsBiteStingerAttackForward
+  - rows: 65
+    columns: 1
+    animationName: MANTICORA_LEGACY_4HitComboClawsBiteStingerAttackForward_RM
+  - rows: 25
+    columns: 1
+    animationName: MANTICORA_LEGACY_bite
+  - rows: 35
+    columns: 1
+    animationName: MANTICORA_LEGACY_ClawsLeftAttackCombat
+  - rows: 35
+    columns: 1
+    animationName: MANTICORA_LEGACY_ClawsRightAttackCombat
+  - rows: 80
+    columns: 1
+    animationName: MANTICORA_LEGACY_death
+  - rows: 20
+    columns: 1
+    animationName: MANTICORA_LEGACY_getHit1
+  - rows: 20
+    columns: 1
+    animationName: MANTICORA_LEGACY_getHit2
+  - rows: 20
+    columns: 1
+    animationName: MANTICORA_LEGACY_getHit3
+  - rows: 60
+    columns: 1
+    animationName: MANTICORA_LEGACY_idle
+  - rows: 60
+    columns: 1
+    animationName: MANTICORA_LEGACY_idleCombat
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jump
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jump_RM
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpBiteAttack
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpBiteAttack_RM
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpClawsAttack
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpClawsAttack_RM
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpHornsAttack
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_jumpHornsAttack_RM
+  - rows: 50
+    columns: 1
+    animationName: MANTICORA_LEGACY_roar
+  - rows: 20
+    columns: 1
+    animationName: MANTICORA_LEGACY_run
+  - rows: 20
+    columns: 1
+    animationName: MANTICORA_LEGACY_run_RM
+  - rows: 15
+    columns: 1
+    animationName: MANTICORA_LEGACY_stingerAttackCombat
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_turn45Left
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_turn45Left_RM
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_turn45Right
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_turn45Right_RM
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_walk
+  - rows: 30
+    columns: 1
+    animationName: MANTICORA_LEGACY_walk_RM
+  - rows: 40
+    columns: 1
+    animationName: MOUNTAIN_DRAGON_LEGACY_bite
+  - rows: 75
+    columns: 1
+    animationName: MOUNTAIN_DRAGON_LEGACY_biteGrabThrow
+  - rows: 75
+    columns: 1
+    animationName: MOUNTAIN_DRAGON_LEGACY_ClawsAttack2HitComboForward
+  - rows: 75
+    columns: 1
+    animationName: MOUNTAIN_DRAGON_LEGACY_ClawsAttack2HitComboForward_RM
+  - rows: 80
+    columns: 1
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward_RM
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackForwardL
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackForwardL_RM
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackForwardR
+  - rows: 50
+    columns: 1
+    animationName: CHIMERA_LEGACY_clawsAttackForwardR_RM
+  - rows: 80
+    columns: 1
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward

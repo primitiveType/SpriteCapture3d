@@ -16,6 +16,8 @@ public class GBufferAnimationRecorderEditor : RecorderBaseEditor
 
         CommonConfig();
         EditorGUILayout.PropertyField(so.FindProperty("PixelsPerMeter"), true);
+        
+        EditorGUILayout.PropertyField(so.FindProperty("m_targetFramerate"), true);
 
 
         EditorGUILayout.Space();

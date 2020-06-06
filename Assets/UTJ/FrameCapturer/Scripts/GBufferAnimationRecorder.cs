@@ -15,6 +15,7 @@ public static class AnimationGenerator
 {
     public static string CreationPath = "./Capture/";
     private static string TemplateFileName => "Assets/Animation_template.txt";
+    private static string MaterialUpdateFunctionName = nameof(AnimationMaterialHelper.AnimationStarted);
     private static string TemplateText { get; set; }
 
     public static void CreateAnimation(string path, string modelName, string animationName, int numFrames, float duration)
@@ -29,6 +30,7 @@ public static class AnimationGenerator
         string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
         animationFile = animationFile.Replace("$NUM_FRAMES_PLUS_ONE", (numFrames + 1).ToString());
         animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION", (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
         Directory.CreateDirectory(path);
         File.WriteAllText(Path.Combine(path, animationName + ".asset"), animationFile);
     }
@@ -58,6 +60,7 @@ public static class TextureArrayGenerator
         DirectoryInfo di = new DirectoryInfo(path);
         List<string> filepaths = new List<string>();
         List<Texture2D> textures = new List<Texture2D>();
+        di.Create();
         foreach (var file in di.EnumerateFiles())
         {
             if (file.Name.StartsWith(namePrefix))
@@ -245,7 +248,7 @@ namespace UTJ.FrameCapturer
                     float frameDelay = 0.0f;
                     AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
 
-                    float numFramesF = clip.frameRate * clip.length;
+                    float numFramesF = targetFramerate * clip.length;
                     NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
                     currentClipName = clip.name;
                     AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
