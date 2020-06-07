@@ -9,7 +9,7 @@ public class AnimationMaterialDictionary : ScriptableObject
 {
     [SerializeField] private List<AnimationMaterialPropertyBlock> PropertyBlocksByModelAnimation;
 
-    public void AddPropertyBlock(string modelName, string animationName, int rows, int columns)
+    public void AddPropertyBlock(Texture2DArray diffuse, Texture2DArray alpha, Texture2DArray normals, string modelName, string animationName,  int columns, int rows, int numFrames)
     {
         if (PropertyBlocksByModelAnimation == null)
         {
@@ -21,7 +21,11 @@ public class AnimationMaterialDictionary : ScriptableObject
         {
             AnimationName = key,
             Columns = columns,
-            Rows = rows
+            Rows = rows, 
+            NumFrames = numFrames,
+            DiffuseMap = diffuse,
+            AlphaMap =  alpha,
+            NormalMap = normals
         };
         var oldItem = PropertyBlocksByModelAnimation.FirstOrDefault(item => item.AnimationName == key);
         if (oldItem != null)
@@ -43,5 +47,9 @@ public class AnimationMaterialDictionary : ScriptableObject
     public MaterialPropertyBlock GetPropertyBlock(string modelName, string animationName)
     {
         return PropertyBlocksByModelAnimation.First(item=>item.AnimationName == $"{modelName}_{animationName}").GetMaterialPropertyBlock();
+    }
+    public MaterialPropertyBlock GetPropertyBlock(string key)
+    {
+        return PropertyBlocksByModelAnimation.First(item=>item.AnimationName == key).GetMaterialPropertyBlock();
     }
 }

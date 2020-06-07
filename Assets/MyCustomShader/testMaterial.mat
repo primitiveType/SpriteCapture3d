@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Alpha:
-        m_Texture: {fileID: 18700000, guid: 88495a48203be4241a640c11d468047c, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Normals:
-        m_Texture: {fileID: 18700000, guid: e5c5627364e3ddf4091f401a47617e65, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2DArray_2D549E80:
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Textures:
-        m_Texture: {fileID: 18700000, guid: 4daa72c13f771624daeadcfd233bd03a, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -93,11 +93,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Columns: 1
-    - Frame: 0
+    - Columns: 6
+    - Frame: 135.6
     - Index: 0.16105461
-    - Perspective: 4.5075436
-    - Rows: 20
+    - NumFrames: 27
+    - Perspective: 5.70332
+    - Rows: 5
     - Vector1_43A7EDD5: 1
     - Vector1_B7228DF7: 25
     - Vector1_FC80C49: 8.83

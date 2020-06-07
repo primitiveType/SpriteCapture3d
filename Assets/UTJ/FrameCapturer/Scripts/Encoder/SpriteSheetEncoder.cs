@@ -161,7 +161,6 @@ namespace UTJ.FrameCapturer
 
         public override void AddVideoFrame(byte[] frame, fcAPI.fcPixelFormat format, double timestamp = -1.0)
         {
-            int bytesPerPixel = frame.Length / (m_config.frameSize * m_config.frameSize);
             if (m_ctx)
             {
                 sheet[m_currentframe % m_config.numFramesInAnimation] = frame;
@@ -170,7 +169,7 @@ namespace UTJ.FrameCapturer
                     currentSheet, ".png");
                 //int channels = System.Math.Min(m_config.pngConfig.channels, (int)format & 7);
                 int channels = System.Math.Min(m_config.pngConfig.channels, (int) format & 7);
-                fcAPI.fcPngExportPixels(m_ctx, path, frame, m_config.frameSize, m_config.frameSize, format, channels);
+                fcAPI.fcPngExportPixels(m_ctx, path, frame, m_config.width, m_config.height, format, channels);
                 paths.Add(path);
             }
 
@@ -178,13 +177,12 @@ namespace UTJ.FrameCapturer
 
             if (m_currentframe % m_config.numFramesInAnimation == 0)
             {
-                Debug.Log($"Apparent {bytesPerPixel} bytes per pixel");
                 //  string path = $"{m_outPath}{m_config.modelName}_{m_config.animationName}_{CaptureType}_{currentSheet.ToString("0000")}.png";
                 string path = AnimationGenerator.GetFileName(m_config.modelName,
                     $"{m_config.animationName}_{CaptureType}", currentSheet, ".png");
                 int channels = System.Math.Min(m_config.pngConfig.channels, (int) format & 7);
                 Debug.Log(
-                    $"Saving sheet {currentSheet} {CaptureType} with {m_config.numFramesInAnimation} anim frames. FrameSize is {m_config.frameSize}. Channels : {channels}. Format : {format}");
+                    $"Saving sheet {currentSheet} {CaptureType} with {m_config.numFramesInAnimation} anim frames. FrameSize is {m_config.width} x {m_config.height}. Channels : {channels}. Format : {format}");
                 // var allBytes = Combine(sheet);
                 var allBytes =
                     MagickSpriteSheetGenerator.Compile(paths, path);
@@ -195,8 +193,7 @@ namespace UTJ.FrameCapturer
                 // {
                 //     Debug.LogError("All bytes array was wrong length");
                 // }
-                // allBytes.Write(path);
-
+                // allBytes.Write(path);h
                 // fcAPI.fcPngExportPixels(m_ctx, path, allBytes.ToByteArray(), allBytes.Width,
                 //     allBytes.Height, format, channels);
 
@@ -204,11 +201,12 @@ namespace UTJ.FrameCapturer
                 currentSheet++;
                 sheet = new byte[m_config.numFramesInAnimation][];
 
-                if (m_currentframe + 1 == m_config.numFramesInAnimation * 8)
-                {
-                    TextureArrayGenerator.Create($"{m_config.modelName}_{m_config.animationName}_{CaptureType}",
-                        AnimationGenerator.GetDirectory(m_config.modelName));
-                }
+             
+            }
+            if (m_currentframe  == m_config.numFramesInAnimation * 8)
+            {
+                // TextureArrayGenerator.Create($"{m_config.modelName}_{m_config.animationName}_{CaptureType}",
+                //     AnimationGenerator.GetDirectory(m_config.modelName));
             }
         }
 

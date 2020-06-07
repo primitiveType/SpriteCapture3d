@@ -197,7 +197,10 @@ namespace UTJ.FrameCapturer
             // [HideInInspector]
             //public Animator animator;
             [HideInInspector]
-            public int frameSize;
+            // public int frameSize;
+            public int width;
+
+            public int height;
             [HideInInspector]
             public int numFramesInAnimation;
 

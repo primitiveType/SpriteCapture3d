@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Runtime.Versioning;
 using System.Threading;
 using UnityEditor;
 using UnityEngine;
@@ -18,7 +21,8 @@ public static class AnimationGenerator
     private static string MaterialUpdateFunctionName = nameof(AnimationMaterialHelper.AnimationStarted);
     private static string TemplateText { get; set; }
 
-    public static void CreateAnimation(string path, string modelName, string animationName, int numFrames, float duration)
+    public static void CreateAnimation(string path, string modelName, string animationName, int numFrames,
+        float duration)
     {
         if (TemplateText == null)
         {
@@ -30,7 +34,8 @@ public static class AnimationGenerator
         string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
         animationFile = animationFile.Replace("$NUM_FRAMES_PLUS_ONE", (numFrames + 1).ToString());
         animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
-        animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION", (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION",
+            (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
         Directory.CreateDirectory(path);
         File.WriteAllText(Path.Combine(path, animationName + ".asset"), animationFile);
     }
@@ -54,7 +59,8 @@ public static class AnimationGenerator
 public static class TextureArrayGenerator
 {
     public static string outputPath => "Assets/SpriteOutputs";
-    public static void Create(string namePrefix, string path)
+
+    public static Texture2DArray Create(string namePrefix, string path)
     {
         Debug.Log($"Creating texture array at path {path}");
         DirectoryInfo di = new DirectoryInfo(path);
@@ -66,15 +72,16 @@ public static class TextureArrayGenerator
             if (file.Name.StartsWith(namePrefix))
             {
                 filepaths.Add(file.FullName);
-                Texture2D newTex = new Texture2D(2,2);
+                Texture2D newTex = new Texture2D(2, 2);
                 newTex.LoadImage(File.ReadAllBytes(file.FullName));
                 textures.Add(newTex);
             }
         }
-        
-        Create(textures, outputPath, namePrefix);
+
+        return Create(textures, outputPath, namePrefix);
     }
-    public static void Create(List<Texture2D> textures, string path, string animationName)
+
+    public static Texture2DArray Create(List<Texture2D> textures, string path, string animationName)
     {
         DirectoryInfo di = new DirectoryInfo(path);
         if (!Directory.Exists(di.FullName))
@@ -82,7 +89,7 @@ public static class TextureArrayGenerator
             di.Create();
             // Directory.CreateDirectory(path);
         }
-        
+
 
         Debug.Log("Creating texture2d array");
         // List<Texture2D> textures = new List<Texture2D>();
@@ -97,7 +104,7 @@ public static class TextureArrayGenerator
         if (textures.Count == 0)
         {
             Debug.Log("No textures in selection.");
-            return;
+            return null;
         }
 
         //string path = "Assets/Texture2d/test.asset";
@@ -117,12 +124,16 @@ public static class TextureArrayGenerator
                 i, 0);
         }
 
+        texture2DArray.wrapMode = TextureWrapMode.Clamp;
+        texture2DArray.filterMode = FilterMode.Point;
         // Apply our changes
         texture2DArray.Apply();
         if (path.Length != 0)
         {
             AssetDatabase.CreateAsset(texture2DArray, Path.Combine(path, $"{animationName}_Array.Asset"));
         }
+
+        return texture2DArray;
     }
 }
 
@@ -179,35 +190,37 @@ namespace UTJ.FrameCapturer
 
         protected override void Start()
         {
-            TextureArrayGenerator.Create("CHIMERA_LEGACY_walk_RM_Alpha", "E:/Projects/SpriteCapture - Copy/Capture/CHIMERA_LEGACY");
-            
-             base.Start();
+            TextureArrayGenerator.Create("CHIMERA_LEGACY_walk_RM_Alpha",
+                "E:/Projects/SpriteCapture - Copy/Capture/CHIMERA_LEGACY");
+
+            base.Start();
             TurnTable.transform.localScale = Vector3.one;
             StartCoroutine(InternalExportCoroutine());
         }
 
-        private int FrameSize { get; set; }
+        // private int FrameSize { get; set; }
+        private int FrameWidth { get; set; }
+        private int FrameHeight { get; set; }
 
         private void SetupCameraResolution()
         {
-            FrameSize = (int) (PixelsPerMeter * Camera.orthographicSize * 2);
-
-            Screen.SetResolution(FrameSize, FrameSize, FullScreenMode.Windowed);
+            Screen.SetResolution(FrameWidth, FrameHeight, FullScreenMode.Windowed);
             Camera.farClipPlane = 100000;
             Camera.allowDynamicResolution = false;
-            Camera.targetTexture = new RenderTexture(FrameSize, FrameSize, 32);
+            Camera.aspect = FrameWidth / (float) FrameHeight;
+            Camera.targetTexture = new RenderTexture(FrameWidth, FrameHeight, 32);
             Camera.targetTexture.filterMode = FilterMode.Point;
         }
 
-        private int SetupEncoderConfig()
+        private void SetupEncoderConfig()
         {
             var config = m_encoderConfigs.spritesheetEncoderSettings;
-            config.frameSize = FrameSize;
+            config.width = FrameWidth;
+            config.height = FrameHeight;
             config.numFramesInAnimation = NumFramesInAnimation;
             config.animationName = currentClipName;
             config.modelName = currentModelName;
             m_encoderConfigs.spritesheetEncoderSettings = config;
-            return FrameSize;
         }
 
         protected override void Update()
@@ -253,7 +266,7 @@ namespace UTJ.FrameCapturer
                     currentClipName = clip.name;
                     AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
                         currentModelName, currentClipName, NumFramesInAnimation, clip.length);
-                    animationDictionary.AddPropertyBlock(currentModelName, currentClipName ,NumFramesInAnimation, 1);
+                    
 
                     // var block = AnimationMaterialPropertyBlock.CreateInstance();
                     // var block = ScriptableObject.CreateInstance<AnimationMaterialPropertyBlock>();
@@ -282,6 +295,23 @@ namespace UTJ.FrameCapturer
 
                     Debug.Log($"Finished with animation {currentClipName}");
                     EndRecording();
+                    
+                    //create array for diffuse
+                    var diffuse = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_FrameBuffer",
+                        AnimationGenerator.GetDirectory(currentModelName));
+                    //create array for alpha
+                    var alpha = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Alpha",
+                        AnimationGenerator.GetDirectory(currentModelName));
+                    
+                    //create array for normals
+                    var normal = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Normal",
+                        AnimationGenerator.GetDirectory(currentModelName));
+
+                    int columns = diffuse.width / FrameWidth;
+                    int rows = diffuse.height / FrameHeight;
+                    //store properties for this animation on this model
+                    animationDictionary.AddPropertyBlock(diffuse, alpha, normal , currentModelName, currentClipName, columns, rows,
+                        NumFramesInAnimation);
                 }
 
                 Debug.Log($"Finished with model {currentModelName}");
@@ -331,12 +361,16 @@ namespace UTJ.FrameCapturer
             foreach (var child in TurnTable.GetComponentsInChildren<SkinnedMeshRenderer>())
             {
                 skinnedMeshRenderers.Add(child);
-                child.updateWhenOffscreen = true; //for some reason, causes the bounding box to update every frame.
+                // child.updateWhenOffscreen = true; //for some reason, causes the bounding box to update every frame.
+                child.forceMatrixRecalculationPerRender = true;
+                child.rendererPriority = Int32.MaxValue;
+                child.skinnedMotionVectors = false;
                 Debug.Log("Found a skm");
             }
 
-            Bounds bounds = new Bounds();
-            bounds.Encapsulate(TurnTable.GetComponent<Collider>().bounds);
+            Bounds bounds = skinnedMeshRenderers.First().bounds;
+
+            // bounds.Encapsulate(TurnTable.GetComponent<Collider>().bounds);
 
             try
             {
@@ -349,16 +383,27 @@ namespace UTJ.FrameCapturer
                 yield break;
             }
 
+            Animator.Play(currentClipName, -1, 0);
+            yield return new WaitForFixedUpdate();
+
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
             {
                 foreach (var frame in EnumerateClipFrames(clipIndex))
                 {
+                    yield return new WaitForEndOfFrame();
+
                     foreach (var skm in skinnedMeshRenderers)
                     {
-                        yield return new WaitForEndOfFrame();
                         //docs say this should include the bounds of every frame of animation, but appears to not be true.
+                        // var mesh = new Mesh();
+                        // skm.BakeMesh(mesh);
                         var skmBounds = skm.bounds;
                         bounds.Encapsulate(skmBounds);
+                        // foreach (var tri in mesh.triangles)
+                        // {
+                        //     bounds.Encapsulate(mesh.vertices[tri]);
+                        //     Debug.DrawLine(Vector3.zero, mesh.vertices[tri], Color.magenta, 10);
+                        // }
                     }
 
                     tester.center = bounds.center;
@@ -380,9 +425,15 @@ namespace UTJ.FrameCapturer
             var maxSizeY = FourDBounds.extents.y;
             var maxSizeZ = FourDBounds.extents.z;
             var maxSize = Mathf.Max(Mathf.Max(maxSizeX, maxSizeY), maxSizeZ);
+            FrameWidth = Mathf.CeilToInt(PixelsPerMeter * maxSize * 2);
+            FrameHeight = Mathf.CeilToInt(PixelsPerMeter * maxSizeY * 2);
+
+            float orthosize = maxSizeY;
             Camera.orthographic = true;
-            Camera.orthographicSize = maxSize;
-            Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 1000);
+            Camera.orthographicSize = orthosize;
+            Camera.aspect = (float) FrameWidth / (float) FrameHeight;
+            Camera.orthographicSize = orthosize;
+            Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 100);
             Camera.transform.LookAt(FourDBounds.center);
             var orthoMatrix = Camera.projectionMatrix;
             Camera.orthographic = false; //has to be false for normal maps.
@@ -414,23 +465,23 @@ namespace UTJ.FrameCapturer
                 m_matCopy.DisableKeyword("OFFSCREEN");
             }
 
-            int captureWidth = cam.pixelWidth;
-            int captureHeight = cam.pixelHeight;
-
-            GetCaptureResolution(ref captureWidth, ref captureHeight);
-            if (m_encoderConfigs.format == MovieEncoder.Type.MP4 ||
-                m_encoderConfigs.format == MovieEncoder.Type.WebM)
-            {
-                captureWidth = (captureWidth + 1) & ~1;
-                captureHeight = (captureHeight + 1) & ~1;
-            }
+            // int captureWidth = cam.pixelWidth;
+            // int captureHeight = cam.pixelHeight;
+            //
+            // GetCaptureResolution(ref captureWidth, ref captureHeight);
+            // if (m_encoderConfigs.format == MovieEncoder.Type.MP4 ||
+            //     m_encoderConfigs.format == MovieEncoder.Type.WebM)
+            // {
+            //     captureWidth = (captureWidth + 1) & ~1;
+            //     captureHeight = (captureHeight + 1) & ~1;
+            // }
 
             if (m_fbComponents.frameBuffer)
             {
                 m_rtFB = new RenderTexture[2];
                 for (int i = 0; i < m_rtFB.Length; ++i)
                 {
-                    m_rtFB[i] = new RenderTexture(captureWidth, captureHeight, 0, RenderTextureFormat.ARGBHalf);
+                    m_rtFB[i] = new RenderTexture(FrameWidth, FrameHeight, 0, RenderTextureFormat.ARGBHalf);
                     m_rtFB[i].filterMode = FilterMode.Point;
                     m_rtFB[i].Create();
                 }
@@ -451,7 +502,7 @@ namespace UTJ.FrameCapturer
                 m_rtGB = new RenderTexture[8];
                 for (int i = 0; i < m_rtGB.Length; ++i)
                 {
-                    m_rtGB[i] = new RenderTexture(captureWidth, captureHeight, 0, RenderTextureFormat.ARGBHalf);
+                    m_rtGB[i] = new RenderTexture(FrameWidth, FrameHeight, 0, RenderTextureFormat.ARGBHalf);
                     m_rtGB[i].filterMode = FilterMode.Point;
                     m_rtGB[i].Create();
                 }
