@@ -13,11 +13,13 @@ public class GBufferAnimationRecorderEditor : RecorderBaseEditor
         var recorder = target as GBufferAnimationRecorder;
         var so = serializedObject;
         EditorGUILayout.PropertyField(so.FindProperty("animationDictionary"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("Camera"), true);
 
         CommonConfig();
         EditorGUILayout.PropertyField(so.FindProperty("PixelsPerMeter"), true);
         
         EditorGUILayout.PropertyField(so.FindProperty("m_targetFramerate"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("TesterBounds"), true);
 
 
         EditorGUILayout.Space();

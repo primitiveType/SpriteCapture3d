@@ -1,141 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using System.Linq;
 using System.Runtime.Versioning;
 using System.Threading;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 
-
-public static class AnimationGenerator
-{
-    public static string CreationPath = "./Capture/";
-    private static string TemplateFileName => "Assets/Animation_template.txt";
-    private static string MaterialUpdateFunctionName = nameof(AnimationMaterialHelper.AnimationStarted);
-    private static string TemplateText { get; set; }
-
-    public static void CreateAnimation(string path, string modelName, string animationName, int numFrames,
-        float duration)
-    {
-        if (TemplateText == null)
-        {
-            TemplateText = File.ReadAllText(TemplateFileName);
-        }
-
-        string fullAnimationName = $"{modelName}_{animationName}";
-
-        string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
-        animationFile = animationFile.Replace("$NUM_FRAMES_PLUS_ONE", (numFrames + 1).ToString());
-        animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
-        animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION",
-            (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
-        Directory.CreateDirectory(path);
-        File.WriteAllText(Path.Combine(path, animationName + ".asset"), animationFile);
-    }
-
-    public static string GetFileName(string model, string animation, int perspective, string extension)
-    {
-        if (!extension.StartsWith("."))
-        {
-            extension = $".{extension}";
-        }
-
-        return Path.Combine(GetDirectory(model), $"{model}_{animation}_{perspective:0000}{extension}");
-    }
-
-    public static string GetDirectory(string model)
-    {
-        return Path.Combine(CreationPath, model);
-    }
-}
-
-public static class TextureArrayGenerator
-{
-    public static string outputPath => "Assets/SpriteOutputs";
-
-    public static Texture2DArray Create(string namePrefix, string path)
-    {
-        Debug.Log($"Creating texture array at path {path}");
-        DirectoryInfo di = new DirectoryInfo(path);
-        List<string> filepaths = new List<string>();
-        List<Texture2D> textures = new List<Texture2D>();
-        di.Create();
-        foreach (var file in di.EnumerateFiles())
-        {
-            if (file.Name.StartsWith(namePrefix))
-            {
-                filepaths.Add(file.FullName);
-                Texture2D newTex = new Texture2D(2, 2);
-                newTex.LoadImage(File.ReadAllBytes(file.FullName));
-                textures.Add(newTex);
-            }
-        }
-
-        return Create(textures, outputPath, namePrefix);
-    }
-
-    public static Texture2DArray Create(List<Texture2D> textures, string path, string animationName)
-    {
-        DirectoryInfo di = new DirectoryInfo(path);
-        if (!Directory.Exists(di.FullName))
-        {
-            di.Create();
-            // Directory.CreateDirectory(path);
-        }
-
-
-        Debug.Log("Creating texture2d array");
-        // List<Texture2D> textures = new List<Texture2D>();
-        // foreach (Object o in Selection.objects)
-        // {
-        //     if (o.GetType() == typeof(Texture2D))
-        //     {
-        //         textures.Add((Texture2D) o);
-        //     }
-        // }
-
-        if (textures.Count == 0)
-        {
-            Debug.Log("No textures in selection.");
-            return null;
-        }
-
-        //string path = "Assets/Texture2d/test.asset";
-        // Create Texture2DArray
-        Texture2DArray texture2DArray = new
-            Texture2DArray(textures[0].width,
-                textures[0].height, textures.Count,
-                TextureFormat.RGBA32, true, false);
-        // Apply settings
-        texture2DArray.filterMode = FilterMode.Bilinear;
-        texture2DArray.wrapMode = TextureWrapMode.Repeat;
-        // Loop through ordinary textures and copy pixels to the
-        // Texture2DArray
-        for (int i = 0; i < textures.Count; i++)
-        {
-            texture2DArray.SetPixels(textures[i].GetPixels(0),
-                i, 0);
-        }
-
-        texture2DArray.wrapMode = TextureWrapMode.Clamp;
-        texture2DArray.filterMode = FilterMode.Point;
-        // Apply our changes
-        texture2DArray.Apply();
-        if (path.Length != 0)
-        {
-            AssetDatabase.CreateAsset(texture2DArray, Path.Combine(path, $"{animationName}_Array.Asset"));
-        }
-
-        return texture2DArray;
-    }
-}
 
 namespace UTJ.FrameCapturer
 {
@@ -154,6 +28,7 @@ namespace UTJ.FrameCapturer
         private MovieEncoderConfigs m_encoderConfigs = new MovieEncoderConfigs(MovieEncoder.Type.SpriteSheet);
 
         [SerializeField] private FrameBufferConponents m_fbComponents = FrameBufferConponents.defaultValue;
+        [SerializeField] private GameObject TesterBounds;
 
         [SerializeField] private Shader m_shCopy;
         private Material m_matCopy;
@@ -342,21 +217,21 @@ namespace UTJ.FrameCapturer
             AnimationClip clip = null;
             float frameDelay = 0f;
             float elapsedFramesInTime = 0f;
-            var tester = TurnTable.GetComponent<BoxCollider>();
+            var tester = TesterBounds.GetComponent<BoxCollider>();
             if (!tester)
             {
-                tester = TurnTable.AddComponent<BoxCollider>();
+                tester = TesterBounds.AddComponent<BoxCollider>();
             }
 
             tester.size = Vector3.zero;
             List<SkinnedMeshRenderer> skinnedMeshRenderers = new List<SkinnedMeshRenderer>();
-            foreach (var child in TurnTable.GetComponentsInChildren<MeshRenderer>())
-            {
-                if (!child.gameObject.GetComponent<MeshCollider>())
-                {
-                    child.gameObject.AddComponent<MeshCollider>();
-                }
-            }
+            // foreach (var child in TurnTable.GetComponentsInChildren<MeshRenderer>())
+            // {
+            //     if (!child.gameObject.GetComponent<MeshCollider>())
+            //     {
+            //         child.gameObject.AddComponent<MeshCollider>();
+            //     }
+            // }
 
             foreach (var child in TurnTable.GetComponentsInChildren<SkinnedMeshRenderer>())
             {
@@ -368,7 +243,7 @@ namespace UTJ.FrameCapturer
                 Debug.Log("Found a skm");
             }
 
-            Bounds bounds = skinnedMeshRenderers.First().bounds;
+            Bounds bounds = new Bounds();
 
             // bounds.Encapsulate(TurnTable.GetComponent<Collider>().bounds);
 
@@ -394,16 +269,25 @@ namespace UTJ.FrameCapturer
 
                     foreach (var skm in skinnedMeshRenderers)
                     {
+                        var skmTransform = skm.transform;
+                        var oldScale = skmTransform.localScale;
+                        skmTransform.localScale = Vector3.one;
                         //docs say this should include the bounds of every frame of animation, but appears to not be true.
-                        // var mesh = new Mesh();
-                        // skm.BakeMesh(mesh);
-                        var skmBounds = skm.bounds;
-                        bounds.Encapsulate(skmBounds);
-                        // foreach (var tri in mesh.triangles)
-                        // {
-                        //     bounds.Encapsulate(mesh.vertices[tri]);
-                        //     Debug.DrawLine(Vector3.zero, mesh.vertices[tri], Color.magenta, 10);
-                        // }
+                        var mesh = new Mesh();
+                        skm.BakeMesh(mesh);
+                        // var skmBounds = skm.bounds;
+                        // bounds.Encapsulate(skmBounds);
+                        foreach (var vert in mesh.vertices)
+                        {
+                            var point = skm.transform.TransformPoint(vert);
+                            point = gameObject.transform.InverseTransformPoint(point);
+                            
+                            bounds.Encapsulate(point);
+                            // Debug.DrawLine(Vector3.zero, mesh.vertices[point], Color.magenta, 10);
+                        }
+                        
+                        skmTransform.localScale = oldScale;
+
                     }
 
                     tester.center = bounds.center;
@@ -424,15 +308,15 @@ namespace UTJ.FrameCapturer
             var maxSizeX = FourDBounds.extents.x;
             var maxSizeY = FourDBounds.extents.y;
             var maxSizeZ = FourDBounds.extents.z;
-            var maxSize = Mathf.Max(Mathf.Max(maxSizeX, maxSizeY), maxSizeZ);
-            FrameWidth = Mathf.CeilToInt(PixelsPerMeter * maxSize * 2);
+            var maxWidth = Mathf.Sqrt((maxSizeX * maxSizeX) + (maxSizeZ * maxSizeZ));
+            FrameWidth = Mathf.CeilToInt(PixelsPerMeter * maxWidth * 2);
             FrameHeight = Mathf.CeilToInt(PixelsPerMeter * maxSizeY * 2);
 
-            float orthosize = maxSizeY;
+            float orthoSize = maxSizeY;
             Camera.orthographic = true;
-            Camera.orthographicSize = orthosize;
+            Camera.orthographicSize = orthoSize;
             Camera.aspect = (float) FrameWidth / (float) FrameHeight;
-            Camera.orthographicSize = orthosize;
+            Camera.orthographicSize = orthoSize;
             Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 100);
             Camera.transform.LookAt(FourDBounds.center);
             var orthoMatrix = Camera.projectionMatrix;
@@ -454,7 +338,7 @@ namespace UTJ.FrameCapturer
             if (m_quad == null) m_quad = fcAPI.CreateFullscreenQuad();
             if (m_matCopy == null) m_matCopy = new Material(m_shCopy);
 
-            var cam = GetComponent<Camera>();
+            var cam = Camera;
             if (cam.targetTexture != null)
             {
                 m_matCopy.EnableKeyword("OFFSCREEN");
@@ -617,7 +501,7 @@ namespace UTJ.FrameCapturer
 
             m_recorders.Clear();
 
-            var cam = GetComponent<Camera>();
+            var cam = Camera;
             if (m_cbCopyFB != null)
             {
                 cam.RemoveCommandBuffer(CameraEvent.AfterEverything, m_cbCopyFB);
