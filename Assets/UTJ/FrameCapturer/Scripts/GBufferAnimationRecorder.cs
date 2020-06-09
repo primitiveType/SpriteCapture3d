@@ -135,6 +135,9 @@ namespace UTJ.FrameCapturer
                 currentModelName = Animator.gameObject.name;
                 int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
+                currentClipName = "TPose";
+                yield return CapturePerspectives(-1);//capture static model
+
                 for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
                 {
                     Debug.Log($"Capturing animation {clipIndex}");
@@ -148,52 +151,7 @@ namespace UTJ.FrameCapturer
                         currentModelName, currentClipName, NumFramesInAnimation, clip.length);
                     
 
-                    // var block = AnimationMaterialPropertyBlock.CreateInstance();
-                    // var block = ScriptableObject.CreateInstance<AnimationMaterialPropertyBlock>();
-                    // block.AnimationName = "test;";
-                    // block.name = "tester";
-                    yield return CalculateBounds(clipIndex);
-                    if (FrameHeight == 0 || FrameWidth == 0)
-                        continue;
-                    SetCameraSizeToBounds();
-                    SetupCameraResolution();
-                    SetupEncoderConfig();
-                    BeginRecording();
-                    int captured = 0;
-                    for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
-                    {
-                        foreach (var frame in EnumerateClipFrames(clipIndex))
-                        {
-                            yield return new WaitForEndOfFrame();
-                            captured++;
-                            m_capture = true;
-                            var captured1 = captured;
-                            // Debug.Log("Waiting for capture");
-                            yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
-                        }
-
-                        TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
-                    }
-
-                    Debug.Log($"Finished with animation {currentClipName}");
-                    EndRecording();
-                    
-                    //create array for diffuse
-                    var diffuse = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_FrameBuffer",
-                        AnimationGenerator.GetDirectory(currentModelName));
-                    //create array for alpha
-                    var alpha = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Alpha",
-                        AnimationGenerator.GetDirectory(currentModelName));
-                    
-                    //create array for normals
-                    var normal = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Normal",
-                        AnimationGenerator.GetDirectory(currentModelName));
-
-                    int columns = diffuse.width / FrameWidth;
-                    int rows = diffuse.height / FrameHeight;
-                    //store properties for this animation on this model
-                    animationDictionary.AddPropertyBlock(diffuse, alpha, normal , currentModelName, currentClipName, columns, rows,
-                        NumFramesInAnimation);
+                   yield return CapturePerspectives(clipIndex);
                 }
 
                 Debug.Log($"Finished with model {currentModelName}");
@@ -203,8 +161,62 @@ namespace UTJ.FrameCapturer
             Debug.Log("All done");
         }
 
+        private IEnumerator CapturePerspectives(int clipIndex)
+        {
+            yield return CalculateBounds(clipIndex);
+           
+            SetCameraSizeToBounds();
+            
+            if (FrameHeight == 0 || FrameWidth == 0)
+                yield break;
+            SetupCameraResolution();
+            SetupEncoderConfig();
+            BeginRecording();
+            int captured = 0;
+            for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
+            {
+                foreach (var frame in EnumerateClipFrames(clipIndex))
+                {
+                    yield return new WaitForEndOfFrame();
+                    captured++;
+                    m_capture = true;
+                    var captured1 = captured;
+                    // Debug.Log("Waiting for capture");
+                    yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
+                }
+
+                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+            }
+
+            Debug.Log($"Finished with animation {currentClipName}");
+            EndRecording();
+
+            //create array for diffuse
+            var diffuse = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_FrameBuffer",
+                AnimationGenerator.GetDirectory(currentModelName));
+            //create array for alpha
+            var alpha = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Alpha",
+                AnimationGenerator.GetDirectory(currentModelName));
+
+            //create array for normals
+            var normal = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Normal",
+                AnimationGenerator.GetDirectory(currentModelName));
+
+            int columns = diffuse.width / FrameWidth;
+            int rows = diffuse.height / FrameHeight;
+            //store properties for this animation on this model
+            animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns, rows,
+                NumFramesInAnimation);
+        }
+
         private IEnumerable EnumerateClipFrames(int clipIndex)
         {
+            if (clipIndex < 0)
+            {
+                yield return null;
+                yield break;
+            }
+
             float frameDelay = 0.0f;
             AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
             frameDelay = clip.length / (float) (NumFramesInAnimation);
@@ -313,18 +325,21 @@ namespace UTJ.FrameCapturer
 
             // bounds.Encapsulate(TurnTable.GetComponent<Collider>().bounds);
 
-            try
+            if (clipIndex >= 0)
             {
-                clip = Animator.GetCurrentAnimatorClipInfo(0)[0].clip;
-                frameDelay = clip.length / (float) (NumFramesInAnimation);
-            }
-            catch
-            {
-                Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
-                yield break;
+                try
+                {
+                    clip = Animator.GetCurrentAnimatorClipInfo(0)[0].clip;
+                    frameDelay = clip.length / (float) (NumFramesInAnimation);
+                }
+                catch
+                {
+                    Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
+                    yield break;
+                }
+                Animator.Play(currentClipName, -1, 0);
             }
 
-            Animator.Play(currentClipName, -1, 0);
             yield return new WaitForFixedUpdate();
 
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
