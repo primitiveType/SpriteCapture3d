@@ -126,14 +126,14 @@ namespace UTJ.FrameCapturer
             {
                 child.gameObject.SetActive(true);
                 Animator = child.GetComponentInChildren<Animator>();
-                if (Animator == null)
-                {
-                    child.gameObject.SetActive(false);
-                    continue; //capture without animation?
-                }
-
-                currentModelName = Animator.gameObject.name;
-                int clipCount = Animator.runtimeAnimatorController.animationClips.Length;
+                // if (Animator == null)
+                // {
+                //     child.gameObject.SetActive(false);
+                //     continue; //capture without animation?
+                // }
+                
+                currentModelName = child.gameObject.name;
+                int clipCount = Animator == null ? 0 : Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
                 currentClipName = "TPose";
                 yield return CapturePerspectives(-1);//capture static model
