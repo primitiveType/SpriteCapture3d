@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
+using UnityEditor.Rendering.PostProcessing;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -34,6 +36,7 @@ public class AnimationMaterialDictionary : ScriptableObject
         }
 
         PropertyBlocksByModelAnimation.Add(block);
+        EditorUtility.SetDirty(this);
     }
 
     public void DebugMe()

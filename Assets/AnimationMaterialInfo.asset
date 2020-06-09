@@ -12,4 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5ed81596bf4962b32c2357ed34ea19, type: 3}
   m_Name: AnimationMaterialInfo
   m_EditorClassIdentifier: 
-  PropertyBlocksByModelAnimation: []
+  PropertyBlocksByModelAnimation:
+  - rows: 5
+    columns: 6
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward
+    numFrames: 27
+    normalMap: {fileID: 18700000, guid: f5d4d77d52abd764cb348ab6585cb3f3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ed37849e0a48f6743871daa182ca5f84, type: 2}
+    alphaMap: {fileID: 18700000, guid: ea84992c27c6df9498dbae06f3133234, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward_RM
+    numFrames: 27
+    normalMap: {fileID: 18700000, guid: 8286216e32142b44bbd292de2afa7e09, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ec58cc281ea960a43ab7b27dfd463470, type: 2}
+    alphaMap: {fileID: 18700000, guid: df7f4ba2f34b82c4795b627bdbb0151a, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackForwardL
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: c24ffe54f80ca9d4fa536e002e14fddf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 27b11549c8e00fc4b80b6909a78686c3, type: 2}
+    alphaMap: {fileID: 18700000, guid: 14252e0e8d9d8e840bf5f72f8aab3078, type: 2}

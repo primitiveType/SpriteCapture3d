@@ -109,15 +109,20 @@ namespace UTJ.FrameCapturer
 
         private IEnumerator InternalExportCoroutine()
         {
+            List<Transform> objectsToProcess = new List<Transform>();
             foreach (Transform child in TurnTable.transform)
             {
+                if (child.gameObject.activeSelf)
+                {
+                    objectsToProcess.Add(child);
+                }
                 child.transform.position = Vector3.zero;
                 child.transform.localScale = Vector3.one;
                 child.transform.rotation = Quaternion.identity;
                 child.gameObject.SetActive(false);
             }
 
-            foreach (Transform child in TurnTable.transform)
+            foreach (Transform child in objectsToProcess)
             {
                 child.gameObject.SetActive(true);
                 Animator = child.GetComponentInChildren<Animator>();
@@ -148,6 +153,8 @@ namespace UTJ.FrameCapturer
                     // block.AnimationName = "test;";
                     // block.name = "tester";
                     yield return CalculateBounds(clipIndex);
+                    if (FrameHeight == 0 || FrameWidth == 0)
+                        continue;
                     SetCameraSizeToBounds();
                     SetupCameraResolution();
                     SetupEncoderConfig();
@@ -212,8 +219,58 @@ namespace UTJ.FrameCapturer
 
         private Bounds FourDBounds { get; set; }
 
+
+        private class MeshRendererBoundsProvider : IBoundsProvider
+        {
+            private MeshRenderer _meshRenderer;
+            public MeshRendererBoundsProvider( MeshRenderer mesh)
+            {
+                _meshRenderer = mesh;
+            }
+            
+            public Bounds GetBounds()
+            {
+                return _meshRenderer.bounds;
+            }
+        }
+        private class SkinnedMeshRendererBoundsProvider : IBoundsProvider
+        {
+            private SkinnedMeshRenderer SkinnedMeshRenderer;
+            public SkinnedMeshRendererBoundsProvider( SkinnedMeshRenderer skm)
+            {
+                SkinnedMeshRenderer = skm;
+            }
+
+
+            public Bounds GetBounds()
+            {
+                var bounds = new Bounds();
+                var skmTransform = SkinnedMeshRenderer.transform;
+                var oldScale = skmTransform.localScale;
+                skmTransform.localScale = Vector3.one;
+                //docs say this should include the bounds of every frame of animation, but appears to not be true.
+                var mesh = new Mesh();
+                SkinnedMeshRenderer.BakeMesh(mesh);
+                foreach (var vert in mesh.vertices)
+                {
+                    var point = SkinnedMeshRenderer.transform.TransformPoint(vert);
+                    bounds.Encapsulate(point);
+                }
+                        
+                skmTransform.localScale = oldScale;
+                return bounds;
+            }
+        }
+        
+        private interface IBoundsProvider
+        {
+            Bounds GetBounds();
+        }
+        
         private IEnumerator CalculateBounds(int clipIndex)
         {
+            FrameWidth = 0;
+            FrameHeight = 0;
             AnimationClip clip = null;
             float frameDelay = 0f;
             float elapsedFramesInTime = 0f;
@@ -224,23 +281,32 @@ namespace UTJ.FrameCapturer
             }
 
             tester.size = Vector3.zero;
-            List<SkinnedMeshRenderer> skinnedMeshRenderers = new List<SkinnedMeshRenderer>();
-            // foreach (var child in TurnTable.GetComponentsInChildren<MeshRenderer>())
-            // {
-            //     if (!child.gameObject.GetComponent<MeshCollider>())
-            //     {
-            //         child.gameObject.AddComponent<MeshCollider>();
-            //     }
-            // }
 
-            foreach (var child in TurnTable.GetComponentsInChildren<SkinnedMeshRenderer>())
+            List<IBoundsProvider> boundsProviders = new List<IBoundsProvider>();
+            // List<SkinnedMeshRenderer> skinnedMeshRenderers = new List<SkinnedMeshRenderer>();
+
+            var skms = TurnTable.GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (var child in skms )
             {
-                skinnedMeshRenderers.Add(child);
+                boundsProviders.Add(new SkinnedMeshRendererBoundsProvider(child));
+                // skinnedMeshRenderers.Add(child);
                 // child.updateWhenOffscreen = true; //for some reason, causes the bounding box to update every frame.
                 child.forceMatrixRecalculationPerRender = true;
                 child.rendererPriority = Int32.MaxValue;
                 child.skinnedMotionVectors = false;
                 Debug.Log("Found a skm");
+            }
+            
+            var meshes = TurnTable.GetComponentsInChildren<MeshRenderer>();
+            foreach (var child in meshes)
+            {
+                boundsProviders.Add(new MeshRendererBoundsProvider(child));
+            }
+    
+            if (boundsProviders.Count == 0)
+            {
+                Debug.LogError("No bounds provider found for " + currentModelName);
+                yield break;
             }
 
             Bounds bounds = new Bounds();
@@ -267,27 +333,9 @@ namespace UTJ.FrameCapturer
                 {
                     yield return new WaitForEndOfFrame();
 
-                    foreach (var skm in skinnedMeshRenderers)
+                    foreach (var provider in boundsProviders)
                     {
-                        var skmTransform = skm.transform;
-                        var oldScale = skmTransform.localScale;
-                        skmTransform.localScale = Vector3.one;
-                        //docs say this should include the bounds of every frame of animation, but appears to not be true.
-                        var mesh = new Mesh();
-                        skm.BakeMesh(mesh);
-                        // var skmBounds = skm.bounds;
-                        // bounds.Encapsulate(skmBounds);
-                        foreach (var vert in mesh.vertices)
-                        {
-                            var point = skm.transform.TransformPoint(vert);
-                            point = gameObject.transform.InverseTransformPoint(point);
-                            
-                            bounds.Encapsulate(point);
-                            // Debug.DrawLine(Vector3.zero, mesh.vertices[point], Color.magenta, 10);
-                        }
-                        
-                        skmTransform.localScale = oldScale;
-
+                       bounds.Encapsulate(provider.GetBounds());
                     }
 
                     tester.center = bounds.center;
@@ -308,14 +356,13 @@ namespace UTJ.FrameCapturer
             var maxSizeX = FourDBounds.extents.x;
             var maxSizeY = FourDBounds.extents.y;
             var maxSizeZ = FourDBounds.extents.z;
-            var maxWidth = Mathf.Sqrt((maxSizeX * maxSizeX) + (maxSizeZ * maxSizeZ));
-            FrameWidth = Mathf.CeilToInt(PixelsPerMeter * maxWidth * 2);
+            FrameWidth = Mathf.CeilToInt(PixelsPerMeter * maxSizeX * 2);
             FrameHeight = Mathf.CeilToInt(PixelsPerMeter * maxSizeY * 2);
 
             float orthoSize = maxSizeY;
             Camera.orthographic = true;
             Camera.orthographicSize = orthoSize;
-            Camera.aspect = (float) FrameWidth / (float) FrameHeight;
+            Camera.aspect = (float) FrameWidth / FrameHeight;
             Camera.orthographicSize = orthoSize;
             Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 100);
             Camera.transform.LookAt(FourDBounds.center);

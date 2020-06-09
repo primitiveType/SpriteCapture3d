@@ -21,11 +21,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Alpha:
+        m_Texture: {fileID: 18700000, guid: ea84992c27c6df9498dbae06f3133234, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - BloodTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Normals:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 18700000, guid: f5d4d77d52abd764cb348ab6585cb3f3, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2DArray_2D549E80:
@@ -37,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Textures:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 18700000, guid: ed37849e0a48f6743871daa182ca5f84, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -93,11 +97,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Aspect: 0.35
+    - BloodAmount: 0
     - Columns: 6
     - Frame: 135.6
     - Index: 0.16105461
     - NumFrames: 27
-    - Perspective: 5.70332
+    - Perspective: 0
     - Rows: 5
     - Vector1_43A7EDD5: 1
     - Vector1_B7228DF7: 25
