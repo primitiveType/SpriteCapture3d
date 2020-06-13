@@ -136,6 +136,7 @@ namespace UTJ.FrameCapturer
                 int clipCount = Animator == null ? 0 : Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
                 currentClipName = "TPose";
+                NumFramesInAnimation = 1;
                 yield return CapturePerspectives(-1);//capture static model
 
                 for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
@@ -207,6 +208,11 @@ namespace UTJ.FrameCapturer
             //store properties for this animation on this model
             animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns, rows,
                 NumFramesInAnimation);
+            //
+            // GameObject.Destroy(diffuse);
+            // GameObject.Destroy(alpha);
+            // GameObject.Destroy(normal);
+
         }
 
         private IEnumerable EnumerateClipFrames(int clipIndex)

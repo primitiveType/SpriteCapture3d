@@ -37,6 +37,7 @@ public class AnimationMaterialDictionary : ScriptableObject
 
         PropertyBlocksByModelAnimation.Add(block);
         EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssets();
     }
 
     public void DebugMe()

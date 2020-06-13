@@ -25,7 +25,11 @@ public static class TextureArrayGenerator
             }
         }
 
-        return Create(textures, outputPath, namePrefix);
+        var array= Create(textures, outputPath, namePrefix);
+
+        textures.ForEach(Object.Destroy);
+
+        return array;
     }
 
     public static Texture2DArray Create(List<Texture2D> textures, string path, string animationName)
@@ -38,7 +42,7 @@ public static class TextureArrayGenerator
         }
 
 
-        Debug.Log("Creating texture2d array");
+        Debug.Log($"Creating texture2d array for animation {animationName} at path {path} with {textures.Count} textures.");
         // List<Texture2D> textures = new List<Texture2D>();
         // foreach (Object o in Selection.objects)
         // {
@@ -59,10 +63,12 @@ public static class TextureArrayGenerator
         Texture2DArray texture2DArray = new
             Texture2DArray(textures[0].width,
                 textures[0].height, textures.Count,
-                TextureFormat.RGBA32, true, false);
+                TextureFormat.RGBA32, false, false);
         // Apply settings
         texture2DArray.filterMode = FilterMode.Bilinear;
         texture2DArray.wrapMode = TextureWrapMode.Repeat;
+        Debug.Log($"Texture array dimensions {texture2DArray.width}x{texture2DArray.height}");
+
         // Loop through ordinary textures and copy pixels to the
         // Texture2DArray
         for (int i = 0; i < textures.Count; i++)

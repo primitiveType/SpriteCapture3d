@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using ImageMagick;
 using UnityEditor;
 using UnityEngine;
@@ -73,6 +74,11 @@ namespace UTJ.FrameCapturer
                     collection.Add(magickImage);
                     width = magickImage.Width;
                     height = magickImage.Height;
+                    if (paths.Count == 1)
+                    {
+                        magickImage.Write(path);
+                        return magickImage;//montage doesn't like when there is only one image
+                    }
                 }
 
 
@@ -83,7 +89,7 @@ namespace UTJ.FrameCapturer
                 montageSettings.BackgroundColor = new MagickColor("transparent");
                 // collection.Write(path);
                 var montage = collection.Montage(montageSettings);
-
+                
                 montage.ColorSpace = ColorSpace.Log;
                 //montage.Format = MagickFormat.Rgb;
                 montage.Write(path);
@@ -169,7 +175,11 @@ namespace UTJ.FrameCapturer
                     currentSheet, ".png");
                 //int channels = System.Math.Min(m_config.pngConfig.channels, (int)format & 7);
                 int channels = System.Math.Min(m_config.pngConfig.channels, (int) format & 7);
-                fcAPI.fcPngExportPixels(m_ctx, path, frame, m_config.width, m_config.height, format, channels);
+                if (!fcAPI.fcPngExportPixels(m_ctx, path, frame, m_config.width, m_config.height, format, channels))
+                {
+                    Debug.Log($"Failed to save {path}");
+                }
+                    
                 paths.Add(path);
             }
 
@@ -184,8 +194,19 @@ namespace UTJ.FrameCapturer
                 Debug.Log(
                     $"Saving sheet {currentSheet} {CaptureType} with {m_config.numFramesInAnimation} anim frames. FrameSize is {m_config.width} x {m_config.height}. Channels : {channels}. Format : {format}");
                 // var allBytes = Combine(sheet);
-                var allBytes =
-                    MagickSpriteSheetGenerator.Compile(paths, path);
+                Thread.Sleep(10);//sleep to force files to be ready... not great
+                try
+                {
+                    var allBytes =
+                        MagickSpriteSheetGenerator.Compile(paths, path);
+
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                    paths.Clear();
+                }
+                
                 paths.ForEach(File.Delete);
                 paths.Clear();
                 // byte[] allByteArray = allBytes.ToByteArray();
