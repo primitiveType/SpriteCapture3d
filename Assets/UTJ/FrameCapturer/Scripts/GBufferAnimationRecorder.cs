@@ -149,7 +149,7 @@ namespace UTJ.FrameCapturer
                     NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
                     currentClipName = clip.name;
                     AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
-                        currentModelName, currentClipName, NumFramesInAnimation, clip.length);
+                        currentModelName, currentClipName, NumFramesInAnimation, clip.length, targetFramerate);
                     
 
                    yield return CapturePerspectives(clipIndex);

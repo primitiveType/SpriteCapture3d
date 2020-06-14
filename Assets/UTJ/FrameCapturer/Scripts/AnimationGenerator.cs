@@ -9,7 +9,7 @@ public static class AnimationGenerator
     private static string TemplateText { get; set; }
 
     public static void CreateAnimation(string path, string modelName, string animationName, int numFrames,
-        float duration)
+        float duration, int framerate)
     {
         if (TemplateText == null)
         {
@@ -19,8 +19,9 @@ public static class AnimationGenerator
         string fullAnimationName = $"{modelName}_{animationName}";
 
         string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
-        animationFile = animationFile.Replace("$NUM_FRAMES_PLUS_ONE", (numFrames + 1).ToString());
+        animationFile = animationFile.Replace("$NUM_FRAMES", (numFrames).ToString());
         animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$NUM_FRAMES_PER_SECOND", (framerate).ToString(CultureInfo.InvariantCulture));
         animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION",
             (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
         Directory.CreateDirectory(path);

@@ -13,748 +13,6 @@ MonoBehaviour:
   m_Name: AnimationMaterialInfo
   m_EditorClassIdentifier: 
   PropertyBlocksByModelAnimation:
-  - rows: 4
-    columns: 6
-    animationName: GOLEM_ICE_LEGACY_roar
-    numFrames: 22
-    normalMap: {fileID: 18700000, guid: a16e08e71123f4b42aea55f8f86e8d48, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b228b435570ef024e82ef733598db678, type: 2}
-    alphaMap: {fileID: 18700000, guid: 372cd650b62192148810c24fea879cfb, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 11f62c1de791cfb4ebe2f1ae5d03d9e8, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1004489de7aa39a489f0fb18c35f7a3c, type: 2}
-    alphaMap: {fileID: 18700000, guid: ca6eed1c2a35ccd44ac7a60ea333ce5b, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: a1263bad23e83734fb36733b61ce14ea, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e08b5dc4406a1af4b850a179b6f631aa, type: 2}
-    alphaMap: {fileID: 18700000, guid: 8ad64716ef130954f9f013a6206eb3e9, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ICE_LEGACY_turn90AttackRight
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: e8acef840b8e0d947a2e08cb9e9de1ff, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 37a27396e5e07434f9dd92cce1361897, type: 2}
-    alphaMap: {fileID: 18700000, guid: d1a4a677478693742af424309fa71e8c, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ICE_LEGACY_turn90AttackRight_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 5112c93b251ed4e4c85e3fb6895f7ac7, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8f1519f890de3654db18fd5a4788ee62, type: 2}
-    alphaMap: {fileID: 18700000, guid: e2a52b89f14a9a04680c5f89737ac729, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_turn90Left
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 7d01360c3f920714dbefc58a72684432, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 5b374a8b72d982d4589dbe071469f3fb, type: 2}
-    alphaMap: {fileID: 18700000, guid: b7603c1580dfd504b94d545b56184dd8, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_turn90Left_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 6e9de2bd12dc3744fb8f59364c034d31, type: 2}
-    diffuseMap: {fileID: 18700000, guid: fc140ee115001ac4dba90c21b33ca1f1, type: 2}
-    alphaMap: {fileID: 18700000, guid: fb0618da56328964f876e194c04f0232, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_turn90Right
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 5007e51d7bf3d9f46ba8aad360f4fb63, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a397b931b0ed08b4fbce5301b207e1af, type: 2}
-    alphaMap: {fileID: 18700000, guid: 045ede9d766895b4a8425be61dfabaf9, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_turn90Right_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: c4028dabc9728e24ead2794d27e5431b, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 413b9780bcb88f341beee9426fc962a0, type: 2}
-    alphaMap: {fileID: 18700000, guid: 12855eb081abf1a439a60cf5b7dc3a41, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_walk
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 493d686976c49d746988064a3f5e940c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1531638bf7e34174cb927a639b99ae7e, type: 2}
-    alphaMap: {fileID: 18700000, guid: 8e225a94b37cd4f4f9c9ced8879a034d, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ICE_LEGACY_walk_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 0ec61778590fdec40bc310cccff2b4cd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8677972193f361449a2c5ae82589785f, type: 2}
-    alphaMap: {fileID: 18700000, guid: 832e88621f6a0ae40a3ad42d2c18bc04, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: GOLEM_ROCK_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 488f1ffb6e442d14f82e49edceedffaf, type: 2}
-    diffuseMap: {fileID: 18700000, guid: fb6b130f159abb242bc7e4b6747fc08e, type: 2}
-    alphaMap: {fileID: 18700000, guid: dffeb1a7ca8f20e429059538d709b261, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: b2ed93176f97d4342afa77bb21601de4, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 87acdaab052682e4190a59ab17333925, type: 2}
-    alphaMap: {fileID: 18700000, guid: 818542a4bcd2ea447987c13c25afdf8a, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: 2ae4cc18a82b4e54ba6b1e9a6e370705, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 7c5a8bcfa52071b4384cad56538c508d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 49eddc4dab8a5374fa59ada0308d86fb, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward_RM
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: 3854e88c8c665ef4fbc414f44c940740, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b7b5ebdb3b1cbaa4cbefae25c8e47d53, type: 2}
-    alphaMap: {fileID: 18700000, guid: c9bb7c71bcccff248b9d5f4ad16755ab, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_B
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 53bbb93554f89d24bb25f7161c0ea4c4, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 63074576c76362144b0f3d190bb1db90, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7cf9168cdd321824c879b3523c9f40e0, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: b16afa5f004f1904780f0fc44866b16d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 2ef598e08beb50a449c7d007e3a32737, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4f4dcc6d74c3b1141842dd939c4c5194, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward_RM
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: a26c86c5eea294e4a989b60c8fa16196, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d10857a443638b84dacf3d951102fbab, type: 2}
-    alphaMap: {fileID: 18700000, guid: 19b7dcbea5605cd4d9e5018416ed46b5, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GOLEM_ROCK_LEGACY_3HitCombo
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: a6a9dca4bde3b48458f0c2eefb91f843, type: 2}
-    diffuseMap: {fileID: 18700000, guid: fb9d2ff46be4a1d4e8e983f954ccd277, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7ac5ca08d3e41354ab054e995b7a8604, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GOLEM_ROCK_LEGACY_3HitComboForward
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: f462542c9b1e08f42a8f27c18325cb71, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 64cc751a1dd4d1c4f9d608cacceb9dd4, type: 2}
-    alphaMap: {fileID: 18700000, guid: 599714b4604f5814d901fb4b3c568b73, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GOLEM_ROCK_LEGACY_3HitComboForward_RM
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: 2f930c16a925f814a877e0c278014580, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1f0e1a1d558f307439dc6f4e7b312591, type: 2}
-    alphaMap: {fileID: 18700000, guid: 34df19a6140f1084eb874156d89f6b35, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_attack1
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: d0b9630946e5c4a4ca2403c613af23ab, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d44cdf8b0e3cacc46b1ee7a88a74561a, type: 2}
-    alphaMap: {fileID: 18700000, guid: a979be652482f044789bfe53a48e0234, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_attack1Forward
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 41a97e177e8d16e44a3b567ea746b721, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4f947e1108e2b734e9712d05fed1457a, type: 2}
-    alphaMap: {fileID: 18700000, guid: d230c07fe5967ed438a657b24934986a, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_attack1Forward_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 744736a8a2c5a054495801aebc74a4dd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f3faa5430830acd45a940e9558eee1a5, type: 2}
-    alphaMap: {fileID: 18700000, guid: 5416e8dd85894dc4c9158c9296e3e3e2, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_attack2
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: e9b3709783ea54945998c3f5e486551e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 9940810d65b00cc4a89a50f0bd2fa135, type: 2}
-    alphaMap: {fileID: 18700000, guid: 434d90dbf41f6914d9dea082cd6462ed, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack3
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 38929f2ef53675649ba29cf2f85055ce, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 19fba0c1eedeed2499289870cd9a7364, type: 2}
-    alphaMap: {fileID: 18700000, guid: d80d37dd7f9e22e439f30bfc6596f9e3, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack3Forward
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: d15f46b6254101141a55b3b5faf1ec83, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d318396ff4d55f14daf65578efd7ee6b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 92383ceff19e2c046a6a155b0e790937, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack3Forward_RM
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 1c5814329e0d91742a998bdf890fcf42, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 0732f324eab6fbf4694ad4a4fa8e0bc1, type: 2}
-    alphaMap: {fileID: 18700000, guid: b52e8cbc85ddda2479e343b5ad170967, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack4
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 89bf0cef8d45b29449fe08e5e3ce76b5, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 9d5c2a3e0d49f2b47ae93f375864f308, type: 2}
-    alphaMap: {fileID: 18700000, guid: 726ddf5a90ab721489bf19e364489b31, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack4Forward
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 479b0621aa587954d9b65518a60e0822, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8e696acea32bae741a5bc7f2522e5b0d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 97e89ee4ead13b441995f8533434422f, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack4Forward_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 2d0512b2fb074fe469f3957af68ec0f6, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 53ffd40fd33e63d41ad99b3fddc2f1b2, type: 2}
-    alphaMap: {fileID: 18700000, guid: bc565bd3567803f4093430faf5fba6a1, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_attack5
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: e80e5a76af082fe4e95ffee1e6f98fef, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 81c55f71211bc75418919a0041e16e1b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3952bd04e87e16f42b6ed9106ab43604, type: 2}
-  - rows: 4
-    columns: 6
-    animationName: GOLEM_ROCK_LEGACY_death
-    numFrames: 24
-    normalMap: {fileID: 18700000, guid: c2fce3bfe28244347b217c53001959fa, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b5dba94c3eec5c8409c8b34985386ee5, type: 2}
-    alphaMap: {fileID: 18700000, guid: 72c1f7145d8ce56479ffe7beebe2e009, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_getHitHeavy
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 8298989dd8472ba4dbb80ff0014fb7ef, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e2d173fef46d9b74dbb1998078473d99, type: 2}
-    alphaMap: {fileID: 18700000, guid: b76619714158d334f8df70844c935691, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_getHitHeavy_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: df0b9a852d9be344a990ba6e8c9488f0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f8c3c02a64789954e88ca77f9593d7bd, type: 2}
-    alphaMap: {fileID: 18700000, guid: 764c35d0d8568e741bfcdc9d3a251e7f, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_getHitLight
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 579e66662ddb8b64ca03a0e57061b04d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 85b1166bed6792f4cbf69535d32fca19, type: 2}
-    alphaMap: {fileID: 18700000, guid: 729011b527703bf429959974120331eb, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_getHitMedium
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 773cefd476fa7f64ba77297c268bec63, type: 2}
-    diffuseMap: {fileID: 18700000, guid: da1110a1c5b1c03499f6707b9a3e97ea, type: 2}
-    alphaMap: {fileID: 18700000, guid: e8b3e153f8006814d81753b61f34137c, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_getHitMedium_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 82530a0208a71ad47bfdcbf0b14c0881, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e083230874b07e7468e30b2976a8f8da, type: 2}
-    alphaMap: {fileID: 18700000, guid: fadbb13136d755a468329c3542435dfd, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_idle
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 12a871072d0a7f04b8c57d6954cd1ce3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 17bc915914366ba4283f33a16f9b4dd7, type: 2}
-    alphaMap: {fileID: 18700000, guid: f67097b100d2d7147b42a5312bd29f7e, type: 2}
-  - rows: 4
-    columns: 6
-    animationName: GOLEM_ROCK_LEGACY_roar
-    numFrames: 22
-    normalMap: {fileID: 18700000, guid: dd934c0ca5c716f43b20a29eea8c2906, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 7629549af693b744fa79a761fd02bfe0, type: 2}
-    alphaMap: {fileID: 18700000, guid: d9eace9557f452743bdca4dc4ec178a8, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 6e302f5d191b6824da304909935e7105, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e26566adeaff8024a86d6a627a7431da, type: 2}
-    alphaMap: {fileID: 18700000, guid: c373b0d18c922394daf007cb62d43b1f, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 68aac761cb5f81d4e8886bdef37b8169, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8d8e536fd55c06f43bcb5f0f58ec08c3, type: 2}
-    alphaMap: {fileID: 18700000, guid: eba6921b3c4f3e74096f072011eb8fd7, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 4e5c268f3f31cae4aa8b19d3d2d18b8d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 7f1df8786d9a97f42a057ddab8ce3cd1, type: 2}
-    alphaMap: {fileID: 18700000, guid: 94c20d685b3717c48b49fb076e0011fc, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: a59b324a687fe0841ad47975f66af650, type: 2}
-    diffuseMap: {fileID: 18700000, guid: fe26365412ab6904bbeafb77bc1b6ffb, type: 2}
-    alphaMap: {fileID: 18700000, guid: 148030af2e07ea146bc8ddc09521e8de, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_turn90Left
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 48a8fb6197edb384f8b331b16077feb1, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 40f9833ba31495645aa8ce1beb35c238, type: 2}
-    alphaMap: {fileID: 18700000, guid: 65d788ddabe559b419cc17345177ff68, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_turn90Left_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: b1163b2d314432f47ab9e1f69444e2a6, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1987e5fb85c76aa4fb9458686eacb79f, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9c8b8824438b705429036c23f1692fee, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_turn90Right
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 15a73004e04b19f40aa1330d21d1b5fd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: da8c240918990a249af3d4a956876ddc, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4c269a52a6fa54f40a21f45f8f91c8d8, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_turn90Right_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 9c5883de09c61744da29812b067c778e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 283d39082a3253a44bcb9888dd629f4d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3e738b9e69754b748a25d824ca8e7162, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_walk
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: f4fa14c89739a46459491c5ba542e08c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: eed81404f3c19eb40910b06e466dc23d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9f6a26267afff3141ad7de7d609c521d, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GOLEM_ROCK_LEGACY_walk_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: c11e8955b72e05f4d89c2f549d818cdf, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1b7476525f6b9c240a9222d0ef797c8d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 2644742e450848d46bba10610ae66de6, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: a966d25f22a048f4293a800ff2c9017d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 7540d5194bfa4054baad4a5c8a6b9b3a, type: 2}
-    alphaMap: {fileID: 18700000, guid: ce37b299c04b2e4429b6f72b8e35f361, type: 2}
-  - rows: 8
-    columns: 10
-    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_construct
-    numFrames: 73
-    normalMap: {fileID: 18700000, guid: 7bcef9befade2944d9744488637b4bee, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 0dfc921996cffdf47adf44c27b511ca7, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3547b99ededd4594d969333f898fc884, type: 2}
-  - rows: 8
-    columns: 10
-    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_explode
-    numFrames: 77
-    normalMap: {fileID: 18700000, guid: b14a597a4e89bdf4baceed66fc2eba28, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 3abb4eb3383639943a288779aec4a803, type: 2}
-    alphaMap: {fileID: 18700000, guid: 16898cccce8a29d4487e80f9f469568a, type: 2}
-  - rows: 1
-    columns: 3
-    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_idle
-    numFrames: 3
-    normalMap: {fileID: 18700000, guid: 874435f557d30b34ab13c04c702075d3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b32ce7f23449f1a4c8c07f6601b107a7, type: 2}
-    alphaMap: {fileID: 18700000, guid: c25450338f976c14997021e0cb6c61c8, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: ef28136b6dd62b74fb1d4627b49f5c7d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 298d03bbc5f1fd04a9addb94dc8a4888, type: 2}
-    alphaMap: {fileID: 18700000, guid: 06759d05a8c0331459bcdf8fa21a53ca, type: 2}
-  - rows: 8
-    columns: 10
-    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_construct
-    numFrames: 73
-    normalMap: {fileID: 18700000, guid: ab4b38fd04418c74fb14c5d0be668bf1, type: 2}
-    diffuseMap: {fileID: 18700000, guid: af80e5dfc9d9cc743bdf6c51ff50c9be, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6c5b4aebc75410e45bfd1e5dfa70f0d0, type: 2}
-  - rows: 8
-    columns: 10
-    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_explode
-    numFrames: 77
-    normalMap: {fileID: 18700000, guid: 10685823324d31f47aadbe006761f787, type: 2}
-    diffuseMap: {fileID: 18700000, guid: eeaaead0cd8c28e4bab2628dfebca03a, type: 2}
-    alphaMap: {fileID: 18700000, guid: 2b8add5ad9c32114a92e91d5f2d54bbd, type: 2}
-  - rows: 1
-    columns: 3
-    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_idle
-    numFrames: 3
-    normalMap: {fileID: 18700000, guid: 3c5bc6aa44dd3e542a52fae45edaa8d3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 3117bceb2e66c9d4082e287fa6be934c, type: 2}
-    alphaMap: {fileID: 18700000, guid: 470c7656906975741b701365a808d863, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: GRIFFON_2sidedFeathers_Legacy_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 469800c67bab3324a955ea1663553cc8, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8c8a880af30d57d4881bd05799b40524, type: 2}
-    alphaMap: {fileID: 18700000, guid: e65716efd5ad2c644a0a4212a4ca53ac, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 26f4869abc8beec40813ba0a5a7627d0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b9054d210e50a564c972d1cc1f1d0626, type: 2}
-    alphaMap: {fileID: 18700000, guid: 0f3e95b9797e321418b121adfeab2594, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack_RM
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 7a0f2da43e36d17488414d1201c575db, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 6b2d66cf1a47686428680a0c3a969d4c, type: 2}
-    alphaMap: {fileID: 18700000, guid: 5d69c03098aca8246bf7084f99eb7a49, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: 5a40796d9a844234e95d9e915ee8e202, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ab0864119813f454cb08d89011be55cf, type: 2}
-    alphaMap: {fileID: 18700000, guid: 25d292d37b8e04e45aa8bb3384bc1167, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack_RM
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: b7b45a8b3e3cdc646a4969e270587af0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f501bb23d9be9fa41a1ff6fbda0b2d3d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6bf0622dba039ef478ef5f76ddcc0634, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 08ec8b6ac3a49c84d9c31bdf3deb8706, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4d4bdfa101d7b6a41af96365bff16778, type: 2}
-    alphaMap: {fileID: 18700000, guid: 53a98d5c5d9ce3540878468eb28e0f1a, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 4a19f42522107ba4e88ee387acce573f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: bf9644e20e3f09b45a583f105b53b3fc, type: 2}
-    alphaMap: {fileID: 18700000, guid: f54f640f18a4cd245876cf08d3cb6587, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_2sidedFeathers_Legacy_death
-    numFrames: 30
-    normalMap: {fileID: 18700000, guid: dae0a471b32adb347a5885b9eef1b6ca, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b7bdca20f60c76347b38970521089bc8, type: 2}
-    alphaMap: {fileID: 18700000, guid: b862c35cf5673be4898f2d02e11f9e01, type: 2}
-  - rows: 2
-    columns: 3
-    animationName: GRIFFON_2sidedFeathers_Legacy_falling
-    numFrames: 6
-    normalMap: {fileID: 18700000, guid: 7a738a5a45a2beb43a1d2ed8aabb4951, type: 2}
-    diffuseMap: {fileID: 18700000, guid: acdc2126fe471cb47a0aaa746542956e, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4a50d71f4bbc38c44907d6cfbcd869b1, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyBackwardsStationary
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: a8246393c48c8e14ca05f8ba17c25491, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 9a90e8d16f214b845860bab964753d64, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4b100a1bff6f0944a951bc5aa6eecf44, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormal
-    numFrames: 7
-    normalMap: {fileID: 18700000, guid: 01b03a3d8a37f3c48959015799a11734, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 9b482029f8c7d4841a4383473ea9912d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 59266558d1a9c714dade779cc2d81a7a, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormalToFalling
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: b41284b0cef6c0c4a943d351f098b3b0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4691364637009fc4d8c1f1c2e70c602e, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9fc3d2d317a84544abec00aedb865298, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationary
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: b444ce4022137de43a4c633dbe618324, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 43d8fd39f90860743a070ce8b4e27735, type: 2}
-    alphaMap: {fileID: 18700000, guid: e1a52df91bb2d5e48a54e33a9eed6735, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationaryToFalling
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: fe4bd7ee53a32ae4b86aac34bd88fb4c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c91c92f961d399c488dbc871476685b4, type: 2}
-    alphaMap: {fileID: 18700000, guid: ece8de2d71cd3e443ab1a0657ee06369, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyLeftStationary
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 446a8975bff2bea4b9595dfa38024bc4, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b26fea1251a92414f84280a80051708a, type: 2}
-    alphaMap: {fileID: 18700000, guid: 1b477eead28a64a49878ec0b1f13e784, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyNormal
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 679ba7cfde7ee1e49a2065a07a264201, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f1739d290aecdf3488325c7549a0e35b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 41a9bd84722a56c46ab296326af970d4, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyRightStationary
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 1d2e3d92ab40ec24a96c12e3e464679c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 083c26380bc1cf64fb1c93de52e4cabe, type: 2}
-    alphaMap: {fileID: 18700000, guid: f4000a1e23433e74da08f86bf9916b42, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationary
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 7fa815504f1f5d747b4c7d86eb00a1dd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 518ba436d19329241beb3a66aadb55fb, type: 2}
-    alphaMap: {fileID: 18700000, guid: 24aee3f296a9f49478cf6c1cac907b11, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationaryClawsAttack
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 7fc60ab9075cd884a8f8178751dcb8dc, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 45c6709664f16f646a6d801a080295a4, type: 2}
-    alphaMap: {fileID: 18700000, guid: 1eab993f989b3a146a0b7946f3b17b44, type: 2}
-  - rows: 2
-    columns: 3
-    animationName: GRIFFON_2sidedFeathers_Legacy_gallop
-    numFrames: 5
-    normalMap: {fileID: 18700000, guid: dae3698677cd6e64c932d16f5e0f425d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 109cbabe7b03b67498cb6ca65d75911b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 796a314b3ba2da94fb31f2fe70af93d2, type: 2}
-  - rows: 2
-    columns: 3
-    animationName: GRIFFON_2sidedFeathers_Legacy_gallop_RM
-    numFrames: 5
-    normalMap: {fileID: 18700000, guid: 97cd9b8a4c8214b44ab5d6a7b7475a45, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1e882e9f65d3f4c42ab0021472a0a03f, type: 2}
-    alphaMap: {fileID: 18700000, guid: b292ce6920ca2eb458dc91c85105f10a, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_getHit1
-    numFrames: 8
-    normalMap: {fileID: 18700000, guid: 6245bf71970006249bc83f772ccc295e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8d05e3ec00fae8a479065f20341f0792, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6aa9503f480f7984eb9fa25261dd39db, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_getHit2
-    numFrames: 8
-    normalMap: {fileID: 18700000, guid: 6f491d8806f9dee4c97495cf60aabf84, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ed5b602cdf93a7e4dab63e097ac51905, type: 2}
-    alphaMap: {fileID: 18700000, guid: 35e3da6a1263cb94aaff7eb126ebd0ee, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_glide
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: f217413731dae394cacd4e61bdf04873, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f09f46cbcef909549b4095dc51fd79a8, type: 2}
-    alphaMap: {fileID: 18700000, guid: 251fbc2a6a174ab4fabe59c87711cde4, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_hitTheGround
-    numFrames: 7
-    normalMap: {fileID: 18700000, guid: 32173b46ec76db441801a8df2788d503, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4df97750ee874d54db7bd21e78eb064e, type: 2}
-    alphaMap: {fileID: 18700000, guid: 50cefec8ca84c8c4fbab0bfaf67afeb5, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_idle
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 2e1a63ff504a51f43b8279e4e1353acb, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f02c6451bb101fb43b02c009a4f9c912, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4dda3a5db03ea844597b226a745259d9, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_jumpToFly
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: f3c1d7b8fb351be41a6024650ba90947, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e2e3ae28c305ebd4b801b2cd75961a0d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 5784455311bf4834fb48746ba73b2bc4, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_2sidedFeathers_Legacy_landing
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: a73232085644f6b4f8801777e0ca6e22, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 50a01bc98e87b7143a53274b49b9a7bd, type: 2}
-    alphaMap: {fileID: 18700000, guid: d1dc9172012b0ef4c9827b12db5e20e6, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 26f281283c9df9a45a3bbc79a881483b, type: 2}
-    diffuseMap: {fileID: 18700000, guid: bce93ba6acd7084499b7e34734d1005d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7552ddfa48dbb054cbda690181ad01ba, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 18c2b5d009778c94b8e06b0d143ebc62, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 6374b12b170bf3440a49800a5f6ea850, type: 2}
-    alphaMap: {fileID: 18700000, guid: 35045b5d47b7e114ba69f770cc21ceb4, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: fcce04587fddaf74eb76ce558095ebba, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 278272ea331af3c4a94153e7ce55d71d, type: 2}
-    alphaMap: {fileID: 18700000, guid: dcfe9e834545dbe4087b02739a596d0d, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 52e2f8168e750ad43875a7b29853bc0a, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 94e457930b48cc6408bdbf6970fb2863, type: 2}
-    alphaMap: {fileID: 18700000, guid: 0b030c8975b30114c9748dafd8f3e6b4, type: 2}
-  - rows: 2
-    columns: 3
-    animationName: GRIFFON_2sidedFeathers_Legacy_swooping
-    numFrames: 6
-    normalMap: {fileID: 18700000, guid: f02684218e6d5cb4c8388d6fb02a5b6e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 292c8d7d1378d334da7de2aebb275e86, type: 2}
-    alphaMap: {fileID: 18700000, guid: 787581da298dc1745a5def0fe01b2d11, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 11aed6231e7bb4243951571b321eb347, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 92042fac66668744c90bc26bd3584f45, type: 2}
-    alphaMap: {fileID: 18700000, guid: fc32b6aeb5fcb1d4e884f2d988e7b02b, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 7626597d74b5cb1458fef6571ed0c914, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ba83bc8ca3bd8ff4c9e95eb657ee6b11, type: 2}
-    alphaMap: {fileID: 18700000, guid: 25840d3b216e78d43963b4bee70d1e59, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: b7538ad409b85734f88be10f08bf2d7d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c9c740631a0de544b82830dfda7e09b2, type: 2}
-    alphaMap: {fileID: 18700000, guid: f8f8ab0bcf4310946a3a31ebc5ed153f, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 65cd70c1a93b72d41827682c9ee55bdc, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 14c540f9c813cb34ca1626dfa2b05d2a, type: 2}
-    alphaMap: {fileID: 18700000, guid: fead9719a73ff7b4e88a41fb9f70f1d1, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_walk
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: e991f89d867a6f046a87cf69c43a5f86, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f9a5c28afe8c63b4fbe436e589fbf15c, type: 2}
-    alphaMap: {fileID: 18700000, guid: 66bf3da71ef451d439bc01c56498799e, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_2sidedFeathers_Legacy_walk_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 8e10b73fa9e6b9a40b1dcedbc4612e6f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 0a562c170a8a5f14ca27b684073c6756, type: 2}
-    alphaMap: {fileID: 18700000, guid: 2a859b4493dde5b4bb0a923f076b1a48, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 6ad019a3009bcd44d839693e3f6a5cc4, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ae1d286bb62efae4abab3fcf89183c56, type: 2}
-    alphaMap: {fileID: 18700000, guid: 8ecde1bfc902d014db029d32ff343d4f, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 076a0a57bd02b514d8abecedce1b2065, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c82e13bda2b318348b7c8143235966a2, type: 2}
-    alphaMap: {fileID: 18700000, guid: 418cf9bbeb00aeb49b3615ec427cd066, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack_RM
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 4354d4084114ee7479472e9abdc592e7, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 48cb1b262d4e8554191ea12285951721, type: 2}
-    alphaMap: {fileID: 18700000, guid: f2130710db1dfe94cb9d83d8b6e180cc, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: 80d81707b5939a44d81eba28a651059d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 943a430fd07df5b4184f7b368dc8d23e, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6f2ba63f0e1049a4ca162d27e5c601ed, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack_RM
-    numFrames: 28
-    normalMap: {fileID: 18700000, guid: b4930145ef9447546b8032ce8f169bcd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 046c81af53d39f047bfea90e8411c87e, type: 2}
-    alphaMap: {fileID: 18700000, guid: af38927cb3128e0439ae6548128b59e1, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: d24e61fc7f78e0945815890ca07dac84, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e17dee9cf414ebe4f83ae0defa29790c, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6afff4c010f9ce0438c0a246a0d82308, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 6520caf54a228b14d9bb8908711a3c08, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 38f04338946891348a95a767eee1440b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 14e1f1b18df531a4ca9b21828e1725bc, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_death
-    numFrames: 30
-    normalMap: {fileID: 18700000, guid: 4127fc473defbe5448ff19412420e3f0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 904e8cfe7282bfe42b5eb49c2c00c82f, type: 2}
-    alphaMap: {fileID: 18700000, guid: 5e5a84f18014f3c46a40086fc6f669e4, type: 2}
-  - rows: 2
-    columns: 3
-    animationName: GRIFFON_SingleSidedFeathers_Legacy_falling
-    numFrames: 6
-    normalMap: {fileID: 18700000, guid: b0a218344a3a16346bc726078b412b68, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8c59edf1cf583484ba6f9ad85a837d3f, type: 2}
-    alphaMap: {fileID: 18700000, guid: 666c7446879181b46bba9e78ed9c810f, type: 2}
   - rows: 3
     columns: 4
     animationName: GRIFFON_SingleSidedFeathers_Legacy_flyBackwardsStationary
@@ -2430,6 +1688,475 @@ MonoBehaviour:
     alphaMap: {fileID: 18700000, guid: 777e2cf05d560f142a4ef61948d2fede, type: 2}
   - rows: 1
     columns: 1
+    animationName: CHIMERA_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 3ae1d25e380fa5941b0845c2ddca5bda, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 85ae51109b57288448ca9e5e20cf0931, type: 2}
+    alphaMap: {fileID: 18700000, guid: efd0d7865dac50d4886817d645236c52, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward
+    numFrames: 27
+    normalMap: {fileID: 18700000, guid: f5d4d77d52abd764cb348ab6585cb3f3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ed37849e0a48f6743871daa182ca5f84, type: 2}
+    alphaMap: {fileID: 18700000, guid: ea84992c27c6df9498dbae06f3133234, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward_RM
+    numFrames: 27
+    normalMap: {fileID: 18700000, guid: 8286216e32142b44bbd292de2afa7e09, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ec58cc281ea960a43ab7b27dfd463470, type: 2}
+    alphaMap: {fileID: 18700000, guid: df7f4ba2f34b82c4795b627bdbb0151a, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackForwardL
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: c24ffe54f80ca9d4fa536e002e14fddf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 27b11549c8e00fc4b80b6909a78686c3, type: 2}
+    alphaMap: {fileID: 18700000, guid: 14252e0e8d9d8e840bf5f72f8aab3078, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackForwardL_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 1354df7000564bd4db027fff127b9922, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8937c0e6464e4f44e8a686fe037e685b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9b1f2a73cb71bdf4d9e37c0869246b6b, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackForwardR
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 310a3fdff3196cf4685032197e0586e3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 44c4770ce19b3c7498dd97bca09f127e, type: 2}
+    alphaMap: {fileID: 18700000, guid: cbe52f19519cb4543b3d82293ae3ccf0, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackForwardR_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 815ca1881af4076489ce8ed8c80ae919, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a3655ea43bc87a34796fc4aeb9edff70, type: 2}
+    alphaMap: {fileID: 18700000, guid: c6d7ec6fba1a5b84f8afe9e49842b57d, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackL
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 3ecd62efa23428742b3c68d7b6542858, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4913bbfc466b55741b9a3d53942997ca, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1d636b6289cbe634e8bf003d6777b625, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_clawsAttackR
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: b10e9ee164106b444bc668006a2a3151, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c24cc8f27b44c7e40bc84a2fcfb870ca, type: 2}
+    alphaMap: {fileID: 18700000, guid: 637a6e68e1e6b7747bd88dfce80c980f, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CHIMERA_LEGACY_death
+    numFrames: 26
+    normalMap: {fileID: 18700000, guid: a51433ed67988294988290f8f31e19fc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c2ed297568763f5408bb2bc8c9856293, type: 2}
+    alphaMap: {fileID: 18700000, guid: 773f0212edfeb364e8b740d384c771b7, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_getHit1
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 005b6e6eb240c72498af8a027eccd050, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ba9c6cbdff2048b43b16da59358e1f10, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2ba4f8a9e59cd5b4db66ed43354432a8, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_getHit2
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 2890a8719821dc34cbb87710bc4dd21e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f1f96d1bf2e2dc44e9e55e6302cbc4f6, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2d784fd8c17e34d48af83c453380220f, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_idle
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 1cc84339ff972ab4cb0eb97cf84ba56b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a7f2278396a0ab743a8afc30b3c7535d, type: 2}
+    alphaMap: {fileID: 18700000, guid: eb00fb8f4014c7b4081cfa3dc34934b3, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_ramAttack
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 3b373a5a06d5e9c44a3c9095ea0e663e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4f5826f8c89e27244b200e7bbff4b968, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8bf318e31314a11409ee86fe5ef65283, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_ramAttackForward
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 03c7d544254fe1d449d631402d122f55, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 65bdd3974f21adb479b08cd456bebfc6, type: 2}
+    alphaMap: {fileID: 18700000, guid: a5c2249dc17c7e141bdb0fd6766186f5, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_ramAttackForward_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: bcf8fed1f8b358f4ab365b5c29828d2f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 930187d9871b8f2478320ea85ff7c8e1, type: 2}
+    alphaMap: {fileID: 18700000, guid: 14dd2c7b36873ea41b932f1d29ffdb13, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_RamBiteComboAttack
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: 6bc36060f41a83845a6314734a154d71, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f2acb2e287423ec45859e01be3bdeca6, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7b3056da8de487345a48c15f05334aa1, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: cb7a957774e34074cbee10aba7794e86, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d5bafbc89588eea4c843901fb3bd2485, type: 2}
+    alphaMap: {fileID: 18700000, guid: 30a647c3b48202842bd99a551aeb94e2, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward_RM
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: ad31182c8a696044ba52d3cc48722de9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 46fce0083298738439e4190c708efe05, type: 2}
+    alphaMap: {fileID: 18700000, guid: de78d8efb3eef7e42845b8086ccc1822, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: CHIMERA_LEGACY_run
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 5762ccbcba9f81849bc1fc8fcc8e214d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8f33b3a084ea59849b4d516cd92a4497, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7343bad7608f9a8478444a33c9320610, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: CHIMERA_LEGACY_run_RM
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: c0ca23ccf699e7b49a26c48dd60af405, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 55306159c749ecc4db104369f7724ea5, type: 2}
+    alphaMap: {fileID: 18700000, guid: fea8d750571198f49b9ff3d068d034e0, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CHIMERA_LEGACY_snakeBiteAttack
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: 7806e618c9fa12c498017f4a5da15c94, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e889d7aaed90d3b4bb13ab40865a08a6, type: 2}
+    alphaMap: {fileID: 18700000, guid: a1ef553aad717144fbf7648f631eebda, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_turn90Left
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 4cb014472e772e7418e610ebfaccd0ca, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b5d6774c6a45cf144abfad2c1aa89b77, type: 2}
+    alphaMap: {fileID: 18700000, guid: ca6e34a1d30492a43bd1b2a1e43f8372, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_turn90Left_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 8a21f2cbaa51d9243a87f87c70c7ff66, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1d2235b6cbb28794f807f13c06c01d75, type: 2}
+    alphaMap: {fileID: 18700000, guid: 494cab3c648dcdb40b637522e549eaa1, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_turn90Right
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: f7b3fa2a7c27bcd4bb2879030d4f41cd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c8fa675007d182343bd2628a5e36407e, type: 2}
+    alphaMap: {fileID: 18700000, guid: f2156738186a6534296524c07e6bf024, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_turn90Right_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 0b3e354d55651044f8975755d61fb995, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 889d14d93916e1d42b196d276261c58f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 70c1f7ac38fd68b4c8d5ca654291ff97, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_walk
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: e0f0978c96d06d244baff8d035613e0d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d3838b91f5fad464681c5114a1ae0a17, type: 2}
+    alphaMap: {fileID: 18700000, guid: d41aa66355c45d443a762e56c0f4f5b9, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CHIMERA_LEGACY_walk_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 2f556ab795182d34f8f3c1307134261f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3dba453002c38594793faa6157a2122b, type: 2}
+    alphaMap: {fileID: 0}
+  - rows: 1
+    columns: 1
+    animationName: EVIL_WATCHER_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 584517ed54aaddd4d941b8444c6d6e5d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5b0878403ffdf6c42ad61d42ba07bf17, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25426c4cb13c2af4bb2226b844dba7ad, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: CYCLOPS_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 509722c0414810c43ae64bb39e575758, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 53bb7777b0d9f7247aef6c116408e6a6, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4d25ea7353faf8d40bfc48c68a732875, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttack
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 2097575c8f4f1ce45a9dd88799ec9fc6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6d475e488c27e284f9626497d7e12581, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9f155eeac5e5d7e42ba6733bbb6d89ca, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 22f39ea201daaae4684fc306156f7d6f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a3656aca7fcd19f459a5cc21267a7f2c, type: 2}
+    alphaMap: {fileID: 18700000, guid: cb242dbb9cbc76544a454dcb2d068884, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 9d541c712ca4b30448d179e76a235f81, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 21bebda2503e55043aa42107f68615a3, type: 2}
+    alphaMap: {fileID: 18700000, guid: f7086de43571fc940b2dcb6975967c5f, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: fb2a42529a1f7284d8168c88d25e2578, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e353a4621786d9d449b37a36af688cad, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1089140f91c742d4d852b079e0cce81c, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left_RM
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: 32a54cd7ccbb5964bae7c01059f0b671, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b912b52d5e4caa84e806e8e163572667, type: 2}
+    alphaMap: {fileID: 18700000, guid: 50223d2146ebac8499ead087c50e98f0, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: c3902a7f681b67244bfe7f404a52951e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ea0f80bd69d13c34db58bfbc481749e6, type: 2}
+    alphaMap: {fileID: 18700000, guid: 795eebd0918845e44b37fae9f7d5f94b, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right_RM
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: 43bb73ccb296bdd4f815b0aad32d59b2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 51947149e2763984687dbb39e9bf2a02, type: 2}
+    alphaMap: {fileID: 18700000, guid: 839d4cda83f718345bd0781b001d0867, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: ca31a4877e7815249881743145fafeb1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2566699d795b90e4db65e03834c19d97, type: 2}
+    alphaMap: {fileID: 18700000, guid: aac1fe68bf9f9554797da2c23eb5f3f3, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward_RM
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: ee245eb0f62f5bf4a8fb3ad70a22dd0d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 696237eb1077b304f9dbc8b13fc2908e, type: 2}
+    alphaMap: {fileID: 18700000, guid: dc1fdd3b29716084b9a1b1949acd1376, type: 2}
+  - rows: 4
+    columns: 6
+    animationName: CYCLOPS_LEGACY_2HitComboAttack
+    numFrames: 22
+    normalMap: {fileID: 18700000, guid: ce4c339e533543041bef86dc41b3e58c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 239fea3a88c5b93468650e1eb98371de, type: 2}
+    alphaMap: {fileID: 18700000, guid: 064e6248d1071944cbfdbc22226799ed, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2HitComboAttackForward
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 54b9534ffa0601e40a8995f4e24191e3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 17013561b77cb404a8391aced9a3a1ac, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9a63c21efe22bd9479b9880c537f3811, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CYCLOPS_LEGACY_2HitComboAttackForward_RM
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: d4f463e0a2f763f4dbef5e1a93285227, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 991cc179e116aca4481575e1bd29b678, type: 2}
+    alphaMap: {fileID: 18700000, guid: 00fb14eb9e96409439d2d75b5ee9d981, type: 2}
+  - rows: 5
+    columns: 7
+    animationName: CYCLOPS_LEGACY_3HitComboAttack
+    numFrames: 33
+    normalMap: {fileID: 18700000, guid: 6f17ba5013185ab4db5e00b0df718ff5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6336dff1ce5803a4f847bfc6150ef526, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6b18d28eca1d14a40984635337658c1e, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CYCLOPS_LEGACY_3HitComboAttackForward
+    numFrames: 30
+    normalMap: {fileID: 18700000, guid: 5b99e2a441d43ff4e9d669525107161e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 223617163b86e904bacdb71636fb302c, type: 2}
+    alphaMap: {fileID: 18700000, guid: af05258df60cb0b41aaa448a7ae1f56d, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: CYCLOPS_LEGACY_3HitComboAttackForward_RM
+    numFrames: 30
+    normalMap: {fileID: 18700000, guid: 435e9f8ab546f9648a19dffaab69d184, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 168fe478fd131df41975b09e7f371ad2, type: 2}
+    alphaMap: {fileID: 18700000, guid: bb206ddaeec447840b1edb62675c72d7, type: 2}
+  - rows: 6
+    columns: 6
+    animationName: CYCLOPS_LEGACY_death
+    numFrames: 36
+    normalMap: {fileID: 18700000, guid: 0b071195c2bd55644839e451bef51552, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8b44cce1687d8704983e262047a993d0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 862b442415aefe44ba86283adf7578d7, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_getHit1
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 9e66c1def8b77e341a8909dde06a31bd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c19ea6f6f4bd61a4882c3d7deb9271e4, type: 2}
+    alphaMap: {fileID: 18700000, guid: 82c24961bec3a3944ab3699db59d3685, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_getHit2
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 10e20fe1fd0f9dc4e9a5c8b1c9dbe416, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e9582fde0fbe2c341b19be09da45edbd, type: 2}
+    alphaMap: {fileID: 18700000, guid: 859f82f2f227ba8459b117fc66449001, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_getHit2_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 5674e8fe9c6a9f34ba5d2bd1617fdbc9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 25b9ede58ee7f4146985a07bb23e0bb5, type: 2}
+    alphaMap: {fileID: 18700000, guid: e833d58488ff0c6478d3e6845669bef8, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_getHit3
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 403ad1fc35a1c8f4fa04207393aae8ee, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e775562495106bc45a9bec435363dd92, type: 2}
+    alphaMap: {fileID: 18700000, guid: fa21644f30a5500448cfc57cdb626531, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_getHit4
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 76a3e637bdff96c4ca489f65965f9c0f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bb03a39112f512648880caf7c80d267d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 20fff501ad53e6c4db42c2e1cac871bb, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_getHit4_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 55a47b6c4af9e5f40b1434b02db044bb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 61f35467c2caaf24084a8b1007090b0b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9a0406e05a1d1034b9be44605195a49e, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CYCLOPS_LEGACY_getHit5
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: 0fae851d6bd11fb45908e2770fc3705a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a11399f13e3d418419c38598a782d343, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3dcb485333bfbe24b8d57069a11af473, type: 2}
+  - rows: 10
+    columns: 10
+    animationName: CYCLOPS_LEGACY_idleLookAround
+    numFrames: 100
+    normalMap: {fileID: 18700000, guid: da1b8ef4579aa544b8cf197f0338d7be, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e9e197da195f2a340bfc7c8e77ec1c1a, type: 2}
+    alphaMap: {fileID: 18700000, guid: dd257ab74c32f454b8d55ca6b87d911a, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_leftHandAttack
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 4c069c6165168d548a66aff75ac0fcfd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 64622fb90e398ae4a8c367f093920e62, type: 2}
+    alphaMap: {fileID: 18700000, guid: 531677eb757381a4c82b221aae756525, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_leftHandAttackForward
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: bf6ea93baca0cdb46b9732ff98e0bbbd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 049bdb06288cbb84e88ee6158c7651be, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3b19a221054868d43a7f34beff08ef9d, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_leftHandAttackForward_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 7affe9c059133904a943aba90b52f09a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 297e46ec28d336a438cd868577473f60, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4ec6c17d2a91b1e4fb7232236efbd65e, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_rightHandAttack
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: fac4f233f0d7d494389fc3d2f4f332e4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d2ea81f95fa741b43aef0bacbfa15c83, type: 2}
+    alphaMap: {fileID: 18700000, guid: 23b249cd75b7fea4994f2cfe85289d29, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_rightHandAttackForward
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 68fa00a258182424fa931a6111500147, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 87b28ebe15b7ed84bb831fa2204fe794, type: 2}
+    alphaMap: {fileID: 18700000, guid: d53b03b89bedf7d449beddc42af40f6e, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: CYCLOPS_LEGACY_rightHandAttackForward_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 7d118adb589281348a249d96b3859bac, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4b200f918aa16134bb4c8815de075c6b, type: 2}
+    alphaMap: {fileID: 18700000, guid: fc24ac9803fdae6409e4d42d1f4b1441, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: CYCLOPS_LEGACY_roar
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: b9b06363567771741b80b559ba8f73a0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: dcfd4477755a57240a0ef3fc9f6a09e0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0924de230b222084fa3c324ab378f283, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_turn90Left
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 8626ebd17974be1499a5b3991484b9c3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a339059bdef0e7e46a8a2f0a0b79c35a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 558852cbb6e911140b18526fc86a6aae, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_turn90Left_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 7d129b64cb4d28149a3d649eba6169ee, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 92b7ebab2ac1ffd4d96eaf15d2372361, type: 2}
+    alphaMap: {fileID: 18700000, guid: e48262cbc375e3f48b799d5deadc1539, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_turn90Right
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: a38a5335df2097d4da1144bacf9f42f2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b904dbe5509fc1746af43d240e140fdc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 85259c326d105e14bbf8f77bde9d112c, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_turn90Right_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 82c36cae85ad32e47b3846a8ab820632, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7878eecce90bb7540be8ea3f5f13f920, type: 2}
+    alphaMap: {fileID: 18700000, guid: 105fe30ee2ba8984f9d8119bcc2d2c74, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_walk
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 611a17adc6486f9428f7185bab07109c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1e28f1d901d6315429735ac7c10f8891, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3833f88d42f36b244a3b433f97af1528, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: CYCLOPS_LEGACY_walk_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: c7d7789301dcf4b459bcde2b3f253aa9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e1590a05e4496de4b9bb90a8273a48fe, type: 2}
+    alphaMap: {fileID: 18700000, guid: 11546d8070c36c64d985e2140f651da9, type: 2}
+  - rows: 1
+    columns: 1
     animationName: DARKNESS_SPIDER_LEGACY_TPose
     numFrames: 1
     normalMap: {fileID: 18700000, guid: a1c90dc3367134a469c666d201661935, type: 2}
@@ -2597,7 +2324,7 @@ MonoBehaviour:
     diffuseMap: {fileID: 18700000, guid: e1d50f2ced7e6714ba4bd49d5bf247f1, type: 2}
     alphaMap: {fileID: 18700000, guid: 456775c4b41921f45a460c82a9f1ca71, type: 2}
   - rows: 1
-    columns: 1
+    columns: 0
     animationName: DRAGONIDE_LEGACY_TPose
     numFrames: 1
     normalMap: {fileID: 18700000, guid: ad8419a637b87d5459f6576ab61a7d49, type: 2}
@@ -3150,7 +2877,7 @@ MonoBehaviour:
     diffuseMap: {fileID: 18700000, guid: bb81217bcafd1ef4daa6b0756ec794e5, type: 2}
     alphaMap: {fileID: 18700000, guid: 86aa816a0e2ff89468ada3912f4c23f7, type: 2}
   - rows: 1
-    columns: 1
+    columns: 0
     animationName: FAT_OGRE_LEGACY_TPose
     numFrames: 1
     normalMap: {fileID: 18700000, guid: bcea76aa1b7a3114fb2f8f4820b9de98, type: 2}
@@ -3913,7 +3640,7 @@ MonoBehaviour:
     diffuseMap: {fileID: 18700000, guid: b4ff54dd519e47540b1c3e96f25f9592, type: 2}
     alphaMap: {fileID: 18700000, guid: fbc288c142d40c645af4737ba0b79411, type: 2}
   - rows: 1
-    columns: 1
+    columns: 0
     animationName: GOBLIN_LEGACY_TPose
     numFrames: 1
     normalMap: {fileID: 18700000, guid: 542c1dcc674254a4dada207e76b4d780, type: 2}
@@ -4689,472 +4416,745 @@ MonoBehaviour:
     normalMap: {fileID: 18700000, guid: 3e00aab979e61514a859b9f1e2722fc5, type: 2}
     diffuseMap: {fileID: 18700000, guid: 22ad3181cebd900478f419aa23c638a8, type: 2}
     alphaMap: {fileID: 18700000, guid: 7f23160a66a8499458a6ed4c06c9d7b7, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: CHIMERA_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 3ae1d25e380fa5941b0845c2ddca5bda, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 85ae51109b57288448ca9e5e20cf0931, type: 2}
-    alphaMap: {fileID: 18700000, guid: efd0d7865dac50d4886817d645236c52, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward
-    numFrames: 27
-    normalMap: {fileID: 18700000, guid: f5d4d77d52abd764cb348ab6585cb3f3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ed37849e0a48f6743871daa182ca5f84, type: 2}
-    alphaMap: {fileID: 18700000, guid: ea84992c27c6df9498dbae06f3133234, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: CHIMERA_LEGACY_claws2HitComboAttackForward_RM
-    numFrames: 27
-    normalMap: {fileID: 18700000, guid: 8286216e32142b44bbd292de2afa7e09, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ec58cc281ea960a43ab7b27dfd463470, type: 2}
-    alphaMap: {fileID: 18700000, guid: df7f4ba2f34b82c4795b627bdbb0151a, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackForwardL
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: c24ffe54f80ca9d4fa536e002e14fddf, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 27b11549c8e00fc4b80b6909a78686c3, type: 2}
-    alphaMap: {fileID: 18700000, guid: 14252e0e8d9d8e840bf5f72f8aab3078, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackForwardL_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 1354df7000564bd4db027fff127b9922, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8937c0e6464e4f44e8a686fe037e685b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9b1f2a73cb71bdf4d9e37c0869246b6b, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackForwardR
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 310a3fdff3196cf4685032197e0586e3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 44c4770ce19b3c7498dd97bca09f127e, type: 2}
-    alphaMap: {fileID: 18700000, guid: cbe52f19519cb4543b3d82293ae3ccf0, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackForwardR_RM
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 815ca1881af4076489ce8ed8c80ae919, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a3655ea43bc87a34796fc4aeb9edff70, type: 2}
-    alphaMap: {fileID: 18700000, guid: c6d7ec6fba1a5b84f8afe9e49842b57d, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackL
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: 3ecd62efa23428742b3c68d7b6542858, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4913bbfc466b55741b9a3d53942997ca, type: 2}
-    alphaMap: {fileID: 18700000, guid: 1d636b6289cbe634e8bf003d6777b625, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_clawsAttackR
-    numFrames: 17
-    normalMap: {fileID: 18700000, guid: b10e9ee164106b444bc668006a2a3151, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c24cc8f27b44c7e40bc84a2fcfb870ca, type: 2}
-    alphaMap: {fileID: 18700000, guid: 637a6e68e1e6b7747bd88dfce80c980f, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: CHIMERA_LEGACY_death
-    numFrames: 26
-    normalMap: {fileID: 18700000, guid: a51433ed67988294988290f8f31e19fc, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c2ed297568763f5408bb2bc8c9856293, type: 2}
-    alphaMap: {fileID: 18700000, guid: 773f0212edfeb364e8b740d384c771b7, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_getHit1
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 005b6e6eb240c72498af8a027eccd050, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ba9c6cbdff2048b43b16da59358e1f10, type: 2}
-    alphaMap: {fileID: 18700000, guid: 2ba4f8a9e59cd5b4db66ed43354432a8, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_getHit2
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 2890a8719821dc34cbb87710bc4dd21e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f1f96d1bf2e2dc44e9e55e6302cbc4f6, type: 2}
-    alphaMap: {fileID: 18700000, guid: 2d784fd8c17e34d48af83c453380220f, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_idle
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 1cc84339ff972ab4cb0eb97cf84ba56b, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a7f2278396a0ab743a8afc30b3c7535d, type: 2}
-    alphaMap: {fileID: 18700000, guid: eb00fb8f4014c7b4081cfa3dc34934b3, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_ramAttack
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 3b373a5a06d5e9c44a3c9095ea0e663e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4f5826f8c89e27244b200e7bbff4b968, type: 2}
-    alphaMap: {fileID: 18700000, guid: 8bf318e31314a11409ee86fe5ef65283, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_ramAttackForward
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 03c7d544254fe1d449d631402d122f55, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 65bdd3974f21adb479b08cd456bebfc6, type: 2}
-    alphaMap: {fileID: 18700000, guid: a5c2249dc17c7e141bdb0fd6766186f5, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_ramAttackForward_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: bcf8fed1f8b358f4ab365b5c29828d2f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 930187d9871b8f2478320ea85ff7c8e1, type: 2}
-    alphaMap: {fileID: 18700000, guid: 14dd2c7b36873ea41b932f1d29ffdb13, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_RamBiteComboAttack
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: 6bc36060f41a83845a6314734a154d71, type: 2}
-    diffuseMap: {fileID: 18700000, guid: f2acb2e287423ec45859e01be3bdeca6, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7b3056da8de487345a48c15f05334aa1, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: cb7a957774e34074cbee10aba7794e86, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d5bafbc89588eea4c843901fb3bd2485, type: 2}
-    alphaMap: {fileID: 18700000, guid: 30a647c3b48202842bd99a551aeb94e2, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward_RM
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: ad31182c8a696044ba52d3cc48722de9, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 46fce0083298738439e4190c708efe05, type: 2}
-    alphaMap: {fileID: 18700000, guid: de78d8efb3eef7e42845b8086ccc1822, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: CHIMERA_LEGACY_run
-    numFrames: 8
-    normalMap: {fileID: 18700000, guid: 5762ccbcba9f81849bc1fc8fcc8e214d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8f33b3a084ea59849b4d516cd92a4497, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7343bad7608f9a8478444a33c9320610, type: 2}
-  - rows: 2
-    columns: 4
-    animationName: CHIMERA_LEGACY_run_RM
-    numFrames: 8
-    normalMap: {fileID: 18700000, guid: c0ca23ccf699e7b49a26c48dd60af405, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 55306159c749ecc4db104369f7724ea5, type: 2}
-    alphaMap: {fileID: 18700000, guid: fea8d750571198f49b9ff3d068d034e0, type: 2}
-  - rows: 4
-    columns: 5
-    animationName: CHIMERA_LEGACY_snakeBiteAttack
-    numFrames: 18
-    normalMap: {fileID: 18700000, guid: 7806e618c9fa12c498017f4a5da15c94, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e889d7aaed90d3b4bb13ab40865a08a6, type: 2}
-    alphaMap: {fileID: 18700000, guid: a1ef553aad717144fbf7648f631eebda, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_turn90Left
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 4cb014472e772e7418e610ebfaccd0ca, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b5d6774c6a45cf144abfad2c1aa89b77, type: 2}
-    alphaMap: {fileID: 18700000, guid: ca6e34a1d30492a43bd1b2a1e43f8372, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_turn90Left_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 8a21f2cbaa51d9243a87f87c70c7ff66, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1d2235b6cbb28794f807f13c06c01d75, type: 2}
-    alphaMap: {fileID: 18700000, guid: 494cab3c648dcdb40b637522e549eaa1, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_turn90Right
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: f7b3fa2a7c27bcd4bb2879030d4f41cd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c8fa675007d182343bd2628a5e36407e, type: 2}
-    alphaMap: {fileID: 18700000, guid: f2156738186a6534296524c07e6bf024, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_turn90Right_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 0b3e354d55651044f8975755d61fb995, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 889d14d93916e1d42b196d276261c58f, type: 2}
-    alphaMap: {fileID: 18700000, guid: 70c1f7ac38fd68b4c8d5ca654291ff97, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_walk
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: e0f0978c96d06d244baff8d035613e0d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d3838b91f5fad464681c5114a1ae0a17, type: 2}
-    alphaMap: {fileID: 18700000, guid: d41aa66355c45d443a762e56c0f4f5b9, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CHIMERA_LEGACY_walk_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 2f556ab795182d34f8f3c1307134261f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 3dba453002c38594793faa6157a2122b, type: 2}
-    alphaMap: {fileID: 0}
-  - rows: 1
-    columns: 1
-    animationName: EVIL_WATCHER_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 584517ed54aaddd4d941b8444c6d6e5d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 5b0878403ffdf6c42ad61d42ba07bf17, type: 2}
-    alphaMap: {fileID: 18700000, guid: 25426c4cb13c2af4bb2226b844dba7ad, type: 2}
-  - rows: 1
-    columns: 1
-    animationName: CYCLOPS_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 509722c0414810c43ae64bb39e575758, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 53bb7777b0d9f7247aef6c116408e6a6, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4d25ea7353faf8d40bfc48c68a732875, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsCrushAttack
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 2097575c8f4f1ce45a9dd88799ec9fc6, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 6d475e488c27e284f9626497d7e12581, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9f155eeac5e5d7e42ba6733bbb6d89ca, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 22f39ea201daaae4684fc306156f7d6f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a3656aca7fcd19f459a5cc21267a7f2c, type: 2}
-    alphaMap: {fileID: 18700000, guid: cb242dbb9cbc76544a454dcb2d068884, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsCrushAttackForward_RM
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 9d541c712ca4b30448d179e76a235f81, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 21bebda2503e55043aa42107f68615a3, type: 2}
-    alphaMap: {fileID: 18700000, guid: f7086de43571fc940b2dcb6975967c5f, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: fb2a42529a1f7284d8168c88d25e2578, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e353a4621786d9d449b37a36af688cad, type: 2}
-    alphaMap: {fileID: 18700000, guid: 1089140f91c742d4d852b079e0cce81c, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Left_RM
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: 32a54cd7ccbb5964bae7c01059f0b671, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b912b52d5e4caa84e806e8e163572667, type: 2}
-    alphaMap: {fileID: 18700000, guid: 50223d2146ebac8499ead087c50e98f0, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: c3902a7f681b67244bfe7f404a52951e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: ea0f80bd69d13c34db58bfbc481749e6, type: 2}
-    alphaMap: {fileID: 18700000, guid: 795eebd0918845e44b37fae9f7d5f94b, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttack90Right_RM
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: 43bb73ccb296bdd4f815b0aad32d59b2, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 51947149e2763984687dbb39e9bf2a02, type: 2}
-    alphaMap: {fileID: 18700000, guid: 839d4cda83f718345bd0781b001d0867, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: ca31a4877e7815249881743145fafeb1, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 2566699d795b90e4db65e03834c19d97, type: 2}
-    alphaMap: {fileID: 18700000, guid: aac1fe68bf9f9554797da2c23eb5f3f3, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_2fistsSmashAttackForward_RM
-    numFrames: 15
-    normalMap: {fileID: 18700000, guid: ee245eb0f62f5bf4a8fb3ad70a22dd0d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 696237eb1077b304f9dbc8b13fc2908e, type: 2}
-    alphaMap: {fileID: 18700000, guid: dc1fdd3b29716084b9a1b1949acd1376, type: 2}
   - rows: 4
     columns: 6
-    animationName: CYCLOPS_LEGACY_2HitComboAttack
+    animationName: GOLEM_ICE_LEGACY_roar
     numFrames: 22
-    normalMap: {fileID: 18700000, guid: ce4c339e533543041bef86dc41b3e58c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 239fea3a88c5b93468650e1eb98371de, type: 2}
-    alphaMap: {fileID: 18700000, guid: 064e6248d1071944cbfdbc22226799ed, type: 2}
+    normalMap: {fileID: 18700000, guid: a16e08e71123f4b42aea55f8f86e8d48, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b228b435570ef024e82ef733598db678, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5334ba102b1a9554d90fd2a7681b1482, type: 2}
   - rows: 4
     columns: 5
-    animationName: CYCLOPS_LEGACY_2HitComboAttackForward
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: 54b9534ffa0601e40a8995f4e24191e3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 17013561b77cb404a8391aced9a3a1ac, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9a63c21efe22bd9479b9880c537f3811, type: 2}
+    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 11f62c1de791cfb4ebe2f1ae5d03d9e8, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1004489de7aa39a489f0fb18c35f7a3c, type: 2}
+    alphaMap: {fileID: 18700000, guid: ca6eed1c2a35ccd44ac7a60ea333ce5b, type: 2}
   - rows: 4
     columns: 5
-    animationName: CYCLOPS_LEGACY_2HitComboAttackForward_RM
-    numFrames: 20
-    normalMap: {fileID: 18700000, guid: d4f463e0a2f763f4dbef5e1a93285227, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 991cc179e116aca4481575e1bd29b678, type: 2}
-    alphaMap: {fileID: 18700000, guid: 00fb14eb9e96409439d2d75b5ee9d981, type: 2}
-  - rows: 5
-    columns: 7
-    animationName: CYCLOPS_LEGACY_3HitComboAttack
-    numFrames: 33
-    normalMap: {fileID: 18700000, guid: 6f17ba5013185ab4db5e00b0df718ff5, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 6336dff1ce5803a4f847bfc6150ef526, type: 2}
-    alphaMap: {fileID: 18700000, guid: 6b18d28eca1d14a40984635337658c1e, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: CYCLOPS_LEGACY_3HitComboAttackForward
-    numFrames: 30
-    normalMap: {fileID: 18700000, guid: 5b99e2a441d43ff4e9d669525107161e, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 223617163b86e904bacdb71636fb302c, type: 2}
-    alphaMap: {fileID: 18700000, guid: af05258df60cb0b41aaa448a7ae1f56d, type: 2}
-  - rows: 5
-    columns: 6
-    animationName: CYCLOPS_LEGACY_3HitComboAttackForward_RM
-    numFrames: 30
-    normalMap: {fileID: 18700000, guid: 435e9f8ab546f9648a19dffaab69d184, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 168fe478fd131df41975b09e7f371ad2, type: 2}
-    alphaMap: {fileID: 18700000, guid: bb206ddaeec447840b1edb62675c72d7, type: 2}
-  - rows: 6
-    columns: 6
-    animationName: CYCLOPS_LEGACY_death
-    numFrames: 36
-    normalMap: {fileID: 18700000, guid: 0b071195c2bd55644839e451bef51552, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8b44cce1687d8704983e262047a993d0, type: 2}
-    alphaMap: {fileID: 18700000, guid: 862b442415aefe44ba86283adf7578d7, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_getHit1
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 9e66c1def8b77e341a8909dde06a31bd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: c19ea6f6f4bd61a4882c3d7deb9271e4, type: 2}
-    alphaMap: {fileID: 18700000, guid: 82c24961bec3a3944ab3699db59d3685, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_getHit2
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 10e20fe1fd0f9dc4e9a5c8b1c9dbe416, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e9582fde0fbe2c341b19be09da45edbd, type: 2}
-    alphaMap: {fileID: 18700000, guid: 859f82f2f227ba8459b117fc66449001, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CYCLOPS_LEGACY_getHit2_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 5674e8fe9c6a9f34ba5d2bd1617fdbc9, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 25b9ede58ee7f4146985a07bb23e0bb5, type: 2}
-    alphaMap: {fileID: 18700000, guid: e833d58488ff0c6478d3e6845669bef8, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CYCLOPS_LEGACY_getHit3
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 403ad1fc35a1c8f4fa04207393aae8ee, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e775562495106bc45a9bec435363dd92, type: 2}
-    alphaMap: {fileID: 18700000, guid: fa21644f30a5500448cfc57cdb626531, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CYCLOPS_LEGACY_getHit4
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 76a3e637bdff96c4ca489f65965f9c0f, type: 2}
-    diffuseMap: {fileID: 18700000, guid: bb03a39112f512648880caf7c80d267d, type: 2}
-    alphaMap: {fileID: 18700000, guid: 20fff501ad53e6c4db42c2e1cac871bb, type: 2}
-  - rows: 3
-    columns: 4
-    animationName: CYCLOPS_LEGACY_getHit4_RM
-    numFrames: 12
-    normalMap: {fileID: 18700000, guid: 55a47b6c4af9e5f40b1434b02db044bb, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 61f35467c2caaf24084a8b1007090b0b, type: 2}
-    alphaMap: {fileID: 18700000, guid: 9a0406e05a1d1034b9be44605195a49e, type: 2}
+    animationName: GOLEM_ICE_LEGACY_turn90AttackLeft_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: a1263bad23e83734fb36733b61ce14ea, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e08b5dc4406a1af4b850a179b6f631aa, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8ad64716ef130954f9f013a6206eb3e9, type: 2}
   - rows: 4
     columns: 5
-    animationName: CYCLOPS_LEGACY_getHit5
+    animationName: GOLEM_ICE_LEGACY_turn90AttackRight
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: e8acef840b8e0d947a2e08cb9e9de1ff, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 37a27396e5e07434f9dd92cce1361897, type: 2}
+    alphaMap: {fileID: 18700000, guid: d1a4a677478693742af424309fa71e8c, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ICE_LEGACY_turn90AttackRight_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 5112c93b251ed4e4c85e3fb6895f7ac7, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8f1519f890de3654db18fd5a4788ee62, type: 2}
+    alphaMap: {fileID: 18700000, guid: e2a52b89f14a9a04680c5f89737ac729, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_turn90Left
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 7d01360c3f920714dbefc58a72684432, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5b374a8b72d982d4589dbe071469f3fb, type: 2}
+    alphaMap: {fileID: 18700000, guid: b7603c1580dfd504b94d545b56184dd8, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_turn90Left_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 6e9de2bd12dc3744fb8f59364c034d31, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fc140ee115001ac4dba90c21b33ca1f1, type: 2}
+    alphaMap: {fileID: 18700000, guid: fb0618da56328964f876e194c04f0232, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_turn90Right
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 5007e51d7bf3d9f46ba8aad360f4fb63, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a397b931b0ed08b4fbce5301b207e1af, type: 2}
+    alphaMap: {fileID: 18700000, guid: 045ede9d766895b4a8425be61dfabaf9, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_turn90Right_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: c4028dabc9728e24ead2794d27e5431b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 413b9780bcb88f341beee9426fc962a0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 12855eb081abf1a439a60cf5b7dc3a41, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_walk
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 493d686976c49d746988064a3f5e940c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1531638bf7e34174cb927a639b99ae7e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8e225a94b37cd4f4f9c9ced8879a034d, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ICE_LEGACY_walk_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 0ec61778590fdec40bc310cccff2b4cd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8677972193f361449a2c5ae82589785f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 832e88621f6a0ae40a3ad42d2c18bc04, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GOLEM_ROCK_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 488f1ffb6e442d14f82e49edceedffaf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fb6b130f159abb242bc7e4b6747fc08e, type: 2}
+    alphaMap: {fileID: 18700000, guid: dffeb1a7ca8f20e429059538d709b261, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A
     numFrames: 18
-    normalMap: {fileID: 18700000, guid: 0fae851d6bd11fb45908e2770fc3705a, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a11399f13e3d418419c38598a782d343, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3dcb485333bfbe24b8d57069a11af473, type: 2}
-  - rows: 10
-    columns: 10
-    animationName: CYCLOPS_LEGACY_idleLookAround
-    numFrames: 100
-    normalMap: {fileID: 18700000, guid: da1b8ef4579aa544b8cf197f0338d7be, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e9e197da195f2a340bfc7c8e77ec1c1a, type: 2}
-    alphaMap: {fileID: 18700000, guid: dd257ab74c32f454b8d55ca6b87d911a, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_leftHandAttack
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 4c069c6165168d548a66aff75ac0fcfd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 64622fb90e398ae4a8c367f093920e62, type: 2}
-    alphaMap: {fileID: 18700000, guid: 531677eb757381a4c82b221aae756525, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_leftHandAttackForward
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: bf6ea93baca0cdb46b9732ff98e0bbbd, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 049bdb06288cbb84e88ee6158c7651be, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3b19a221054868d43a7f34beff08ef9d, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_leftHandAttackForward_RM
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 7affe9c059133904a943aba90b52f09a, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 297e46ec28d336a438cd868577473f60, type: 2}
-    alphaMap: {fileID: 18700000, guid: 4ec6c17d2a91b1e4fb7232236efbd65e, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_rightHandAttack
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: fac4f233f0d7d494389fc3d2f4f332e4, type: 2}
-    diffuseMap: {fileID: 18700000, guid: d2ea81f95fa741b43aef0bacbfa15c83, type: 2}
-    alphaMap: {fileID: 18700000, guid: 23b249cd75b7fea4994f2cfe85289d29, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_rightHandAttackForward
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 68fa00a258182424fa931a6111500147, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 87b28ebe15b7ed84bb831fa2204fe794, type: 2}
-    alphaMap: {fileID: 18700000, guid: d53b03b89bedf7d449beddc42af40f6e, type: 2}
-  - rows: 3
-    columns: 5
-    animationName: CYCLOPS_LEGACY_rightHandAttackForward_RM
-    numFrames: 13
-    normalMap: {fileID: 18700000, guid: 7d118adb589281348a249d96b3859bac, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 4b200f918aa16134bb4c8815de075c6b, type: 2}
-    alphaMap: {fileID: 18700000, guid: fc24ac9803fdae6409e4d42d1f4b1441, type: 2}
+    normalMap: {fileID: 18700000, guid: b2ed93176f97d4342afa77bb21601de4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 87acdaab052682e4190a59ab17333925, type: 2}
+    alphaMap: {fileID: 18700000, guid: 818542a4bcd2ea447987c13c25afdf8a, type: 2}
   - rows: 4
     columns: 5
-    animationName: CYCLOPS_LEGACY_roar
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: 2ae4cc18a82b4e54ba6b1e9a6e370705, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7c5a8bcfa52071b4384cad56538c508d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 49eddc4dab8a5374fa59ada0308d86fb, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_A_Forward_RM
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: 3854e88c8c665ef4fbc414f44c940740, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b7b5ebdb3b1cbaa4cbefae25c8e47d53, type: 2}
+    alphaMap: {fileID: 18700000, guid: c9bb7c71bcccff248b9d5f4ad16755ab, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_B
     numFrames: 20
-    normalMap: {fileID: 18700000, guid: b9b06363567771741b80b559ba8f73a0, type: 2}
-    diffuseMap: {fileID: 18700000, guid: dcfd4477755a57240a0ef3fc9f6a09e0, type: 2}
-    alphaMap: {fileID: 18700000, guid: 0924de230b222084fa3c324ab378f283, type: 2}
+    normalMap: {fileID: 18700000, guid: 53bbb93554f89d24bb25f7161c0ea4c4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 63074576c76362144b0f3d190bb1db90, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7cf9168cdd321824c879b3523c9f40e0, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: b16afa5f004f1904780f0fc44866b16d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2ef598e08beb50a449c7d007e3a32737, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4f4dcc6d74c3b1141842dd939c4c5194, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_2HitCombo_C_Forward_RM
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: a26c86c5eea294e4a989b60c8fa16196, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d10857a443638b84dacf3d951102fbab, type: 2}
+    alphaMap: {fileID: 18700000, guid: 19b7dcbea5605cd4d9e5018416ed46b5, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GOLEM_ROCK_LEGACY_3HitCombo
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: a6a9dca4bde3b48458f0c2eefb91f843, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fb9d2ff46be4a1d4e8e983f954ccd277, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7ac5ca08d3e41354ab054e995b7a8604, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GOLEM_ROCK_LEGACY_3HitComboForward
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: f462542c9b1e08f42a8f27c18325cb71, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 64cc751a1dd4d1c4f9d608cacceb9dd4, type: 2}
+    alphaMap: {fileID: 18700000, guid: 599714b4604f5814d901fb4b3c568b73, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GOLEM_ROCK_LEGACY_3HitComboForward_RM
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: 2f930c16a925f814a877e0c278014580, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1f0e1a1d558f307439dc6f4e7b312591, type: 2}
+    alphaMap: {fileID: 18700000, guid: 34df19a6140f1084eb874156d89f6b35, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_turn90Left
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 8626ebd17974be1499a5b3991484b9c3, type: 2}
-    diffuseMap: {fileID: 18700000, guid: a339059bdef0e7e46a8a2f0a0b79c35a, type: 2}
-    alphaMap: {fileID: 18700000, guid: 558852cbb6e911140b18526fc86a6aae, type: 2}
+    animationName: GOLEM_ROCK_LEGACY_attack1
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: d0b9630946e5c4a4ca2403c613af23ab, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d44cdf8b0e3cacc46b1ee7a88a74561a, type: 2}
+    alphaMap: {fileID: 18700000, guid: a979be652482f044789bfe53a48e0234, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_turn90Left_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 7d129b64cb4d28149a3d649eba6169ee, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 92b7ebab2ac1ffd4d96eaf15d2372361, type: 2}
-    alphaMap: {fileID: 18700000, guid: e48262cbc375e3f48b799d5deadc1539, type: 2}
+    animationName: GOLEM_ROCK_LEGACY_attack1Forward
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 41a97e177e8d16e44a3b567ea746b721, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4f947e1108e2b734e9712d05fed1457a, type: 2}
+    alphaMap: {fileID: 18700000, guid: d230c07fe5967ed438a657b24934986a, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_turn90Right
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: a38a5335df2097d4da1144bacf9f42f2, type: 2}
-    diffuseMap: {fileID: 18700000, guid: b904dbe5509fc1746af43d240e140fdc, type: 2}
-    alphaMap: {fileID: 18700000, guid: 85259c326d105e14bbf8f77bde9d112c, type: 2}
+    animationName: GOLEM_ROCK_LEGACY_attack1Forward_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 744736a8a2c5a054495801aebc74a4dd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f3faa5430830acd45a940e9558eee1a5, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5416e8dd85894dc4c9158c9296e3e3e2, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_turn90Right_RM
-    numFrames: 10
-    normalMap: {fileID: 18700000, guid: 82c36cae85ad32e47b3846a8ab820632, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 7878eecce90bb7540be8ea3f5f13f920, type: 2}
-    alphaMap: {fileID: 18700000, guid: 105fe30ee2ba8984f9d8119bcc2d2c74, type: 2}
+    animationName: GOLEM_ROCK_LEGACY_attack2
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: e9b3709783ea54945998c3f5e486551e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9940810d65b00cc4a89a50f0bd2fa135, type: 2}
+    alphaMap: {fileID: 18700000, guid: 434d90dbf41f6914d9dea082cd6462ed, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack3
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 38929f2ef53675649ba29cf2f85055ce, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 19fba0c1eedeed2499289870cd9a7364, type: 2}
+    alphaMap: {fileID: 18700000, guid: d80d37dd7f9e22e439f30bfc6596f9e3, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack3Forward
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: d15f46b6254101141a55b3b5faf1ec83, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d318396ff4d55f14daf65578efd7ee6b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 92383ceff19e2c046a6a155b0e790937, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack3Forward_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 1c5814329e0d91742a998bdf890fcf42, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0732f324eab6fbf4694ad4a4fa8e0bc1, type: 2}
+    alphaMap: {fileID: 18700000, guid: b52e8cbc85ddda2479e343b5ad170967, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack4
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 89bf0cef8d45b29449fe08e5e3ce76b5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9d5c2a3e0d49f2b47ae93f375864f308, type: 2}
+    alphaMap: {fileID: 18700000, guid: 726ddf5a90ab721489bf19e364489b31, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack4Forward
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 479b0621aa587954d9b65518a60e0822, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8e696acea32bae741a5bc7f2522e5b0d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 97e89ee4ead13b441995f8533434422f, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack4Forward_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 2d0512b2fb074fe469f3957af68ec0f6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 53ffd40fd33e63d41ad99b3fddc2f1b2, type: 2}
+    alphaMap: {fileID: 18700000, guid: bc565bd3567803f4093430faf5fba6a1, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_attack5
+    numFrames: 18
+    normalMap: {fileID: 18700000, guid: e80e5a76af082fe4e95ffee1e6f98fef, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 81c55f71211bc75418919a0041e16e1b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3952bd04e87e16f42b6ed9106ab43604, type: 2}
+  - rows: 4
+    columns: 6
+    animationName: GOLEM_ROCK_LEGACY_death
+    numFrames: 24
+    normalMap: {fileID: 18700000, guid: c2fce3bfe28244347b217c53001959fa, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b5dba94c3eec5c8409c8b34985386ee5, type: 2}
+    alphaMap: {fileID: 18700000, guid: 72c1f7145d8ce56479ffe7beebe2e009, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_getHitHeavy
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 8298989dd8472ba4dbb80ff0014fb7ef, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e2d173fef46d9b74dbb1998078473d99, type: 2}
+    alphaMap: {fileID: 18700000, guid: b76619714158d334f8df70844c935691, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_getHitHeavy_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: df0b9a852d9be344a990ba6e8c9488f0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f8c3c02a64789954e88ca77f9593d7bd, type: 2}
+    alphaMap: {fileID: 18700000, guid: 764c35d0d8568e741bfcdc9d3a251e7f, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_walk
+    animationName: GOLEM_ROCK_LEGACY_getHitLight
     numFrames: 10
-    normalMap: {fileID: 18700000, guid: 611a17adc6486f9428f7185bab07109c, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 1e28f1d901d6315429735ac7c10f8891, type: 2}
-    alphaMap: {fileID: 18700000, guid: 3833f88d42f36b244a3b433f97af1528, type: 2}
+    normalMap: {fileID: 18700000, guid: 579e66662ddb8b64ca03a0e57061b04d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 85b1166bed6792f4cbf69535d32fca19, type: 2}
+    alphaMap: {fileID: 18700000, guid: 729011b527703bf429959974120331eb, type: 2}
   - rows: 3
     columns: 4
-    animationName: CYCLOPS_LEGACY_walk_RM
+    animationName: GOLEM_ROCK_LEGACY_getHitMedium
     numFrames: 10
-    normalMap: {fileID: 18700000, guid: c7d7789301dcf4b459bcde2b3f253aa9, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e1590a05e4496de4b9bb90a8273a48fe, type: 2}
-    alphaMap: {fileID: 18700000, guid: 11546d8070c36c64d985e2140f651da9, type: 2}
+    normalMap: {fileID: 18700000, guid: 773cefd476fa7f64ba77297c268bec63, type: 2}
+    diffuseMap: {fileID: 18700000, guid: da1110a1c5b1c03499f6707b9a3e97ea, type: 2}
+    alphaMap: {fileID: 18700000, guid: e8b3e153f8006814d81753b61f34137c, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_getHitMedium_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 82530a0208a71ad47bfdcbf0b14c0881, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e083230874b07e7468e30b2976a8f8da, type: 2}
+    alphaMap: {fileID: 18700000, guid: fadbb13136d755a468329c3542435dfd, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_idle
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 12a871072d0a7f04b8c57d6954cd1ce3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 17bc915914366ba4283f33a16f9b4dd7, type: 2}
+    alphaMap: {fileID: 18700000, guid: f67097b100d2d7147b42a5312bd29f7e, type: 2}
+  - rows: 4
+    columns: 6
+    animationName: GOLEM_ROCK_LEGACY_roar
+    numFrames: 22
+    normalMap: {fileID: 18700000, guid: dd934c0ca5c716f43b20a29eea8c2906, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7629549af693b744fa79a761fd02bfe0, type: 2}
+    alphaMap: {fileID: 18700000, guid: d9eace9557f452743bdca4dc4ec178a8, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 6e302f5d191b6824da304909935e7105, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e26566adeaff8024a86d6a627a7431da, type: 2}
+    alphaMap: {fileID: 18700000, guid: c373b0d18c922394daf007cb62d43b1f, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackLeft_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 68aac761cb5f81d4e8886bdef37b8169, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8d8e536fd55c06f43bcb5f0f58ec08c3, type: 2}
+    alphaMap: {fileID: 18700000, guid: eba6921b3c4f3e74096f072011eb8fd7, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: 4e5c268f3f31cae4aa8b19d3d2d18b8d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7f1df8786d9a97f42a057ddab8ce3cd1, type: 2}
+    alphaMap: {fileID: 18700000, guid: 94c20d685b3717c48b49fb076e0011fc, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GOLEM_ROCK_LEGACY_turn90AttackRight_RM
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: a59b324a687fe0841ad47975f66af650, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fe26365412ab6904bbeafb77bc1b6ffb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 148030af2e07ea146bc8ddc09521e8de, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_turn90Left
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 48a8fb6197edb384f8b331b16077feb1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 40f9833ba31495645aa8ce1beb35c238, type: 2}
+    alphaMap: {fileID: 18700000, guid: 65d788ddabe559b419cc17345177ff68, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_turn90Left_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: b1163b2d314432f47ab9e1f69444e2a6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1987e5fb85c76aa4fb9458686eacb79f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9c8b8824438b705429036c23f1692fee, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_turn90Right
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 15a73004e04b19f40aa1330d21d1b5fd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: da8c240918990a249af3d4a956876ddc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4c269a52a6fa54f40a21f45f8f91c8d8, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_turn90Right_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 9c5883de09c61744da29812b067c778e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 283d39082a3253a44bcb9888dd629f4d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3e738b9e69754b748a25d824ca8e7162, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_walk
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: f4fa14c89739a46459491c5ba542e08c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: eed81404f3c19eb40910b06e466dc23d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9f6a26267afff3141ad7de7d609c521d, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GOLEM_ROCK_LEGACY_walk_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: c11e8955b72e05f4d89c2f549d818cdf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1b7476525f6b9c240a9222d0ef797c8d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2644742e450848d46bba10610ae66de6, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: a966d25f22a048f4293a800ff2c9017d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7540d5194bfa4054baad4a5c8a6b9b3a, type: 2}
+    alphaMap: {fileID: 18700000, guid: ce37b299c04b2e4429b6f72b8e35f361, type: 2}
+  - rows: 8
+    columns: 10
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_construct
+    numFrames: 73
+    normalMap: {fileID: 18700000, guid: 7bcef9befade2944d9744488637b4bee, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0dfc921996cffdf47adf44c27b511ca7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3547b99ededd4594d969333f898fc884, type: 2}
+  - rows: 8
+    columns: 10
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_explode
+    numFrames: 77
+    normalMap: {fileID: 18700000, guid: b14a597a4e89bdf4baceed66fc2eba28, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3abb4eb3383639943a288779aec4a803, type: 2}
+    alphaMap: {fileID: 18700000, guid: 16898cccce8a29d4487e80f9f469568a, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GOLEM_SPLIT_ANIMATED_ICE_LEGACY_idle
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 874435f557d30b34ab13c04c702075d3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b32ce7f23449f1a4c8c07f6601b107a7, type: 2}
+    alphaMap: {fileID: 18700000, guid: c25450338f976c14997021e0cb6c61c8, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: ef28136b6dd62b74fb1d4627b49f5c7d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 298d03bbc5f1fd04a9addb94dc8a4888, type: 2}
+    alphaMap: {fileID: 18700000, guid: 06759d05a8c0331459bcdf8fa21a53ca, type: 2}
+  - rows: 8
+    columns: 10
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_construct
+    numFrames: 73
+    normalMap: {fileID: 18700000, guid: ab4b38fd04418c74fb14c5d0be668bf1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: af80e5dfc9d9cc743bdf6c51ff50c9be, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6c5b4aebc75410e45bfd1e5dfa70f0d0, type: 2}
+  - rows: 8
+    columns: 10
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_explode
+    numFrames: 77
+    normalMap: {fileID: 18700000, guid: 10685823324d31f47aadbe006761f787, type: 2}
+    diffuseMap: {fileID: 18700000, guid: eeaaead0cd8c28e4bab2628dfebca03a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2b8add5ad9c32114a92e91d5f2d54bbd, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GOLEM_SPLIT_ANIMATED_ROCK_LEGACY_idle
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 3c5bc6aa44dd3e542a52fae45edaa8d3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3117bceb2e66c9d4082e287fa6be934c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 470c7656906975741b701365a808d863, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 469800c67bab3324a955ea1663553cc8, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8c8a880af30d57d4881bd05799b40524, type: 2}
+    alphaMap: {fileID: 18700000, guid: e65716efd5ad2c644a0a4212a4ca53ac, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 26f4869abc8beec40813ba0a5a7627d0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b9054d210e50a564c972d1cc1f1d0626, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0f3e95b9797e321418b121adfeab2594, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack_RM
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 7a0f2da43e36d17488414d1201c575db, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6b2d66cf1a47686428680a0c3a969d4c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5d69c03098aca8246bf7084f99eb7a49, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: 5a40796d9a844234e95d9e915ee8e202, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ab0864119813f454cb08d89011be55cf, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25d292d37b8e04e45aa8bb3384bc1167, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack_RM
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: b7b45a8b3e3cdc646a4969e270587af0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f501bb23d9be9fa41a1ff6fbda0b2d3d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6bf0622dba039ef478ef5f76ddcc0634, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 08ec8b6ac3a49c84d9c31bdf3deb8706, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4d4bdfa101d7b6a41af96365bff16778, type: 2}
+    alphaMap: {fileID: 18700000, guid: 53a98d5c5d9ce3540878468eb28e0f1a, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 4a19f42522107ba4e88ee387acce573f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bf9644e20e3f09b45a583f105b53b3fc, type: 2}
+    alphaMap: {fileID: 18700000, guid: f54f640f18a4cd245876cf08d3cb6587, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_2sidedFeathers_Legacy_death
+    numFrames: 30
+    normalMap: {fileID: 18700000, guid: dae0a471b32adb347a5885b9eef1b6ca, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b7bdca20f60c76347b38970521089bc8, type: 2}
+    alphaMap: {fileID: 18700000, guid: b862c35cf5673be4898f2d02e11f9e01, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_falling
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 7a738a5a45a2beb43a1d2ed8aabb4951, type: 2}
+    diffuseMap: {fileID: 18700000, guid: acdc2126fe471cb47a0aaa746542956e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4a50d71f4bbc38c44907d6cfbcd869b1, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyBackwardsStationary
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: a8246393c48c8e14ca05f8ba17c25491, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9a90e8d16f214b845860bab964753d64, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4b100a1bff6f0944a951bc5aa6eecf44, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormal
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 01b03a3d8a37f3c48959015799a11734, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9b482029f8c7d4841a4383473ea9912d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 59266558d1a9c714dade779cc2d81a7a, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormalToFalling
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: b41284b0cef6c0c4a943d351f098b3b0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4691364637009fc4d8c1f1c2e70c602e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9fc3d2d317a84544abec00aedb865298, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationary
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: b444ce4022137de43a4c633dbe618324, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 43d8fd39f90860743a070ce8b4e27735, type: 2}
+    alphaMap: {fileID: 18700000, guid: e1a52df91bb2d5e48a54e33a9eed6735, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationaryToFalling
+    numFrames: 17
+    normalMap: {fileID: 18700000, guid: fe4bd7ee53a32ae4b86aac34bd88fb4c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c91c92f961d399c488dbc871476685b4, type: 2}
+    alphaMap: {fileID: 18700000, guid: ece8de2d71cd3e443ab1a0657ee06369, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyLeftStationary
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 446a8975bff2bea4b9595dfa38024bc4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b26fea1251a92414f84280a80051708a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1b477eead28a64a49878ec0b1f13e784, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyNormal
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 679ba7cfde7ee1e49a2065a07a264201, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f1739d290aecdf3488325c7549a0e35b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 41a9bd84722a56c46ab296326af970d4, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyRightStationary
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 1d2e3d92ab40ec24a96c12e3e464679c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 083c26380bc1cf64fb1c93de52e4cabe, type: 2}
+    alphaMap: {fileID: 18700000, guid: f4000a1e23433e74da08f86bf9916b42, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationary
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 7fa815504f1f5d747b4c7d86eb00a1dd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 518ba436d19329241beb3a66aadb55fb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 24aee3f296a9f49478cf6c1cac907b11, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationaryClawsAttack
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 7fc60ab9075cd884a8f8178751dcb8dc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 45c6709664f16f646a6d801a080295a4, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1eab993f989b3a146a0b7946f3b17b44, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: dae3698677cd6e64c932d16f5e0f425d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 109cbabe7b03b67498cb6ca65d75911b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 796a314b3ba2da94fb31f2fe70af93d2, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 97cd9b8a4c8214b44ab5d6a7b7475a45, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1e882e9f65d3f4c42ab0021472a0a03f, type: 2}
+    alphaMap: {fileID: 18700000, guid: b292ce6920ca2eb458dc91c85105f10a, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit1
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 6245bf71970006249bc83f772ccc295e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8d05e3ec00fae8a479065f20341f0792, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6aa9503f480f7984eb9fa25261dd39db, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit2
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 6f491d8806f9dee4c97495cf60aabf84, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ed5b602cdf93a7e4dab63e097ac51905, type: 2}
+    alphaMap: {fileID: 18700000, guid: 35e3da6a1263cb94aaff7eb126ebd0ee, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_glide
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: f217413731dae394cacd4e61bdf04873, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f09f46cbcef909549b4095dc51fd79a8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 251fbc2a6a174ab4fabe59c87711cde4, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_hitTheGround
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 32173b46ec76db441801a8df2788d503, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4df97750ee874d54db7bd21e78eb064e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 50cefec8ca84c8c4fbab0bfaf67afeb5, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_idle
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 2e1a63ff504a51f43b8279e4e1353acb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f02c6451bb101fb43b02c009a4f9c912, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4dda3a5db03ea844597b226a745259d9, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_jumpToFly
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: f3c1d7b8fb351be41a6024650ba90947, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e2e3ae28c305ebd4b801b2cd75961a0d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5784455311bf4834fb48746ba73b2bc4, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_landing
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: a73232085644f6b4f8801777e0ca6e22, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 50a01bc98e87b7143a53274b49b9a7bd, type: 2}
+    alphaMap: {fileID: 18700000, guid: d1dc9172012b0ef4c9827b12db5e20e6, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 26f281283c9df9a45a3bbc79a881483b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bce93ba6acd7084499b7e34734d1005d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7552ddfa48dbb054cbda690181ad01ba, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 18c2b5d009778c94b8e06b0d143ebc62, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6374b12b170bf3440a49800a5f6ea850, type: 2}
+    alphaMap: {fileID: 18700000, guid: 35045b5d47b7e114ba69f770cc21ceb4, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: fcce04587fddaf74eb76ce558095ebba, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 278272ea331af3c4a94153e7ce55d71d, type: 2}
+    alphaMap: {fileID: 18700000, guid: dcfe9e834545dbe4087b02739a596d0d, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 52e2f8168e750ad43875a7b29853bc0a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 94e457930b48cc6408bdbf6970fb2863, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0b030c8975b30114c9748dafd8f3e6b4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_swooping
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: f02684218e6d5cb4c8388d6fb02a5b6e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 292c8d7d1378d334da7de2aebb275e86, type: 2}
+    alphaMap: {fileID: 18700000, guid: 787581da298dc1745a5def0fe01b2d11, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 11aed6231e7bb4243951571b321eb347, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 92042fac66668744c90bc26bd3584f45, type: 2}
+    alphaMap: {fileID: 18700000, guid: fc32b6aeb5fcb1d4e884f2d988e7b02b, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 7626597d74b5cb1458fef6571ed0c914, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ba83bc8ca3bd8ff4c9e95eb657ee6b11, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25840d3b216e78d43963b4bee70d1e59, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: b7538ad409b85734f88be10f08bf2d7d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c9c740631a0de544b82830dfda7e09b2, type: 2}
+    alphaMap: {fileID: 18700000, guid: f8f8ab0bcf4310946a3a31ebc5ed153f, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 65cd70c1a93b72d41827682c9ee55bdc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 14c540f9c813cb34ca1626dfa2b05d2a, type: 2}
+    alphaMap: {fileID: 18700000, guid: fead9719a73ff7b4e88a41fb9f70f1d1, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: e991f89d867a6f046a87cf69c43a5f86, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f9a5c28afe8c63b4fbe436e589fbf15c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 66bf3da71ef451d439bc01c56498799e, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 8e10b73fa9e6b9a40b1dcedbc4612e6f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0a562c170a8a5f14ca27b684073c6756, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2a859b4493dde5b4bb0a923f076b1a48, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 6ad019a3009bcd44d839693e3f6a5cc4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ae1d286bb62efae4abab3fcf89183c56, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8ecde1bfc902d014db029d32ff343d4f, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 076a0a57bd02b514d8abecedce1b2065, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c82e13bda2b318348b7c8143235966a2, type: 2}
+    alphaMap: {fileID: 18700000, guid: 418cf9bbeb00aeb49b3615ec427cd066, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_2HitComboAttack_RM
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 4354d4084114ee7479472e9abdc592e7, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 48cb1b262d4e8554191ea12285951721, type: 2}
+    alphaMap: {fileID: 18700000, guid: f2130710db1dfe94cb9d83d8b6e180cc, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: 80d81707b5939a44d81eba28a651059d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 943a430fd07df5b4184f7b368dc8d23e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6f2ba63f0e1049a4ca162d27e5c601ed, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_3HitComboAttack_RM
+    numFrames: 28
+    normalMap: {fileID: 18700000, guid: b4930145ef9447546b8032ce8f169bcd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 046c81af53d39f047bfea90e8411c87e, type: 2}
+    alphaMap: {fileID: 18700000, guid: af38927cb3128e0439ae6548128b59e1, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: d24e61fc7f78e0945815890ca07dac84, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e17dee9cf414ebe4f83ae0defa29790c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6afff4c010f9ce0438c0a246a0d82308, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_biteAttack_RM
+    numFrames: 12
+    normalMap: {fileID: 18700000, guid: 6520caf54a228b14d9bb8908711a3c08, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 38f04338946891348a95a767eee1440b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 14e1f1b18df531a4ca9b21828e1725bc, type: 2}
+  - rows: 5
+    columns: 6
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_death
+    numFrames: 30
+    normalMap: {fileID: 18700000, guid: 4127fc473defbe5448ff19412420e3f0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 904e8cfe7282bfe42b5eb49c2c00c82f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5e5a84f18014f3c46a40086fc6f669e4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_SingleSidedFeathers_Legacy_falling
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: b0a218344a3a16346bc726078b412b68, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8c59edf1cf583484ba6f9ad85a837d3f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 666c7446879181b46bba9e78ed9c810f, type: 2}

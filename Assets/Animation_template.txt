@@ -31,7 +31,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: $ANIMATION_DURATION
-        value: $NUM_FRAMES_PLUS_ONE
+        value: $NUM_FRAMES
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -46,7 +46,7 @@ AnimationClip:
     classID: 23
     script: {fileID: 0}
   m_PPtrCurves: []
-  m_SampleRate: 24
+  m_SampleRate: $FRAMES_PER_SECOND
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -96,7 +96,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: $ANIMATION_DURATION
-        value: $NUM_FRAMES_PLUS_ONE
+        value: $NUM_FRAMES
         inSlope: 0
         outSlope: 0
         tangentMode: 136
