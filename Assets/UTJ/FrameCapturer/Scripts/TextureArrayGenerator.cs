@@ -14,25 +14,27 @@ public static class TextureArrayGenerator
         List<string> filepaths = new List<string>();
         List<Texture2D> textures = new List<Texture2D>();
         di.Create();
+        bool linear = namePrefix.Contains("FrameBuffer");
         foreach (var file in di.EnumerateFiles())
         {
             if (file.Name.StartsWith(namePrefix))
             {
                 filepaths.Add(file.FullName);
-                Texture2D newTex = new Texture2D(2, 2);
+                
+                Texture2D newTex = new Texture2D(2, 2, TextureFormat.RGBA32, false, linear);
                 newTex.LoadImage(File.ReadAllBytes(file.FullName));
                 textures.Add(newTex);
             }
         }
 
-        var array= Create(textures, outputPath, namePrefix);
+        var array= Create(textures, outputPath, namePrefix, linear);
 
         textures.ForEach(Object.Destroy);
 
         return array;
     }
 
-    public static Texture2DArray Create(List<Texture2D> textures, string path, string animationName)
+    private static Texture2DArray Create(List<Texture2D> textures, string path, string animationName, bool linear)
     {
         DirectoryInfo di = new DirectoryInfo(path);
         if (!Directory.Exists(di.FullName))
@@ -63,9 +65,9 @@ public static class TextureArrayGenerator
         Texture2DArray texture2DArray = new
             Texture2DArray(textures[0].width,
                 textures[0].height, textures.Count,
-                TextureFormat.RGBA32, false, false);
+                TextureFormat.RGBA32, false, linear);
         // Apply settings
-        texture2DArray.filterMode = FilterMode.Bilinear;
+        texture2DArray.filterMode = FilterMode.Point;
         texture2DArray.wrapMode = TextureWrapMode.Repeat;
         Debug.Log($"Texture array dimensions {texture2DArray.width}x{texture2DArray.height}");
 

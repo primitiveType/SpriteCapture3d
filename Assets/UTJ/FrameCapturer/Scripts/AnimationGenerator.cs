@@ -21,7 +21,8 @@ public static class AnimationGenerator
         string animationFile = TemplateText.Replace("$ANIMATION_NAME", fullAnimationName);
         animationFile = animationFile.Replace("$NUM_FRAMES", (numFrames).ToString());
         animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
-        animationFile = animationFile.Replace("$NUM_FRAMES_PER_SECOND", (framerate).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$FRAMES_PER_SECOND", (framerate).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$HALF_FRAMES_PER_SECOND", (framerate/2f).ToString(CultureInfo.InvariantCulture));
         animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION",
             (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
         Directory.CreateDirectory(path);
