@@ -13,34 +13,6 @@ MonoBehaviour:
   m_Name: AnimationMaterialInfo
   m_EditorClassIdentifier: 
   PropertyBlocksByModelAnimation:
-  - rows: 3
-    columns: 3
-    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward_RM
-    numFrames: 9
-    normalMap: {fileID: 18700000, guid: ad31182c8a696044ba52d3cc48722de9, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 46fce0083298738439e4190c708efe05, type: 2}
-    alphaMap: {fileID: 18700000, guid: de78d8efb3eef7e42845b8086ccc1822, type: 2}
-  - rows: 2
-    columns: 2
-    animationName: CHIMERA_LEGACY_run
-    numFrames: 4
-    normalMap: {fileID: 18700000, guid: 5762ccbcba9f81849bc1fc8fcc8e214d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 8f33b3a084ea59849b4d516cd92a4497, type: 2}
-    alphaMap: {fileID: 18700000, guid: 7343bad7608f9a8478444a33c9320610, type: 2}
-  - rows: 2
-    columns: 2
-    animationName: CHIMERA_LEGACY_run_RM
-    numFrames: 4
-    normalMap: {fileID: 18700000, guid: c0ca23ccf699e7b49a26c48dd60af405, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 55306159c749ecc4db104369f7724ea5, type: 2}
-    alphaMap: {fileID: 18700000, guid: fea8d750571198f49b9ff3d068d034e0, type: 2}
-  - rows: 3
-    columns: 3
-    animationName: CHIMERA_LEGACY_snakeBiteAttack
-    numFrames: 9
-    normalMap: {fileID: 18700000, guid: 7806e618c9fa12c498017f4a5da15c94, type: 2}
-    diffuseMap: {fileID: 18700000, guid: e889d7aaed90d3b4bb13ab40865a08a6, type: 2}
-    alphaMap: {fileID: 18700000, guid: a1ef553aad717144fbf7648f631eebda, type: 2}
   - rows: 2
     columns: 3
     animationName: CHIMERA_LEGACY_turn90Left
@@ -209,3 +181,1872 @@ MonoBehaviour:
     normalMap: {fileID: 18700000, guid: cb7a957774e34074cbee10aba7794e86, type: 2}
     diffuseMap: {fileID: 18700000, guid: d5bafbc89588eea4c843901fb3bd2485, type: 2}
     alphaMap: {fileID: 18700000, guid: 30a647c3b48202842bd99a551aeb94e2, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: CHIMERA_LEGACY_RamBiteComboAttackForward_RM
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: ad31182c8a696044ba52d3cc48722de9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 46fce0083298738439e4190c708efe05, type: 2}
+    alphaMap: {fileID: 18700000, guid: de78d8efb3eef7e42845b8086ccc1822, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: CHIMERA_LEGACY_run
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 5762ccbcba9f81849bc1fc8fcc8e214d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8f33b3a084ea59849b4d516cd92a4497, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7343bad7608f9a8478444a33c9320610, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: CHIMERA_LEGACY_run_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: c0ca23ccf699e7b49a26c48dd60af405, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 55306159c749ecc4db104369f7724ea5, type: 2}
+    alphaMap: {fileID: 18700000, guid: fea8d750571198f49b9ff3d068d034e0, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: CHIMERA_LEGACY_snakeBiteAttack
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: 7806e618c9fa12c498017f4a5da15c94, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e889d7aaed90d3b4bb13ab40865a08a6, type: 2}
+    alphaMap: {fileID: 18700000, guid: a1ef553aad717144fbf7648f631eebda, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: EVIL_WATCHER_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 584517ed54aaddd4d941b8444c6d6e5d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5b0878403ffdf6c42ad61d42ba07bf17, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25426c4cb13c2af4bb2226b844dba7ad, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: DARKNESS_SPIDER_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 39862e820fb7ce940b1fd43f47286fd0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e62d3c47438405b40bfa977becc96859, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3a3196e32ac19434b81ce82ae6ca3057, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_Bite
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 66b2782e4ec2cea4cbb1f36cb53e4a53, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 39fdd2b881efef6489ad2336f1c8d307, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3dd57fa65a3a64f47ba0c4e5508d9f94, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_Bite3HitCombo
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 1781e72dbf7cf1a488cb46c7f220179b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: cda3f49cae1624c438a115863f5c1359, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5c6312dd887143e42878eb3df15af238, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlBiteThreat
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: ec77297b2408fc64e910bc3c0e96300e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 850a5152cde79134fb2897926d99438f, type: 2}
+    alphaMap: {fileID: 18700000, guid: a54422fda5997ed49959cd97e9b5d9d1, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlBiteThreat_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 54d2eac2cbe126a489150621d76fe552, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4bdb9066d80bbe841a7f102c100602eb, type: 2}
+    alphaMap: {fileID: 18700000, guid: f8f38d6c84e9ba34d8468004232a6404, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlNormal
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: c5e44cd3d43b6924f9a5c4a60c46a453, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a2b620b80de8f78489e91025f71106cc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0090c1015a016764e8f629c40fcacc2f, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlNormal_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 148f5b05d6ce9f844936110cd4eb9a52, type: 2}
+    diffuseMap: {fileID: 18700000, guid: abbfa32d04c4c5740a44bd6337c00672, type: 2}
+    alphaMap: {fileID: 18700000, guid: eb21ff9b379bf894898160eac18a9142, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThreat
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 18040e5fa6f244042bd4f4639abccf22, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0ed74e072d1cfdd4b90f48237dde0cb9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 03803b08e73c4d744bb9787eb45937d9, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThreat_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 096facabc11e7024f9fcc5a03cfc9919, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 84cc2c879f3e71141808af2fc54234f9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 57da67db8e2ddf74c86c496317b5b1f0, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThrowSpiderWebThreat
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: fe42811d9ecbe9d4ca65e622e9138ad6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ca2a2ef4900a0114098751d29a3d8a30, type: 2}
+    alphaMap: {fileID: 18700000, guid: db22d37298ee2e64a8597888c3cd73b5, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: DARKNESS_SPIDER_LEGACY_crawlThrowSpiderWebThreat_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: dead39c8500af2f4d877bf318137699f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d0ebdd291b162e14c940fe6e6d04188a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 13dd14441a479304dbcaeaf3d6ee1975, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_deathNormal
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 0c1bae891e2f42f44bcaa89e1b358c6d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9d56f991d263f38469d4d6f5e35751b1, type: 2}
+    alphaMap: {fileID: 18700000, guid: 632bd8d9af364084083e78224351cf5e, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_deathThreat
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 5872cf6c18479c14b8c6f7fffd25ab1a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3d6129071573d6f49b09798542bf6333, type: 2}
+    alphaMap: {fileID: 18700000, guid: bfb1a741ded39bd4bb4ad2b7091e7e4b, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_idleLookAroundNormal
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: ec08685b38f38944a9758534c49de70d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a1121e6a8ce9d024486183ff9f01a668, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8f40b0a5dd49b0446803e4e72069a46a, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_idleLookAroundThreat
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 0d41f67dbd5973941be050fc4cfd1e20, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 986665f4806456f4ca02ec5501875745, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4b86342d85948514b9e296fcf77e9ea4, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_idleNormal
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 6914d17403f30c94dacc1832892b8445, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ec2379cc085701140ac01b3d74ac311a, type: 2}
+    alphaMap: {fileID: 18700000, guid: af29024315afd8e4596cb2d9d04c00d5, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: DARKNESS_SPIDER_LEGACY_idleThreat
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: fd067b996cb19f44da1b49afe29e76a4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d179a0bc3d977a144843abb0dd0c4460, type: 2}
+    alphaMap: {fileID: 18700000, guid: b98b97311dd8ad14f9290f0ba742691b, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteNormal
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: a281f5b4f309ec649bbac4fa2978c52b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 23acb916ee4ef7849bfdff8c9ec63ea8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 287c5e7a1f7006144a3dfc9b746606c4, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteNormal_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 424628953fb5ce343b7a1ea10fa93d34, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 84c94328579f81f4cb3be7667ca03e89, type: 2}
+    alphaMap: {fileID: 18700000, guid: 89504678acbad264c856eff157f21473, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteThreat
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: b31c307a0a814674dbc2a968fe71ec65, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 909d5fa3edc230b4abaa599a798a254e, type: 2}
+    alphaMap: {fileID: 18700000, guid: c2eaf7d32a3391b43a441a73e9e789a6, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_jumpBiteThreat_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 894d597c451bc2148914be515d63fe09, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0a63f04e6276d8e40977f908b4836d1e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 79b990c8c1a0ed440a972d63525ed68e, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_throwSpiderWebNormal
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 798245e8a028c164b8efb776ff2cef61, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0c71c9cffcf84a64391e813f10458ffd, type: 2}
+    alphaMap: {fileID: 18700000, guid: f44b7a1a40e70d54cb0390f6a34c1d94, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: DARKNESS_SPIDER_LEGACY_throwSpiderWebThreat
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 7881cae7e9f9bd349976f790a47eee7b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 32e48752d1703244aa29c5f7d8215ea5, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8a4a1f3a23030654ab851efc2b908476, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GHOUL_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 0527d7fdd70be444e964ca723f8296d2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ad47e79e01d562044a7687f3424380bd, type: 2}
+    alphaMap: {fileID: 18700000, guid: cecda56ef06a8b04b8549870521605c1, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack1
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: ddcc80ccdb0e89d4cb597c2572b0aaff, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 54d1d27540045cc43950f2fc26f9233d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 513d72322cff8e34a937574e88595ab8, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack1Forward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2d3be0d105e330f4891547bb6b7e6020, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 04454535b7bc57e47863523b28318abb, type: 2}
+    alphaMap: {fileID: 18700000, guid: e97baebe2d9fe1847aa99c14245ac5c3, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack1Forward_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 09f08410b7e8a3f48bd9838961fb48c5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: cf828efee15a029499b32186ca8a7da5, type: 2}
+    alphaMap: {fileID: 18700000, guid: d7f6c1231026edb499beb6371644fe29, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack2
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: ad97eba51ca91004a9cab631c2e3fb6b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 91b679dd835684d4cb5e56fdfe2957a9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 346b4603093b30c42a1adc25c34e64ac, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack2Forward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: d98844721b5fc3e4e8af0413e34f80f9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ff7142a704c0ea144a7da64ff88e383e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5f7ad465c67ae10459a55c1f351da0c4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_attack2Forward_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 3fa5dde4fb151d24a812d300f0cb6f82, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 150afdc65280fcd4ca9cca5dec18dd25, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0561c53425f18664daa9417c3c5fa66b, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GHOUL_LEGACY_attack2HitCombo
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: d8e04f2fe9b37ca45bfd0992e3c0afcf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 078b3ff0afd0adf479ba09318348f3eb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 702e9d4011e267041b8f0143ec5617c2, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GHOUL_LEGACY_attack2HitComboForward
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 970278f123de7c949a4bae0ddfc63140, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1a782dc55b82c7f4bba2a2ea09bb38cd, type: 2}
+    alphaMap: {fileID: 18700000, guid: b2554a2489955ca4f8a3295f9e37e6ca, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GHOUL_LEGACY_attack2HitComboForward_RM
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: e425fec77b651f541868af8105300d7c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b8e8e152f1adbd64398b12e8ce53d653, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4a54cb615af4be1478a90adc3d498d17, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBite
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 2d2019ed7c5f2374dbaa52e0bd4621d0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0692c849b87de2241b1361ffd8d59dfe, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5f56ba8da4e716945a641f574398fb44, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBiteForward
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 3b16920f058a8ce42b529e4fc2cca08b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 82120b84417dc114d85b71458d81ff73, type: 2}
+    alphaMap: {fileID: 18700000, guid: 773cefaf4b7b94042be2907ab70b2cf6, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GHOUL_LEGACY_attack2HitComboToGrabBiteForward_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 404e70724bfe7ba419f8bd40c96e0848, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 19338188cc2e9b841a5dabaf006ee567, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0e4492c3d6cfdb8438dbd3a5145a449e, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GHOUL_LEGACY_death
+    numFrames: 11
+    normalMap: {fileID: 18700000, guid: b5881842921025d4ea6e34dd51356faf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7e3a0721dc978c7459e0059a02865fb2, type: 2}
+    alphaMap: {fileID: 18700000, guid: fe75b8e1e266d854a942aa483f1d7386, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GHOUL_LEGACY_getHit1
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 1b55750789c23c44fa0480ff5d4fdc93, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c61e8ca9a87bb954fae756dd5d05d4fb, type: 2}
+    alphaMap: {fileID: 18700000, guid: c5781cc890662ba4a94a089e84eaddb7, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GHOUL_LEGACY_getHit2
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: dbedcd3630e211149b32f57288d14cae, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5275d55e301545f41a35131ad6bcd9f8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1852e4b806582d04aa9bcdda1515cd1e, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_grabBite
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 3412f02bb64226d42ae063099d843d06, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2d49f84d1fdbcf34f9a8b48000f80894, type: 2}
+    alphaMap: {fileID: 18700000, guid: b35f14a247423704fb68ed3953eb7bb0, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GHOUL_LEGACY_idle
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 0dce477fc463bc749852397dcde64a3c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 61ab46a20ae585e4490eab3fd4dbc7c4, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3382f4c695abd4c47b700dc48371db8d, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GHOUL_LEGACY_jumpattack
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 3d0a28c52fb634f4ba5baa9c9e213ae6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d39458104703037479b3ba90c5ab63d8, type: 2}
+    alphaMap: {fileID: 18700000, guid: f6b3b2c3377e0ea42a98f8de8f5992d0, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GHOUL_LEGACY_jumpattack_RM
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: fa4c7a3ec8b728d48afb509f88f75003, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ea1159c12b9d4d946ada0536791c38b9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 47569430ea848544a90a3d6645fa9b11, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpBackwards
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: f3551bafe2f035b4ba48e8948770a0a9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bb135e03723b0824ca53d67a59421c31, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4de087d26ce7e094ca3b4c473f3476fa, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpBackwards_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 4b22ed3975362304e95dc4726299c780, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 96b8f46feadca9444ae003978718c08f, type: 2}
+    alphaMap: {fileID: 18700000, guid: f78ea977461492c4b949e1c87d1af3e6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpForward
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: e9afcf22f4626794ea2a3f27daec6a04, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bbdb68cae0f53164fb0d85d7308e7f8e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1bcd9fc80731dd847bce9f6408747071, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpForward_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 6b2430c06430eaf4ea84d4227aa5e043, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 13c6193b055002d4f9cfe1f90e774734, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9e5826f4dfcbab044a1a6c1cdbb2922b, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpGrabBite
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: f104b7793d7c94a43960a238f3a4daef, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d51c83d3e1cb0bf45969211e2cca3341, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2289f40a1903a0d4ab2605856dd083bf, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: GHOUL_LEGACY_jumpGrabBite_RM
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: 9a57f916de26f434d97d7bb0535b7b26, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 336e395cbfea23a41bfed0dadc4742d9, type: 2}
+    alphaMap: {fileID: 18700000, guid: b386d8a1319c81f4eade69aaed962604, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GHOUL_LEGACY_run
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: c9b2ce964dfdd524085d32e2be1b0a30, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 03dde54634d221344b4587494f0fa1df, type: 2}
+    alphaMap: {fileID: 18700000, guid: 29db9000103e71048aec16dfe46ef89c, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GHOUL_LEGACY_run_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: fcee1461f40720249adbeed62a040bcd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 862d450f9a06b39409ecfe0fb1605dba, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3c8282e9b4406d24aabaad4298c2fed0, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_strafeLeft
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: d9a43a0ac18d1d34aabdc43c30c05caf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a8d0310ef993bb74f9579857fabd40bb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9ce17588752d994458c691843facd2a4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_strafeLeft_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 808da97c168e8ad4c9dfe2a5f1afe003, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b41c87025eccd064e9bb91b9976d778b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3704a1ba1024872488d15afb97277163, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_strafeRight
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: f860bdc9cfa41ce49ab07a5dd7a9de25, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ef345cdeae76be84ba708ab24917b49f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 33e690145da4a2544b61cc1fd47089a6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_strafeRight_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: bccca417187791b4997959cc0fc37238, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 860b0ac30dd43394a86ec0c2ceb9678d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 310b9291a61539640b15c79c597e9a1b, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_walk
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 5e450b7c6e983374d9053c2d87c5f5b0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 36b4cb411d6a2064290915210a663373, type: 2}
+    alphaMap: {fileID: 18700000, guid: 81eda0860808a6347a305344cde94f43, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GHOUL_LEGACY_walk_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2eff6375288018e4ba710ce1a97d0480, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a87431e6d23f94143a0c65756556e6c2, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0a5028bca4885c24da07aabb61c08e4b, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GIANT_RAT_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: f8be3ede96cce4245b5204c1d4a82333, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ce20d3128c9c38142a172c039b4c2df7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 698512b828269da41b2c80db577c125d, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GIANT_RAT_LEGACY_death
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 5f50630e450334c47a7007500e3f681a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: de80bb33c4d782343975498b1ab6fe22, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3664e5799c3801a4ca91448ddc423024, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeBackwards
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: a3900362468ec9e47a57da870b6be4f4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 99e4a4a2925906747a754ca82b93d412, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3479d009f3622b24d9b424db45a9eb61, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeBackwards_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: f5bd6497eb4a3f5459da67214b30b639, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 30d8451aa7cbec0488424cbfe49a3e80, type: 2}
+    alphaMap: {fileID: 18700000, guid: 694fa11af68fbe14cb76f58c2e548249, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeLeft
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: bd4dd592abd55a44ab3846239d6da01b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3e410b33e0c0be444b4e3727d8026c4e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4330a7fdef04c084499c9bc33c2b1220, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeLeft_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 6e31b860cb4fa764488722d961d7aa25, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4027abde85d8fba4194f6d901d5dced0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 58b81e10204e96a49bd617d078845212, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeRight
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: f97fc8ee8e217bb4697791c13899b84f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d413337d09a8b584fa567781077143ff, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0c72266fe0c2a12409889cbbb2c0ebc6, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_dodgeRight_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: ebf19bb63b1adaa429bf118277d8b312, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 56d2b7aeb600c0e408f64c28be0d54e9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7b075644494c94049abfb4c470a53083, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_getHitFront
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: a46efa60daf419541951595b6f70fbb0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 57a62e79bee0fbc48bd2065f3d9d5bb5, type: 2}
+    alphaMap: {fileID: 18700000, guid: faf5d1fe9efaf3e4fa25dfda1c09c37e, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_getHitLeft
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 71da5561a1cc56345a65a8ad7453550f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 42eb7d9fab21f5241a925e779ee20b77, type: 2}
+    alphaMap: {fileID: 18700000, guid: badc9ed0b3fce4b499c3cb64daebae6e, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_getHitRight
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: a45796feee726b5429c2a672ded1dd41, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 617632ee1d3dec94cbc6cafdaaba44c9, type: 2}
+    alphaMap: {fileID: 18700000, guid: e908a9bf6051f8e4f90c2914f7a22123, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GIANT_RAT_LEGACY_idle
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: b0de00e7c7cdd2e48b4e198c24671efa, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b06a528724c3d7e4f88910367a143e99, type: 2}
+    alphaMap: {fileID: 18700000, guid: bfd98fdd769983f47b1e94177c7468a6, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_jumpBite
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: f54e9cae7340c8e40a8999686c3fc8d2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1d5b8b6236b2a024eb9cc0697ab2ada9, type: 2}
+    alphaMap: {fileID: 18700000, guid: c8defe48e252749479667f0fde7f6a09, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GIANT_RAT_LEGACY_jumpBite_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: cbebafddf9c3e4e45a126849e08a3c0f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d660571e97ac525418c45c9480ccb68c, type: 2}
+    alphaMap: {fileID: 18700000, guid: c62190d77ad5f044499df51f962d0da9, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GIANT_RAT_LEGACY_run
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 1f8f115bbdea15f42957558c34a2cbd7, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b9f4d434985fbf041a243fffd7279e36, type: 2}
+    alphaMap: {fileID: 18700000, guid: f148f09144950f34b9db1b968b404932, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GIANT_RAT_LEGACY_run_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 9aac0de6282de244684f12b37561493b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e1be58756fe433f4aa7739e42ab18230, type: 2}
+    alphaMap: {fileID: 18700000, guid: 026a1b9352f9eb24591b6709e0a6980c, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GIANT_RAT_LEGACY_taunt
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 6e02a6c16ccc9f64b879e928533ad0c7, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 63e5eb281a4af05468a6239cd09965cd, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4508dfc1c6c3b434888b14fc418585a4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GIANT_RAT_LEGACY_walk
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 678910d1183e2314f80589d3aaa11655, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1ea1ab1be72f2bc4f8b1123918c92678, type: 2}
+    alphaMap: {fileID: 18700000, guid: f7b8e66d6b96cea4bb29d45b4e2d175a, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GIANT_RAT_LEGACY_walk_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 381b9c8d36e17c14589d43c3cc0587c6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b91341f60b8117b4483829304b71a702, type: 2}
+    alphaMap: {fileID: 18700000, guid: 75ff08558f967a64f8d54351cbd98298, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: VAMPIRE_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 6b5009de9f84bbe4dbcc66eac5048498, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e6904ecfcf33dfa499b9e9005b092c69, type: 2}
+    alphaMap: {fileID: 18700000, guid: 49cdbc685a9564d4a82520a924a6ec5e, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitCombo
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 815b155cc16b15b4497d0c21af495d49, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b98181f48498240439c2216106bfe01b, type: 2}
+    alphaMap: {fileID: 18700000, guid: b5cfa79a9d8cf4d4e9e33947d8e94bcd, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitComboForward
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 0dec328641fdfd142b8ec637f76c0071, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 949bd445090eaab459444a0f3a2f01cd, type: 2}
+    alphaMap: {fileID: 18700000, guid: b7d59e52ee2da854495f5a0938c200da, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitComboForward_RM
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: ed8ca49c35e6c86498fe0bae2811dba2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f13d8dc248cba534e994089a4f5c3655, type: 2}
+    alphaMap: {fileID: 18700000, guid: cb9e6dff8d341064ba9da5683c5ba965, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitComboForwardToGrabBite
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 780ae0d93284e044eb13bbb4f2848ad4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a3cab3a6f8a36384fb1982ef9b79f0b9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4ee68ae51cd2ef440b119d78a70e99e7, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitComboForwardToGrabBite_RM
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 80243575afe6b3a4296373adb229d50c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c6c5cfaf06cb83d418996c7367640eaa, type: 2}
+    alphaMap: {fileID: 18700000, guid: b24ccd211c4a9134295d702d1306acda, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: VAMPIRE_LEGACY_clawsAttack2HitComboToGrabBite
+    numFrames: 13
+    normalMap: {fileID: 18700000, guid: 2dd3133b036180345b3f56bad4c84019, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6303900562a77ea4aa2c48315339c3cc, type: 2}
+    alphaMap: {fileID: 18700000, guid: e937aaa2c6595294fbff075996127523, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackLeft
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 38ddb28dc3e7e104b9a0458cf9633efa, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 01c30dd5a6d67a9439c6b68c276b8e87, type: 2}
+    alphaMap: {fileID: 18700000, guid: cb21dea4bcdf7e14389c941b55824d22, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackLeftForward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: b28a5cd1a8ce7f84c9b03c897517525a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c2a421bdbe1656c4c93cc9679ce515f1, type: 2}
+    alphaMap: {fileID: 18700000, guid: c7d9d8ea1f982914388cd743e5b9e777, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackLeftForward_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: b1c3266dabe530c47acfdbcad42f9bb5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9549c3bc55bd4984b9d4a61bc65c3013, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7d83678f318f19049b4e345d5cca26a4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackRight
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 830aaa2e7a9ade64eacfc46b9c12eee1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: aadb85bc7ea9a6946a880372c7929cdc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8db7614f38da9c54cb35599a607e9b46, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackRightForward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 095b56c3debe9cf4190e55489779cfd9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9d1f2f78338d6c84d9cf7f7e2ed05249, type: 2}
+    alphaMap: {fileID: 18700000, guid: b7b9aa18aa71f3c4fb09291933c82a83, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_clawsAttackRightForward_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 1cf538b7d59887745a1c48c9e8acfbcb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3b8dad5c3cd3f4e4280d78ac232c0e14, type: 2}
+    alphaMap: {fileID: 18700000, guid: 91f39d63375bd9e4ca5048f83b76e841, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: VAMPIRE_LEGACY_death
+    numFrames: 11
+    normalMap: {fileID: 18700000, guid: 355001e9c65c2d14880207bfa42e1162, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 102a445ed46891347898c3ccdadb5d49, type: 2}
+    alphaMap: {fileID: 18700000, guid: fa6a72d1e5b37a142a375f3da00cde0d, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: VAMPIRE_LEGACY_getHit1
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: fb473903f5382f14c86ba741551e8ceb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0efa410bf2ebc8b429186b0fac679b66, type: 2}
+    alphaMap: {fileID: 18700000, guid: 287e42544ba9ada459108a647ee88af7, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: VAMPIRE_LEGACY_getHit2
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: ed08675e26f59634dac2029c8133e195, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fbc280275e59dfd438af64dc095efc7e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 088e93a2bc3d98a469e12d33a35feb70, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: VAMPIRE_LEGACY_idleBreathe
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: bc2b6d1d978e4514e891b62dd36bd285, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6478200eda3b3f44c9a6062b6c7739b3, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2353e2c332328f34a829633b31c6638a, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpBackwards
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 7054aca4a54e11e4b83b27a76126008f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e492e3ea1a6cd8643b2e6ad3e35a7717, type: 2}
+    alphaMap: {fileID: 18700000, guid: d1f68b412d077f74791b7aff5155a561, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpBackwards_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 36deebc7301ca414e82723d1d16d3f17, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 35e1e4d7509b2f742b89a55938093a34, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3b7f1cb1e58852e4683fde1f40938c7d, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: VAMPIRE_LEGACY_jumpclawsAttack
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 98523621076cba949bed0af5caeeb638, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d61b45def6f6aba48a4265cb56906fc1, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8e2b445626290784dbe588296b37b4fd, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: VAMPIRE_LEGACY_jumpclawsAttack_RM
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 1a41da15b42d4464ea26fa02c0e18404, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fd2c7971671085e4e8e683347e7e849a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 11d6d312918998b41b2960d1e21dbd56, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpForward
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 75c3322b8328a274eb3233b6f48fe390, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 83202b27b9c4028489449d741b19fb96, type: 2}
+    alphaMap: {fileID: 18700000, guid: f76c5f422e0a694469be21b3b4b46b3b, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpForward_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 6955e0c658496c94bbf87f96af340614, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 86ab73f06b53efa418ff345346f0e4ec, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8c9959b4a0d0dd940959cde72f3012db, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpGrabBite
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: 37ba307c7017c9340a122c8264ca36f1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: cb7d7640f04d7f24e9940e0ed2ba600b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1fc0ab00df35471438e9353556a9128a, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: VAMPIRE_LEGACY_jumpGrabBite_RM
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: 68c5cd718d5de1542b7b4a3801734329, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f0e73f7808b569345ac24241f978c1aa, type: 2}
+    alphaMap: {fileID: 18700000, guid: c6873a0fd095a164d9b000b027c66a2c, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: VAMPIRE_LEGACY_run
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: ab83f73c4415c074baeb0c831213c4d6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d2aef596f48856f47a3e3f689a4c41ba, type: 2}
+    alphaMap: {fileID: 18700000, guid: 320ece9c3f1bd2e42ac2574262b19800, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: VAMPIRE_LEGACY_run_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: dc04628842378644badbd0351c3daa13, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8da5a38b61702454d8e7ec47d5b2c3a4, type: 2}
+    alphaMap: {fileID: 18700000, guid: b0ced16cd3f9b1f4296bb16b910d48e8, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_standGrabBite
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: b5aff086c8b49f842b1d5a5d84ae1e7e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 664fba4a39460274ebacb801089105b4, type: 2}
+    alphaMap: {fileID: 18700000, guid: abab676119b336a4391a420cc68ae2b7, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_strafeLeft
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 3a2df78abb2385a4e854309d5c3ea411, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1cb125f3a54cba24288577cc56355444, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0176d9ea742a12f4e99cab0c88fc1bb6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_strafeLeft_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: d3eae605f87d15f49b9d8900f9ebb0d7, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ca020c405a5fbbd48bb3d79987a505f7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0e06bee027b6a5947bc59bd6a01cf2d2, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_strafeRight
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 27abfdb2b07b65d4d86fe04e3723aa15, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e27cdef4309f9f34b95fa4f56c622cdf, type: 2}
+    alphaMap: {fileID: 18700000, guid: 53a8c4f796c106543bcf0adcf04534f1, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_strafeRight_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 93e42030eb558b244971867601cc86af, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 06431ea9e739d2f459ad661192b34a98, type: 2}
+    alphaMap: {fileID: 18700000, guid: b8e3b815245181240a6ddeaf00dd7f0a, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_walk
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: e01c9c50c7055184b9713f649c3e5c26, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ad96e2edca4337a4c9909fe847f92700, type: 2}
+    alphaMap: {fileID: 18700000, guid: df0a99e6331715f4dbccc000599454ba, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: VAMPIRE_LEGACY_walk_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 766f3d17882ab6f4b8ee09858f7f852f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 74db80302afc63b4ca541b36c5503d58, type: 2}
+    alphaMap: {fileID: 18700000, guid: 08bab9d391d4de547b349575aa735b0c, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Assault_Rifle_01_FPSController_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: ea491a52db276d44e9b09cb1765169da, type: 2}
+    diffuseMap: {fileID: 2800000, guid: b91dccd95769be84ea9c739f7a1830ff, type: 2}
+    alphaMap: {fileID: 2800000, guid: 76a416f8845614c49ad759d7fa1f8ae9, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Assault_Rifle_01_FPSController_aim_fire@assault_rifle_01
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: dc95d40e06563ad4a97fa2a25910e219, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 461845b913dae1d40b68110b19082ae5, type: 2}
+    alphaMap: {fileID: 2800000, guid: 5eff11bb020433b4ab96be772742a906, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_aim_in@assault_rifle_01
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 5aa7be2352459fc418436d73673561b5, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 767e6d8c88c7c7b47a8483ddf07e6b44, type: 2}
+    alphaMap: {fileID: 2800000, guid: 53b364d3ea42b914caae22416c11120a, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_aim_out@assault_rifle_01
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 7a2304a4fccf5424abb4c1a5c6e19630, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d348dd9164e710448ba89a227838163b, type: 2}
+    alphaMap: {fileID: 2800000, guid: b869ade5cdda55f418613b20580b3020, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_fire@assault_rifle_01
+    numFrames: 4
+    normalMap: {fileID: 2800000, guid: 3ff5e92d055e3ee46b74d93dd8891de3, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 853bc9e8f3b0b7643a455c62fb00254c, type: 2}
+    alphaMap: {fileID: 2800000, guid: c437bdf6d1b72494cbb10e49af8b62d6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Assault_Rifle_01_FPSController_grenade_throw@assault_rifle_01
+    numFrames: 6
+    normalMap: {fileID: 2800000, guid: 33a2d84539053ee4a86dc88737770334, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 687c9f5803d49aa4a97ff329b4d22add, type: 2}
+    alphaMap: {fileID: 2800000, guid: 14ffbc7cadb34d9429cdd119558d47fc, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_holster_weapon@assault_rifle_01
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 8cc58a3f49e2b72418321f7751ad8c0e, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 6b2fe8591858fcd48a1b9003d2458636, type: 2}
+    alphaMap: {fileID: 2800000, guid: 149431cea1e25b743bf96a947417fd16, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: Assault_Rifle_01_FPSController_idle@assault_rifle_01
+    numFrames: 10
+    normalMap: {fileID: 2800000, guid: 1f45c127d775ccf4aacb55c003abaa11, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 1f7823efa65d7384a98f238455f06c95, type: 2}
+    alphaMap: {fileID: 2800000, guid: 869b4800c9d728d4b8dc3f3b3dd6148d, type: 2}
+  - rows: 4
+    columns: 6
+    animationName: Assault_Rifle_01_FPSController_inspect_weapon@assault_rifle_01
+    numFrames: 22
+    normalMap: {fileID: 2800000, guid: dba96fc5a36f3d94ea4a625714f7d2da, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 9978dbb744e2ba94095a566cf203065c, type: 2}
+    alphaMap: {fileID: 2800000, guid: 4be9327743d463e4c88c2d7a86394fd5, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: Assault_Rifle_01_FPSController_knife_attack_1@assault_rifle_01
+    numFrames: 12
+    normalMap: {fileID: 2800000, guid: 123cb0d113e5d4c4088fdfa1aa3600f8, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 44e46f2d22fc52a49b1c8b40bcfcae83, type: 2}
+    alphaMap: {fileID: 2800000, guid: 9c18cfbb28dbe4845bf4aa803a0e79f3, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Assault_Rifle_01_FPSController_knife_attack_2@assault_rifle_01
+    numFrames: 5
+    normalMap: {fileID: 2800000, guid: f630ed24d84ad1249bfd4b6c5aec3da8, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 63460bcf3a27d3b40b78352d31fc3e97, type: 2}
+    alphaMap: {fileID: 2800000, guid: d6c1f0c3f4e9f6f48ba0f3805580bbc5, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: Assault_Rifle_01_FPSController_reload_ammo_left@assault_rifle_01
+    numFrames: 11
+    normalMap: {fileID: 2800000, guid: 09324808fa9ba344ba90b3ce54a96058, type: 2}
+    diffuseMap: {fileID: 2800000, guid: f97bf817bc515cc468050dbe6ea1b13f, type: 2}
+    alphaMap: {fileID: 2800000, guid: 3f82ca28919e0454fa65110f44729ea2, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: Assault_Rifle_01_FPSController_reload_out_of_ammo@assault_rifle_01
+    numFrames: 15
+    normalMap: {fileID: 2800000, guid: 0e6697e75609e7a4b9c32a474b951823, type: 2}
+    diffuseMap: {fileID: 2800000, guid: ca58fa8686f6e2844aa49d9253be2cd2, type: 2}
+    alphaMap: {fileID: 2800000, guid: 2e7abc5ce9244cb4085edaf6209b8078, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_run@assault_rifle_01
+    numFrames: 4
+    normalMap: {fileID: 2800000, guid: 349e6634d5a50aa41a47a3cbb28c6272, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 93236a68e0a06854d9a7d275a8acbdb2, type: 2}
+    alphaMap: {fileID: 2800000, guid: e216fe8f6217971488f523047b540add, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: Assault_Rifle_01_FPSController_take_out_weapon@assault_rifle_01
+    numFrames: 7
+    normalMap: {fileID: 2800000, guid: 345170f24e5fcfd448e6fa516b1cf7e5, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 2253b7d368f1ce64a8bc4188e69d10b9, type: 2}
+    alphaMap: {fileID: 2800000, guid: c8f771484bc25c44c9abb890bac185ba, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: Assault_Rifle_01_FPSController_walk@assault_rifle_01
+    numFrames: 4
+    normalMap: {fileID: 2800000, guid: 941edc45280fe284296c095d17a0fdaf, type: 2}
+    diffuseMap: {fileID: 2800000, guid: fd4105db83fd4cf4f843ea7b728b1ae5, type: 2}
+    alphaMap: {fileID: 2800000, guid: ffe6342e74d14974891ad2701ab199f3, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Camera_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 5995dc1f1b4f78245986770308c61c34, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d9faa39064565564e92a7814fd6c9dc5, type: 2}
+    alphaMap: {fileID: 2800000, guid: b6109e8ea51cdd840aa2aa757ec41e20, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Camera_Attack
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 1d1aed009018d42439c78de5b0b95685, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 866595e9865e749479091c9d5fd39239, type: 2}
+    alphaMap: {fileID: 2800000, guid: a1b3e4732ec40f547abbb254261fce91, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: RingStaff_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 8efad4e096e6694438c74de2a904b9e1, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 786b9def69eb2af4eaeb8e592dd40dc0, type: 2}
+    alphaMap: {fileID: 2800000, guid: 40fe893944bd7b4438fcc8494382f526, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff_Attack
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 9b78439b3de5b154984fcb80b816f057, type: 2}
+    diffuseMap: {fileID: 2800000, guid: f4735ffe4238d9441a673871b6394d93, type: 2}
+    alphaMap: {fileID: 2800000, guid: 25dd2773facfd98429db387189b6c04c, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff_AttackStart
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: bd92e9cd187b4b24cabe565a3d321687, type: 2}
+    diffuseMap: {fileID: 2800000, guid: dd0d3e88c193b474baf74725c970f638, type: 2}
+    alphaMap: {fileID: 2800000, guid: c6218a0f686218f45959ef12e36ed8d3, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff_Idle long
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 2e0a737b0c55eaa49a36e1caf19e0d04, type: 2}
+    diffuseMap: {fileID: 2800000, guid: e79f62dd48f6c2548b7bf01162d84d6d, type: 2}
+    alphaMap: {fileID: 2800000, guid: 3f88d763a1f5ce14bbf9d6f49362658b, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff_Idle
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 8916b30a89b7d3f4cb468617baf6a4d9, type: 2}
+    diffuseMap: {fileID: 2800000, guid: f48f3b32f0e69fc4882dfe9550730537, type: 2}
+    alphaMap: {fileID: 2800000, guid: 13bd9ab2093b6bd4481e93dc26554c7e, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: RingStaffStraight_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 058b88f0a7fa9da429cf56c1085cb09e, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d1167735f31cf7341a25b4e8aae5a710, type: 2}
+    alphaMap: {fileID: 2800000, guid: a8eec4eeb9b6d174ea2ebb3bbc6cc717, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaffStraight_Attack
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 2f260c0971e8ede46a3d5cdb957930e7, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 7c5617e5ef9a54c4f9335b1bc6a0e6bb, type: 2}
+    alphaMap: {fileID: 2800000, guid: 56006f82d6b7ed04e8f3f00049ef666a, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaffStraight_AttackStart
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 80a8a17e44f12dd42b36415135ad7c55, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 9e05906a943260a4baec3500a0a2cc1e, type: 2}
+    alphaMap: {fileID: 2800000, guid: 3d251b955d316e24cb350401f62980f0, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaffStraight_Idle long
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 518b60f1627e0bc4aa87887e5452edb2, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 0182fe07fd8388c4ca71affa75dd5320, type: 2}
+    alphaMap: {fileID: 2800000, guid: 95b97950582c9c1498ee1d69239cfd69, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaffStraight_Idle
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: 6ad752dfa7fa9ac478dba602efbd6313, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 95483fb66097d5d4190539b860a9d434, type: 2}
+    alphaMap: {fileID: 2800000, guid: 47837195f2ba4274087342f8d39ded55, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Chandelier_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 2c37353b0f0d4e74eb3264fe0f7f1570, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7d788fc2170825d44a1f7c20a71f248d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3fd102fc7f087fb4494a695be001fe33, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Chandelier_WaitOneSecond
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: e943829cf1d0a134486c2d8f7f98998d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 174cde43b959ca84da2382db5f73ce41, type: 2}
+    alphaMap: {fileID: 18700000, guid: 43217425f62606a4fba6c7990df1494d, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: GRIFFON_2sidedFeathers_Legacy_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 469800c67bab3324a955ea1663553cc8, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8c8a880af30d57d4881bd05799b40524, type: 2}
+    alphaMap: {fileID: 18700000, guid: e65716efd5ad2c644a0a4212a4ca53ac, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 26f4869abc8beec40813ba0a5a7627d0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b9054d210e50a564c972d1cc1f1d0626, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0f3e95b9797e321418b121adfeab2594, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_2HitComboAttack_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 7a0f2da43e36d17488414d1201c575db, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6b2d66cf1a47686428680a0c3a969d4c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5d69c03098aca8246bf7084f99eb7a49, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack
+    numFrames: 14
+    normalMap: {fileID: 18700000, guid: 5a40796d9a844234e95d9e915ee8e202, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ab0864119813f454cb08d89011be55cf, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25d292d37b8e04e45aa8bb3384bc1167, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_3HitComboAttack_RM
+    numFrames: 14
+    normalMap: {fileID: 18700000, guid: b7b45a8b3e3cdc646a4969e270587af0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f501bb23d9be9fa41a1ff6fbda0b2d3d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6bf0622dba039ef478ef5f76ddcc0634, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 08ec8b6ac3a49c84d9c31bdf3deb8706, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4d4bdfa101d7b6a41af96365bff16778, type: 2}
+    alphaMap: {fileID: 18700000, guid: 53a98d5c5d9ce3540878468eb28e0f1a, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_biteAttack_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 4a19f42522107ba4e88ee387acce573f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bf9644e20e3f09b45a583f105b53b3fc, type: 2}
+    alphaMap: {fileID: 18700000, guid: f54f640f18a4cd245876cf08d3cb6587, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: GRIFFON_2sidedFeathers_Legacy_death
+    numFrames: 15
+    normalMap: {fileID: 18700000, guid: dae0a471b32adb347a5885b9eef1b6ca, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b7bdca20f60c76347b38970521089bc8, type: 2}
+    alphaMap: {fileID: 18700000, guid: b862c35cf5673be4898f2d02e11f9e01, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_falling
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 7a738a5a45a2beb43a1d2ed8aabb4951, type: 2}
+    diffuseMap: {fileID: 18700000, guid: acdc2126fe471cb47a0aaa746542956e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4a50d71f4bbc38c44907d6cfbcd869b1, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyBackwardsStationary
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: a8246393c48c8e14ca05f8ba17c25491, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9a90e8d16f214b845860bab964753d64, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4b100a1bff6f0944a951bc5aa6eecf44, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormal
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 01b03a3d8a37f3c48959015799a11734, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9b482029f8c7d4841a4383473ea9912d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 59266558d1a9c714dade779cc2d81a7a, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitNormalToFalling
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: b41284b0cef6c0c4a943d351f098b3b0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4691364637009fc4d8c1f1c2e70c602e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9fc3d2d317a84544abec00aedb865298, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationary
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: b444ce4022137de43a4c633dbe618324, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 43d8fd39f90860743a070ce8b4e27735, type: 2}
+    alphaMap: {fileID: 18700000, guid: e1a52df91bb2d5e48a54e33a9eed6735, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyGetHitStationaryToFalling
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: fe4bd7ee53a32ae4b86aac34bd88fb4c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c91c92f961d399c488dbc871476685b4, type: 2}
+    alphaMap: {fileID: 18700000, guid: ece8de2d71cd3e443ab1a0657ee06369, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyLeftStationary
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 446a8975bff2bea4b9595dfa38024bc4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b26fea1251a92414f84280a80051708a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1b477eead28a64a49878ec0b1f13e784, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyNormal
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 679ba7cfde7ee1e49a2065a07a264201, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f1739d290aecdf3488325c7549a0e35b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 41a9bd84722a56c46ab296326af970d4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyRightStationary
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 1d2e3d92ab40ec24a96c12e3e464679c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 083c26380bc1cf64fb1c93de52e4cabe, type: 2}
+    alphaMap: {fileID: 18700000, guid: f4000a1e23433e74da08f86bf9916b42, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationary
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 7fa815504f1f5d747b4c7d86eb00a1dd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 518ba436d19329241beb3a66aadb55fb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 24aee3f296a9f49478cf6c1cac907b11, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_flyStationaryClawsAttack
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 7fc60ab9075cd884a8f8178751dcb8dc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 45c6709664f16f646a6d801a080295a4, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1eab993f989b3a146a0b7946f3b17b44, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: dae3698677cd6e64c932d16f5e0f425d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 109cbabe7b03b67498cb6ca65d75911b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 796a314b3ba2da94fb31f2fe70af93d2, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_gallop_RM
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 97cd9b8a4c8214b44ab5d6a7b7475a45, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1e882e9f65d3f4c42ab0021472a0a03f, type: 2}
+    alphaMap: {fileID: 18700000, guid: b292ce6920ca2eb458dc91c85105f10a, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit1
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 6245bf71970006249bc83f772ccc295e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8d05e3ec00fae8a479065f20341f0792, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6aa9503f480f7984eb9fa25261dd39db, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: GRIFFON_2sidedFeathers_Legacy_getHit2
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 6f491d8806f9dee4c97495cf60aabf84, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ed5b602cdf93a7e4dab63e097ac51905, type: 2}
+    alphaMap: {fileID: 18700000, guid: 35e3da6a1263cb94aaff7eb126ebd0ee, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_glide
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: f217413731dae394cacd4e61bdf04873, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f09f46cbcef909549b4095dc51fd79a8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 251fbc2a6a174ab4fabe59c87711cde4, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_hitTheGround
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: 32173b46ec76db441801a8df2788d503, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4df97750ee874d54db7bd21e78eb064e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 50cefec8ca84c8c4fbab0bfaf67afeb5, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_idle
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 2e1a63ff504a51f43b8279e4e1353acb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f02c6451bb101fb43b02c009a4f9c912, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4dda3a5db03ea844597b226a745259d9, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_jumpToFly
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: f3c1d7b8fb351be41a6024650ba90947, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e2e3ae28c305ebd4b801b2cd75961a0d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5784455311bf4834fb48746ba73b2bc4, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: GRIFFON_2sidedFeathers_Legacy_landing
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: a73232085644f6b4f8801777e0ca6e22, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 50a01bc98e87b7143a53274b49b9a7bd, type: 2}
+    alphaMap: {fileID: 18700000, guid: d1dc9172012b0ef4c9827b12db5e20e6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 26f281283c9df9a45a3bbc79a881483b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: bce93ba6acd7084499b7e34734d1005d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7552ddfa48dbb054cbda690181ad01ba, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_leftClawsAttack_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 18c2b5d009778c94b8e06b0d143ebc62, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6374b12b170bf3440a49800a5f6ea850, type: 2}
+    alphaMap: {fileID: 18700000, guid: 35045b5d47b7e114ba69f770cc21ceb4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: fcce04587fddaf74eb76ce558095ebba, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 278272ea331af3c4a94153e7ce55d71d, type: 2}
+    alphaMap: {fileID: 18700000, guid: dcfe9e834545dbe4087b02739a596d0d, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_rightClawsAttack_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 52e2f8168e750ad43875a7b29853bc0a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 94e457930b48cc6408bdbf6970fb2863, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0b030c8975b30114c9748dafd8f3e6b4, type: 2}
+  - rows: 1
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_swooping
+    numFrames: 3
+    normalMap: {fileID: 18700000, guid: f02684218e6d5cb4c8388d6fb02a5b6e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 292c8d7d1378d334da7de2aebb275e86, type: 2}
+    alphaMap: {fileID: 18700000, guid: 787581da298dc1745a5def0fe01b2d11, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 11aed6231e7bb4243951571b321eb347, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 92042fac66668744c90bc26bd3584f45, type: 2}
+    alphaMap: {fileID: 18700000, guid: fc32b6aeb5fcb1d4e884f2d988e7b02b, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Left_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 7626597d74b5cb1458fef6571ed0c914, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ba83bc8ca3bd8ff4c9e95eb657ee6b11, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25840d3b216e78d43963b4bee70d1e59, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: b7538ad409b85734f88be10f08bf2d7d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c9c740631a0de544b82830dfda7e09b2, type: 2}
+    alphaMap: {fileID: 18700000, guid: f8f8ab0bcf4310946a3a31ebc5ed153f, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_turn90Right_RM
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 65cd70c1a93b72d41827682c9ee55bdc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 14c540f9c813cb34ca1626dfa2b05d2a, type: 2}
+    alphaMap: {fileID: 18700000, guid: fead9719a73ff7b4e88a41fb9f70f1d1, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: e991f89d867a6f046a87cf69c43a5f86, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f9a5c28afe8c63b4fbe436e589fbf15c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 66bf3da71ef451d439bc01c56498799e, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: GRIFFON_2sidedFeathers_Legacy_walk_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 8e10b73fa9e6b9a40b1dcedbc4612e6f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 0a562c170a8a5f14ca27b684073c6756, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2a859b4493dde5b4bb0a923f076b1a48, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: ceiling chain_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 0c86ffe754afbd14fa6372999e9a33bf, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 70fb2ccbe5f634e4aaed531705b88553, type: 2}
+    alphaMap: {fileID: 18700000, guid: 590125cf1fb21954eb9eb0b5586d4d5f, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: ceiling chain_WaitOneSecond
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 8ae8f8aa722ae314aa12ea0c6a9b8c39, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c56f10f26b0570b4385cb391273e9ec7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9aa65d5a963242d469eefcdf372b9ffc, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: HARPY_breastsExposed_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 61d32de7dbc13c24d8979d2ee1a3b32e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5679aaace2ea88448bf62489bc753fdd, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0701b548089d1c941a1c5cbd7929f998, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_2HitComboForward
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 140f0e090db964747b411145304daa70, type: 2}
+    diffuseMap: {fileID: 18700000, guid: aa5041575b154384587a4451dd700d4f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6b99639626ddfe64cab4d3099e103435, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_2HitComboForward_RM
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: c4876e84473a742479b023bc0395fb94, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 6789e813fa601c84d877ee7f78b700f7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 856c47d2d87edfa4bac16e0baa91e1c4, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_3HitComboForward
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: d6162deaf6c2ffa4f8df8733445a20b4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7dfcfb5cc74f2cb4aac0343414ab48ae, type: 2}
+    alphaMap: {fileID: 18700000, guid: c8dcbb1d658e3f04180655a9403f2ae8, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_3HitComboForward_RM
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: a379717f1788caf40b5099b128a8fc34, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 827527e5ad20f174e98bf7e64e3562ed, type: 2}
+    alphaMap: {fileID: 18700000, guid: dede30bdd1a9f9a40bb250ce73c69cbc, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack1
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: cda810cd05fc0084990a7b8b336cbd6c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 873bc2ae20b8aa04182802e76af66312, type: 2}
+    alphaMap: {fileID: 18700000, guid: 0497ab50fa809c949a9aaae1253ad3a3, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack1Forward
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 8d97c02ec07fa1a47b20e79bf5c158a4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 83a8c7c136fc0d042b95e89b7027b59e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 161580c68c5bb4640a32080bca282606, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack1Forward_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 7d7ec427af844244887aa6c432cd6ee2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2e49fb530f1c3ca42aa2e66abf579f0f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 50358e69c873e0240ab94f01f383088d, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack2
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 52cf3b0a0e1206a468121789ed6d27e6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 86326e5064054d348bced917854f1b43, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1ab7ccfc515ab5646987f95d52ec9b58, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack2Forward
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 7d038ae6f97ec0548948d8a882a13008, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8046c556f3897454bb0a699ee1b1dd4f, type: 2}
+    alphaMap: {fileID: 18700000, guid: f33d1a7e255f1d74b8ff137a1fc8854a, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack2Forward_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: b1f08b044a5a5d54f8215f47932a4f18, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7a4a9c9f387be714196154433764f126, type: 2}
+    alphaMap: {fileID: 18700000, guid: c876302ada1b4984e8ef609ef863bf1b, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack3
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 82d96babe086dd54fbdbaef5e817fe35, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f7f3dfd46f0453f448f06635f161358f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4a7aa1e98407aae42b27b72668fb92ee, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack3Forward
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 1faeec23d9c06a648a12cfc8f2559ea9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f8788a61b241d1640a0d17d5d4b349bb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1ee809215772ce84a82c97156bae2852, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_attack3Forward_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 61707ad977b9c3f4d82bc5262e7e97a6, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 29faaa2de1849e443a2926dcf4edf4b5, type: 2}
+    alphaMap: {fileID: 18700000, guid: ce4e17137d95957419711a5041675b0f, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_catchPrey
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: b18cf38a340e3f442ad44ca826324f55, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 39ad1984376517c4da192990eb0e2315, type: 2}
+    alphaMap: {fileID: 18700000, guid: b0a9ffd17f4b2a9419200bff29b77951, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_death
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: ba54f54ba9037564ab5a5a795405345b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 919ff6e6612bcee40850cad30a8102fc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9eb0f8bb0d2ea37499bdebe7386889a6, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_deathHitTheGround
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 6d171c30885aa464d96cc7172ec424ff, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1663c087a88a18448983a64991233ada, type: 2}
+    alphaMap: {fileID: 18700000, guid: 794b07e8de7bed74eb3c3b88d4a8e3bc, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_falling
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 1f1790f3bff236544bdcbaa79e666bb5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e2b901860f32e7c48818ec86b56d5218, type: 2}
+    alphaMap: {fileID: 18700000, guid: 357ebac729f8c44439ac42fc1f78b94f, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_fly
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2b32c17d18e5fd84db9979a23ecc671b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 88bdf213d70989d4f8aee3fc7e82c5cc, type: 2}
+    alphaMap: {fileID: 18700000, guid: 52c46000491e09d47a973475d2cc256d, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_flyGetHit
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 7f55901516cbd4447837b240e1228630, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b31d22177be73c944a43f12092d66735, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1e814b7ef83869746999e5811819acef, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_flyWithPrey
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 53f38c3e88105f44d8d89fab1702c070, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 07c31045ad8148246a3cf665dc9eb82d, type: 2}
+    alphaMap: {fileID: 18700000, guid: fa76ae9db0833434eb17d68257881746, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_getHit1
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 89c115afdced002429d74b8f2d1d352d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9b1c45769610ff744b61518644348a13, type: 2}
+    alphaMap: {fileID: 18700000, guid: 32ff6f5ab219bef46b6bfc5081f04bb3, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_getHit2
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: c25f24a7574a0024787282b1b87eef42, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 634150552bb3bb749bcf8201ef1b4ed0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9de5b9d673e4caf47aebc5cfbd6d7c5d, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_getHitToFall
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: da8062027e55d1646988546293abf450, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 79648ffb1b1f1b64cbe64cfc170e7876, type: 2}
+    alphaMap: {fileID: 18700000, guid: 82ae87fcff99ed244bd332891eef1ffb, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_glide
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 8e00c6d2f6ccf6b40b3a8ed751cec8ee, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fee96ea9a6a890a409e749ef90996865, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2bd71c4abe608314c857f57fc6bb6c65, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_idle
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: d40e1779e09f47844985a8c178d2b81f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9213da4bb5f788647888da7f9e76e818, type: 2}
+    alphaMap: {fileID: 18700000, guid: 697b86d29d2e1bb4da7e022956e74fa2, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_jump
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 04c61f9034147b445b63e9a98b2165fd, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8930fe2dfbc9ac24aa5d427fe34c1e8b, type: 2}
+    alphaMap: {fileID: 18700000, guid: fe0190ab00ab93044a824b9d55b69baf, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_jump_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: bc00681346746764d87f770031c275aa, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 97b9e6038d23cf4449e027968ddc2498, type: 2}
+    alphaMap: {fileID: 18700000, guid: 31825e7298405454386d7bd45e4dade2, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_jumpClawsAttack
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 94e753478bcad0645bc9e9eb9b7eca1c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8b7c8ac1f897466469a64fd8b321db41, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2c2482617a3e9b641ac6a036c59f6b76, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_jumpClawsAttack_RM
+    numFrames: 8
+    normalMap: {fileID: 18700000, guid: 3ca1f705c6dfdba4899ca4bee9009781, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4adfd46b39857364bb708e2406aa414b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 20bf814a76acbc9428c5cc4076566ef5, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_landing
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: bd8ef35fcb3aeb049855c1213a1dcc94, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b2db04164cd8f994cb9301ec8e7559f8, type: 2}
+    alphaMap: {fileID: 18700000, guid: e10c34872984a3047b90898677123e44, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_run
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 8e8009c44bfef2049b9cb696653dd1f5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: c406616ed98c2524b872f644299b78f5, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9cb529d7dc11422489a6d8874a4f5b57, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: HARPY_breastsExposed_LEGACY_run_RM
+    numFrames: 4
+    normalMap: {fileID: 18700000, guid: 73e560f698d9fc34b8d8257ee0ee0b92, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5cb14c8b88ee34a45967619a108146b0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7fc4d7cdcb697ed4398c2db999b76be9, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_strafeL
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 3015b7ed824849546a7cf219b417dbc2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 1254b02ca98fa644fb32d50379f598e7, type: 2}
+    alphaMap: {fileID: 18700000, guid: fc05a3d8a540e38439b3da44fa350699, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_strafeL_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 4c7a693cf84a3ce4bbd1402be1c680a5, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2e24356b37878cd4daab2a371873b1fe, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3dee5b9d157625842808885ea539b256, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_strafeR
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: c29c3261c5e48914da4683aaa9c37d1b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 68fb102d6a217e5408f6a380aa4ceae8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 18d82e9c296d2c644b53cce45ffaf41c, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_strafeR_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 0738c8757fd0e64438508687022b9ae9, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 3eced6f9aba8e684f865feda35d7282c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9d31c33b7ec9bb44e9e2c0a6de21b772, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_swoop
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: d115bec4ba6b186438d743d4a4dcdc65, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a6ff3d3e291eea448b9a281303941150, type: 2}
+    alphaMap: {fileID: 18700000, guid: 6b8ea74434f7d8a41b2d4f7fa4d20b33, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_takeOff
+    numFrames: 6
+    normalMap: {fileID: 18700000, guid: 7ac9f0d842528044bab61d08f873d3b4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7944534b099f3c34f93ceb5d409d7ef2, type: 2}
+    alphaMap: {fileID: 18700000, guid: 89443474b6b08054083d9c6e34d7044b, type: 2}
+  - rows: 3
+    columns: 4
+    animationName: HARPY_breastsExposed_LEGACY_taunt
+    numFrames: 10
+    normalMap: {fileID: 18700000, guid: 58dc97543294e8946b680cfaef8099ed, type: 2}
+    diffuseMap: {fileID: 18700000, guid: dad3ba8e8cb2c594d9c360938328a313, type: 2}
+    alphaMap: {fileID: 18700000, guid: 915aa0e94f470b14893e14ba6fe3628a, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_throwPreyAway
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2a75d7bdcaa0cc5468c8d81c419fadaa, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e285fbe186b657341bf2be956ad6840c, type: 2}
+    alphaMap: {fileID: 18700000, guid: 243064530c1700d4b8490db64d3302ce, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_walk
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: a7b40f70f7b6cbe4f93cd166b7a095dc, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7708527bd3ff07a4fa3052954f0483b3, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2587773eb221409408db753c8aadf7a1, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: HARPY_breastsExposed_LEGACY_walk_RM
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 154a36b83837b7f439cc80b5590342d0, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 278c1d5794b47114397855e25b85244d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9f99905293650ac44bfab9439ef9906c, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Pistol_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 03feb06efca31a64bb216bf275d4b9ad, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 2777633b32b0ed2409904eb3be7eb494, type: 2}
+    alphaMap: {fileID: 2800000, guid: b8e8ee7cb81f86346b741617247f9144, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: Pistol_PistolShoot
+    numFrames: 2
+    normalMap: {fileID: 2800000, guid: d6abc5066bb27424a8e658bc2f1630b0, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 56698c493f77bc444bc43458fe572c15, type: 2}
+    alphaMap: {fileID: 2800000, guid: 454991ac5461a64418199c30a5f4d6c4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Pistol_PistolIdle
+    numFrames: 5
+    normalMap: {fileID: 2800000, guid: 21ccf9840a931c6478c12df05ac00546, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 4c55d29c99e9e4444ba248603892c3d4, type: 2}
+    alphaMap: {fileID: 2800000, guid: c4b058c542e6e8f4fad769b55cb6a4cf, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_mgun_lg_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: bea658c5109582c43bf2d3b2f3995eea, type: 2}
+    diffuseMap: {fileID: 18700000, guid: a92865ac08b6bce4a88be709d5138193, type: 2}
+    alphaMap: {fileID: 18700000, guid: c329b80aca7628341bebe9ea24b10582, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_nade_lg_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 7fcd62132ba3e8648b7ba3f919b80e65, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 30366198164bde54bb88ea9702815c7b, type: 2}
+    alphaMap: {fileID: 18700000, guid: fa4a32c799a40324f8f674254b9ad861, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_mgun_sm_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 50ddc4f9105fcb54fa6023cf7833427e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8a6b674cef67709499f730f599cf9be8, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3a9426df95663064484f57816b068772, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_nade_sm_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: e8b938d6ed442124aa860438d3d30f7a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 52dc90765e9ec714380416baeb221f42, type: 2}
+    alphaMap: {fileID: 18700000, guid: 068400d7a1c468240b745597c9226e56, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_rckt_lg_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 11a050629fcae2847bc900e1c35cea3e, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ba592bcbca4371b44963428b8aab7434, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3c8efa33d7402834ca56d61332e191b6, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_rckt_sm_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: bcfe58850bf918e4ba5355c88d648da1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 08868a681f5abd3479f79e4295c15183, type: 2}
+    alphaMap: {fileID: 18700000, guid: 5d631fcde1132994584ef8c253d2d8b8, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_sgun_lg_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: d5a3b095b284c664fbd2d8e56f7f3461, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4d31ce77a15908d49acf0d3b0cf173d6, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7fd50417ddf74b54f810334e7625af49, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: pkup_ammo_sgun_sm_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: f96aca4eabc831d45a24af91c4885b57, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 90b26450217c59b458db2a44852e5a2f, type: 2}
+    alphaMap: {fileID: 18700000, guid: 4a69a83eae139334a849fd5260dbb495, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: FirstAidKit_White_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 32b98be3cdddc664ebfd4c34e034344d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9adcb6e2473462549872be9e0ef25c73, type: 2}
+    alphaMap: {fileID: 18700000, guid: 324155cb8dec48f4eaf53bb8498d5418, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: FirstAidKit_Biohazard_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 5f6caa9554658c941a3b242fcaf5aec1, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 99560ea303f14f645afe55810a8fd22a, type: 2}
+    alphaMap: {fileID: 18700000, guid: 40f85db2a8b2374468a83cb4aad15265, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Shotgun_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: bd5526e5aabb34d4b8c82f6484eda91e, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 29f9219f835835140ac8ed09433d21f8, type: 2}
+    alphaMap: {fileID: 2800000, guid: 1cf79c9b636d6a245a48c6868261893d, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Shotgun_ShotgunIdle
+    numFrames: 5
+    normalMap: {fileID: 2800000, guid: 1297f5ea05c7bf344be09ce7f34afa69, type: 2}
+    diffuseMap: {fileID: 2800000, guid: dd33df47e7ee6c24ebbff775087368b1, type: 2}
+    alphaMap: {fileID: 2800000, guid: fe736a818d41cd347bd9eb1e2f27eace, type: 2}
+  - rows: 2
+    columns: 2
+    animationName: Shotgun_ShotgunShoot
+    numFrames: 4
+    normalMap: {fileID: 2800000, guid: 98acb960b12133b4da4662ed8ab2713b, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 02985c8482d5fd3478b97330a5b31a6b, type: 2}
+    alphaMap: {fileID: 2800000, guid: 8e5e17c6b1d5bc741bd5a34983768fe1, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Shotgun pickup_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 83a5c1994c947e7498a3d7b4a9b4aa37, type: 2}
+    diffuseMap: {fileID: 18700000, guid: b4f40f3e96b50a141a072240ece9a573, type: 2}
+    alphaMap: {fileID: 18700000, guid: 404751d522c11e241ae197061363db3e, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff Pickup_AttackStart
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 7bce48cf3e3366045a27cc9f8aeea62f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: cced02ae30e29c545b8aead4b8982424, type: 2}
+    alphaMap: {fileID: 18700000, guid: 38e8fcae8903a3a41ac2880774055979, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff Pickup_Idle long
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 12cff610059bd4b4eb7beb0baea3324a, type: 2}
+    diffuseMap: {fileID: 18700000, guid: fb4c383dd69b3bc40b13d53ec46d3a7b, type: 2}
+    alphaMap: {fileID: 18700000, guid: 34031fe03e8b95b4e85e449ddc9be3ef, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff Pickup_Idle
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 3c8f56900feed464da36402e90b107b8, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9bd4cf5a3e0361c44af0ecaa318b4a2d, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1743b32ff2a15694eb4f63f4763c6b08, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: RingStaff Pickup_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: e99f4873d54f6c44990d1a7e3a67e426, type: 2}
+    diffuseMap: {fileID: 18700000, guid: ca932c01c398d894085248a97fc530de, type: 2}
+    alphaMap: {fileID: 18700000, guid: c111cff1c4484784087f62fd9a2fc020, type: 2}
+  - rows: 1
+    columns: 2
+    animationName: RingStaff Pickup_Attack
+    numFrames: 2
+    normalMap: {fileID: 18700000, guid: 72636ed6a7bc1ca44b338f0ab9043d9f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 8b62329317435ed4593d8727f85175ea, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7f15d3610d7a2f74780e2e66de528dff, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_01_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 9cca9358c52c8cc46a2759ad94cc80f3, type: 2}
+    diffuseMap: {fileID: 18700000, guid: dfff5db392e82d44ca8bbb1eb1f0cbe0, type: 2}
+    alphaMap: {fileID: 18700000, guid: 8fee0c01fa611c04f881ead7a7d45c17, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_02_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 1667a4674dc76f040874f65bc493e2df, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 931a601d0a275cc4b86a851855a4bf63, type: 2}
+    alphaMap: {fileID: 18700000, guid: 1ec987c1786755f4b8d22bcdddc96441, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_03_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: a9b94dc720460024eaaf6b035e8a7a38, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 21f369d1af9857849af88326ce13cc85, type: 2}
+    alphaMap: {fileID: 18700000, guid: 3e5ce2b848e198548840e20fb36af017, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_04_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 8d1f0d7e866c0084c8c07a272d3c33b8, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e9cc16577ff2ebb46a315b7374dd6646, type: 2}
+    alphaMap: {fileID: 18700000, guid: ebaa61df9d5c3da4c8fcfdd8b55fad58, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_05_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 3193b03e6d9e24646945dddd9db81e92, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e5c7b97d5d235674db14e115938b1720, type: 2}
+    alphaMap: {fileID: 18700000, guid: eda4ebd031c2ad54d85290a7de2204b4, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_06_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: e956a3469443b80429173eeb95605da2, type: 2}
+    diffuseMap: {fileID: 18700000, guid: dc21af825fd4df04d90141db96c3c0fb, type: 2}
+    alphaMap: {fileID: 18700000, guid: 87f8c999048d2764ab5a73baa3600f6d, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_07_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 1ab4ca862433d254a9a8e31fbe9ed834, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 86610fcea8d99884785b28dd76fa9795, type: 2}
+    alphaMap: {fileID: 18700000, guid: 7b28250bf2756f445aef3cc9d3de0a30, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_08_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 8eec806826a8bda4b8832b700831402b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: e1e3f2a905ed0c44d9eba7af020e62eb, type: 2}
+    alphaMap: {fileID: 18700000, guid: a510a4bf2dab11b4484bb5861611171f, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_09_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: c0717196266f1ed4984357a5e6e4d05b, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9553856e6d9b51142abcc057072577e2, type: 2}
+    alphaMap: {fileID: 18700000, guid: 76d452612760b3545b7fd8603eee5e33, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: P_Key_10_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: aa0beedc9e761854d99830cb0564d5e4, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 2b92a9f769660674aa24debd338b4988, type: 2}
+    alphaMap: {fileID: 18700000, guid: 238271a3292ef594491f2c2265a23faa, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: HourglassPotionYellow_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 818b612cefa32aa4b8db71a172674176, type: 2}
+    diffuseMap: {fileID: 2800000, guid: b5a1ed8f974994a40b7e159ac02803a7, type: 2}
+    alphaMap: {fileID: 2800000, guid: 753896ad5206fe3479a120cda2abcde4, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: VialPotionBlue_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 986c596a84a92c34096b585aecbdd93e, type: 2}
+    diffuseMap: {fileID: 2800000, guid: e1af89cffdc9cf6408e7d07269383f2f, type: 2}
+    alphaMap: {fileID: 2800000, guid: 8bfadf1035c61db4dbc85986f4194a9a, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: PyramidPotionBlue_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 786a3c98a440e3f4bab1d004e51d4116, type: 2}
+    diffuseMap: {fileID: 2800000, guid: af5470993db4a17458c88fd3b70f2326, type: 2}
+    alphaMap: {fileID: 2800000, guid: ff0079dcf39e0f848b2e6b3d1c967ee4, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: Barrel_04_WaitOneSecond
+    numFrames: 5
+    normalMap: {fileID: 2800000, guid: e15269a50007db44c8428eb68b93f882, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 5ed854e700fcafa48a51c98d746bf99e, type: 2}
+    alphaMap: {fileID: 2800000, guid: ca09397b45867a84e973ccf6d83dc5bb, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: Barrel_04_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 6788e531ab7f85e45a98b67762a6a253, type: 2}
+    diffuseMap: {fileID: 2800000, guid: e76cafd73e12ffb468e7af4700db5495, type: 2}
+    alphaMap: {fileID: 2800000, guid: 6ab376e1b588d5749b185e901cce1419, type: 2}
+  - rows: 6
+    columns: 6
+    animationName: Barrel_04_WaitOneSecondParticles
+    numFrames: 36
+    normalMap: {fileID: 2800000, guid: d94e4619f40b5194593549df3812e606, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 6c79ecee87367fc49b60945cdf819000, type: 2}
+    alphaMap: {fileID: 2800000, guid: 2f81623d1a8322e43995bb6d175fb842, type: 2}

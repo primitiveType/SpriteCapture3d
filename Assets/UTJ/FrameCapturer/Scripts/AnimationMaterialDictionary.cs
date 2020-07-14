@@ -11,7 +11,7 @@ public class AnimationMaterialDictionary : ScriptableObject
 {
     [SerializeField] private List<AnimationMaterialPropertyBlock> PropertyBlocksByModelAnimation;
 
-    public void AddPropertyBlock(Texture2DArray diffuse, Texture2DArray alpha, Texture2DArray normals, string modelName, string animationName,  int columns, int rows, int numFrames)
+    public void AddPropertyBlock(Texture diffuse, Texture alpha, Texture normals, string modelName, string animationName,  int columns, int rows, int numFrames)
     {
         if (PropertyBlocksByModelAnimation == null)
         {

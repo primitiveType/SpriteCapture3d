@@ -14,7 +14,7 @@ public static class TextureArrayGenerator
         List<string> filepaths = new List<string>();
         List<Texture2D> textures = new List<Texture2D>();
         di.Create();
-        bool linear = namePrefix.Contains("FrameBuffer");
+        bool linear = false;
         foreach (var file in di.EnumerateFiles())
         {
             if (file.Name.StartsWith(namePrefix))
@@ -32,6 +32,37 @@ public static class TextureArrayGenerator
         textures.ForEach(Object.Destroy);
 
         return array;
+    }
+
+    public static Texture2D CreateTex2D(string namePrefix, string path)
+    {
+        Debug.Log($"Creating texture at path {path}");
+        DirectoryInfo di = new DirectoryInfo(path);
+        List<string> filepaths = new List<string>();
+        List<Texture2D> textures = new List<Texture2D>();
+        di.Create();
+        bool linear = false;
+        foreach (var file in di.EnumerateFiles())
+        {
+            if (file.Name.StartsWith(namePrefix))
+            {
+                filepaths.Add(file.FullName);
+                
+                Texture2D newTex = new Texture2D(2, 2, TextureFormat.RGBA32, false, linear);
+                newTex.LoadImage(File.ReadAllBytes(file.FullName));
+                textures.Add(newTex);
+            }
+        }
+
+        if (textures.Count != 1)
+        {
+            Debug.LogWarning($"Found {textures.Count} textures when we expected 1!");
+        }
+        
+        var toReturn = textures[0];
+            AssetDatabase.CreateAsset(toReturn, Path.Combine(outputPath, $"{namePrefix}_spritesheet.Asset"));
+
+            return toReturn;
     }
 
     private static Texture2DArray Create(List<Texture2D> textures, string path, string animationName, bool linear)

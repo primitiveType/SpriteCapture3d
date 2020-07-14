@@ -17,6 +17,10 @@ public class GBufferAnimationRecorderEditor : RecorderBaseEditor
 
         CommonConfig();
         EditorGUILayout.PropertyField(so.FindProperty("PixelsPerMeter"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("EncapsulateAnimatedBounds"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("NumRotationsToCapture"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("dontReposition"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("GenerateArrays"), true);
         
         EditorGUILayout.PropertyField(so.FindProperty("m_targetFramerate"), true);
         EditorGUILayout.PropertyField(so.FindProperty("TesterBounds"), true);

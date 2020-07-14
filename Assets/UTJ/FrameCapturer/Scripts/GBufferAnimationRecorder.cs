@@ -22,6 +22,7 @@ namespace UTJ.FrameCapturer
         public GameObject TurnTable;
         public Animator Animator;
 
+        public bool dontReposition = false;
         #region fields
 
         [SerializeField]
@@ -65,9 +66,6 @@ namespace UTJ.FrameCapturer
 
         protected override void Start()
         {
-            TextureArrayGenerator.Create("CHIMERA_LEGACY_walk_RM_Alpha",
-                "E:/Projects/SpriteCapture - Copy/Capture/CHIMERA_LEGACY");
-
             base.Start();
             TurnTable.transform.localScale = Vector3.one;
             StartCoroutine(InternalExportCoroutine());
@@ -116,9 +114,15 @@ namespace UTJ.FrameCapturer
                 {
                     objectsToProcess.Add(child);
                 }
-                child.transform.position = Vector3.zero;
-                child.transform.localScale = Vector3.one;
-                child.transform.rotation = Quaternion.identity;
+
+                if (!dontReposition)
+                {
+                    var transform1 = child.transform;
+                    transform1.position = Vector3.zero;
+                    //transform1.localScale = Vector3.one;
+                    transform1.rotation = Quaternion.identity;
+                }
+
                 child.gameObject.SetActive(false);
             }
 
@@ -133,7 +137,7 @@ namespace UTJ.FrameCapturer
                 // }
                 
                 currentModelName = child.gameObject.name;
-                int clipCount = Animator == null ? 0 : Animator.runtimeAnimatorController.animationClips.Length;
+                int clipCount = Animator?.runtimeAnimatorController == null ? 0 : Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
                 currentClipName = "TPose";
                 NumFramesInAnimation = 1;
@@ -146,7 +150,7 @@ namespace UTJ.FrameCapturer
                     AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
 
                     float numFramesF = targetFramerate * clip.length;
-                    NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
+                    NumFramesInAnimation = Mathf.Clamp(Mathf.RoundToInt(numFramesF), 2, Int32.MaxValue);
                     currentClipName = clip.name;
                     AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
                         currentModelName, currentClipName, NumFramesInAnimation, clip.length, targetFramerate);
@@ -164,11 +168,19 @@ namespace UTJ.FrameCapturer
 
         private IEnumerator CapturePerspectives(int clipIndex)
         {
-            yield return CalculateBounds(clipIndex);
-           
-            SetCameraSizeToBounds();
-            
-            if (FrameHeight == 0 || FrameWidth == 0)
+            if (dontReposition)
+            {
+                FrameHeight = PixelsPerMeter;
+                FrameWidth = PixelsPerMeter;
+            }
+            else
+            {
+                yield return CalculateBounds(clipIndex);
+
+                SetCameraSizeToBounds();
+            }
+
+            if (FrameHeight == 0 || FrameWidth == 0 || NumFramesInAnimation == 0)
                 yield break;
             SetupCameraResolution();
             SetupEncoderConfig();
@@ -186,34 +198,59 @@ namespace UTJ.FrameCapturer
                     yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
                 }
 
-                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                if (!dontReposition)
+                {
+                    TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                }
             }
 
             Debug.Log($"Finished with animation {currentClipName}");
             EndRecording();
 
-            //create array for diffuse
-            var diffuse = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_FrameBuffer",
-                AnimationGenerator.GetDirectory(currentModelName));
-            //create array for alpha
-            var alpha = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Alpha",
-                AnimationGenerator.GetDirectory(currentModelName));
+            if (NumRotationsToCapture > 1)
+            {
+                //create array for diffuse
+                var diffuse = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_FrameBuffer",
+                    AnimationGenerator.GetDirectory(currentModelName));
+                //create array for alpha
+                var alpha = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Alpha",
+                    AnimationGenerator.GetDirectory(currentModelName));
 
-            //create array for normals
-            var normal = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Normal",
-                AnimationGenerator.GetDirectory(currentModelName));
+                //create array for normals
+                var normal = TextureArrayGenerator.Create($"{currentModelName}_{currentClipName}_Normal",
+                    AnimationGenerator.GetDirectory(currentModelName));
 
-            int columns = diffuse.width / FrameWidth;
-            int rows = diffuse.height / FrameHeight;
-            //store properties for this animation on this model
-            animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns, rows,
-                NumFramesInAnimation);
-            //
-            // GameObject.Destroy(diffuse);
-            // GameObject.Destroy(alpha);
-            // GameObject.Destroy(normal);
+                int columns = diffuse.width / FrameWidth;
+                int rows = diffuse.height / FrameHeight;
+                //store properties for this animation on this model
+                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns,
+                    rows,
+                    NumFramesInAnimation);
+            }
+            else
+            {
+                //create array for diffuse
+                var diffuse = TextureArrayGenerator.CreateTex2D($"{currentModelName}_{currentClipName}_FrameBuffer",
+                    AnimationGenerator.GetDirectory(currentModelName));
+                //create array for alpha
+                var alpha = TextureArrayGenerator.CreateTex2D($"{currentModelName}_{currentClipName}_Alpha",
+                    AnimationGenerator.GetDirectory(currentModelName));
+
+                //create array for normals
+                var normal = TextureArrayGenerator.CreateTex2D($"{currentModelName}_{currentClipName}_Normal",
+                    AnimationGenerator.GetDirectory(currentModelName));
+
+                int columns = diffuse.width / FrameWidth;
+                int rows = diffuse.height / FrameHeight;
+                //store properties for this animation on this model
+                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns,
+                    rows,
+                    NumFramesInAnimation);
+            }
 
         }
+
+        [SerializeField] public bool GenerateArrays = true;
 
         private IEnumerable EnumerateClipFrames(int clipIndex)
         {
@@ -237,6 +274,19 @@ namespace UTJ.FrameCapturer
 
         private Bounds FourDBounds { get; set; }
 
+        private class BoxColliderBoundsProvider : IBoundsProvider
+        {
+            private Collider Collider { get; set; }
+            public BoxColliderBoundsProvider( Collider collider)
+            {
+                Collider = collider;
+            }
+            
+            public Bounds GetBounds()
+            {
+                return Collider.bounds;
+            }
+        }
 
         private class MeshRendererBoundsProvider : IBoundsProvider
         {
@@ -320,6 +370,12 @@ namespace UTJ.FrameCapturer
             {
                 boundsProviders.Add(new MeshRendererBoundsProvider(child));
             }
+            
+            var boxes = TurnTable.GetComponentsInChildren<BoxCollider>();
+            foreach (var child in boxes)
+            {
+                boundsProviders.Add(new BoxColliderBoundsProvider(child));
+            }
     
             if (boundsProviders.Count == 0)
             {
@@ -350,13 +406,27 @@ namespace UTJ.FrameCapturer
 
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
             {
-                foreach (var frame in EnumerateClipFrames(clipIndex))
+                if (EncapsulateAnimatedBounds)
                 {
-                    yield return new WaitForEndOfFrame();
+                    foreach (var frame in EnumerateClipFrames(clipIndex))
+                    {
+                        yield return new WaitForEndOfFrame();
 
+                        foreach (var provider in boundsProviders)
+                        {
+                            bounds.Encapsulate(provider.GetBounds());
+                        }
+
+                        tester.center = bounds.center;
+                        tester.size = bounds.size;
+                        elapsedFramesInTime += frameDelay;
+                    }
+                }
+                else
+                {
                     foreach (var provider in boundsProviders)
                     {
-                       bounds.Encapsulate(provider.GetBounds());
+                        bounds.Encapsulate(provider.GetBounds());
                     }
 
                     tester.center = bounds.center;
@@ -364,13 +434,19 @@ namespace UTJ.FrameCapturer
                     elapsedFramesInTime += frameDelay;
                 }
 
-                TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                if (!dontReposition)
+                {
+                    TurnTable.transform.Rotate(new Vector3(0, 360f / NumRotationsToCapture, 0));
+                }
             }
 
 
             FourDBounds = bounds;
             Debug.Log($"Bounds size: {FourDBounds.size.ToString()}");
         }
+
+
+        public bool EncapsulateAnimatedBounds = true;
 
         private void SetCameraSizeToBounds()
         {
@@ -385,8 +461,12 @@ namespace UTJ.FrameCapturer
             Camera.orthographicSize = orthoSize;
             Camera.aspect = (float) FrameWidth / FrameHeight;
             Camera.orthographicSize = orthoSize;
-            Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 100);
-            Camera.transform.LookAt(FourDBounds.center);
+            if (!dontReposition)
+            {
+                Camera.transform.position = new Vector3(FourDBounds.center.x, FourDBounds.center.y, 100);
+                Camera.transform.LookAt(FourDBounds.center);
+            }
+
             var orthoMatrix = Camera.projectionMatrix;
             Camera.orthographic = false; //has to be false for normal maps.
             Camera.projectionMatrix = orthoMatrix; //trick it to use orthographic
@@ -647,6 +727,7 @@ namespace UTJ.FrameCapturer
                 double timestamp = 0;
                 if (m_recordedFrames > 0)
                 {
+                    timestamp = 1.0 / m_targetFramerate * m_recordedFrames;
                     timestamp = 1.0 / m_targetFramerate * m_recordedFrames;
                 }
 

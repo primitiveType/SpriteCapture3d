@@ -8,9 +8,9 @@ public class AnimationMaterialPropertyBlock
     [SerializeField] private int columns;
     [SerializeField] private string animationName;
     [SerializeField] private int numFrames;
-    [SerializeField] private Texture2DArray normalMap;
-    [SerializeField] private Texture2DArray diffuseMap;
-    [SerializeField] private Texture2DArray alphaMap;
+    [SerializeField] private Texture normalMap;
+    [SerializeField] private Texture diffuseMap;
+    [SerializeField] private Texture alphaMap;
     private static readonly int RowsProperty = Shader.PropertyToID("Rows");
     private static readonly int ColumnsProperty = Shader.PropertyToID("Columns");
     private static readonly int NumFramesProperty = Shader.PropertyToID("NumFrames");
@@ -42,19 +42,19 @@ public class AnimationMaterialPropertyBlock
         set => numFrames = value;
     }
 
-    public Texture2DArray NormalMap
+    public Texture NormalMap
     {
         get => normalMap;
         set => normalMap = value;
     }
 
-    public Texture2DArray DiffuseMap
+    public Texture DiffuseMap
     {
         get => diffuseMap;
         set => diffuseMap = value;
     }
 
-    public Texture2DArray AlphaMap
+    public Texture AlphaMap
     {
         get => alphaMap;
         set => alphaMap = value;

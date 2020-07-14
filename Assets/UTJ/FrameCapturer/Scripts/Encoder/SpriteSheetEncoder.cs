@@ -124,8 +124,6 @@ namespace UTJ.FrameCapturer
             get { return Type.Png; }
         }
 
-        // public int Rows { get; set; }
-        // public int Columns { get; set; }
         private byte[][] sheet;
 
         private string CaptureType { get; set; }
@@ -148,18 +146,8 @@ namespace UTJ.FrameCapturer
             m_currentframe = 0;
             sheet = new byte[m_config.numFramesInAnimation][];
 
-            //GetAnimationInfo();
         }
 
-        void GetAnimationInfo()
-        {
-            // AnimationClip clip = m_config.animator.GetCurrentAnimatorClipInfo(0)[0].clip;
-            // float numFramesF = clip.frameRate * clip.length;
-            // NumFramesInAnimation = Mathf.RoundToInt(numFramesF);
-            // Debug.Log($"{NumFramesInAnimation} frames calculated.");
-            // Rows = Mathf.CeilToInt(Mathf.Sqrt(NumFramesInAnimation));
-            // Columns = Rows;
-        }
 
         private int currentSheet;
 
@@ -209,43 +197,11 @@ namespace UTJ.FrameCapturer
                 
                 paths.ForEach(File.Delete);
                 paths.Clear();
-                // byte[] allByteArray = allBytes.ToByteArray();
-                // if (allByteArray.Length != allBytes.Width * allBytes.Height * 8)
-                // {
-                //     Debug.LogError("All bytes array was wrong length");
-                // }
-                // allBytes.Write(path);h
-                // fcAPI.fcPngExportPixels(m_ctx, path, allBytes.ToByteArray(), allBytes.Width,
-                //     allBytes.Height, format, channels);
-
-                //allBytes.Dispose();
                 currentSheet++;
                 sheet = new byte[m_config.numFramesInAnimation][];
-
-             
-            }
-            if (m_currentframe  == m_config.numFramesInAnimation * 8)
-            {
-                // TextureArrayGenerator.Create($"{m_config.modelName}_{m_config.animationName}_{CaptureType}",
-                //     AnimationGenerator.GetDirectory(m_config.modelName));
             }
         }
-
-        private static byte[] Combine(byte[][] arrays)
-        {
-            byte[] bytes = new byte[arrays.Sum(a => a.Length)];
-
-            int offset = 0;
-            Debug.Log($"Combining {arrays.Length} arrays. Total length {bytes.Length}");
-            foreach (byte[] array in arrays)
-            {
-                Buffer.BlockCopy(array, 0, bytes, offset, array.Length);
-                offset += array.Length;
-            }
-
-            return bytes;
-        }
-
+        
 
         public override void AddAudioSamples(float[] samples)
         {
