@@ -12,7 +12,7 @@ public class GBufferAnimationRecorderEditor : RecorderBaseEditor
 
         var recorder = target as GBufferAnimationRecorder;
         var so = serializedObject;
-        EditorGUILayout.PropertyField(so.FindProperty("animationDictionary"), true);
+        //EditorGUILayout.PropertyField(so.FindProperty("animationDictionary"), true);
         EditorGUILayout.PropertyField(so.FindProperty("Camera"), true);
 
         CommonConfig();
@@ -21,6 +21,8 @@ public class GBufferAnimationRecorderEditor : RecorderBaseEditor
         EditorGUILayout.PropertyField(so.FindProperty("NumRotationsToCapture"), true);
         EditorGUILayout.PropertyField(so.FindProperty("dontReposition"), true);
         EditorGUILayout.PropertyField(so.FindProperty("GenerateArrays"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("UseMeshBounds"), true);
+        EditorGUILayout.PropertyField(so.FindProperty("_captureOnlyKeyframes"), true);
         
         EditorGUILayout.PropertyField(so.FindProperty("m_targetFramerate"), true);
         EditorGUILayout.PropertyField(so.FindProperty("TesterBounds"), true);

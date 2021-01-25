@@ -15,14 +15,16 @@ namespace UTJ.FrameCapturer
 {
     public class GBufferAnimationRecorder : RecorderBase
     {
-        [SerializeField] public AnimationMaterialDictionary animationDictionary;
+        private AnimationMaterialDictionary animationDictionary;
 
         private int NumFramesInAnimation = 8;
         public int PixelsPerMeter = 200;
         public GameObject TurnTable;
         public Animator Animator;
+        public bool UseMeshBounds;
 
         public bool dontReposition = false;
+
         #region fields
 
         [SerializeField]
@@ -130,18 +132,21 @@ namespace UTJ.FrameCapturer
             {
                 child.gameObject.SetActive(true);
                 Animator = child.GetComponentInChildren<Animator>();
+                animationDictionary = AnimationGenerator.GetMaterialDictionary(child.name);
                 // if (Animator == null)
                 // {
                 //     child.gameObject.SetActive(false);
                 //     continue; //capture without animation?
                 // }
-                
+
                 currentModelName = child.gameObject.name;
-                int clipCount = Animator?.runtimeAnimatorController == null ? 0 : Animator.runtimeAnimatorController.animationClips.Length;
+                int clipCount = Animator?.runtimeAnimatorController == null
+                    ? 0
+                    : Animator.runtimeAnimatorController.animationClips.Length;
                 Debug.Log($"Clip Count : {clipCount}");
                 currentClipName = "TPose";
                 NumFramesInAnimation = 1;
-                yield return CapturePerspectives(-1);//capture static model
+                yield return CapturePerspectives(-1); //capture static model
 
                 for (int clipIndex = 0; clipIndex < clipCount; clipIndex++)
                 {
@@ -150,13 +155,18 @@ namespace UTJ.FrameCapturer
                     AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
 
                     float numFramesF = targetFramerate * clip.length;
-                    NumFramesInAnimation = Mathf.Clamp(Mathf.RoundToInt(numFramesF), 2, Int32.MaxValue);
+                    if (CaptureOnlyKeyframes)
+                    {
+                        numFramesF = clip.events.Count(e => e.functionName == "BroadcastCapture");//HACKy
+                        Debug.Log($"found {numFramesF} frames from events");
+                    }
+
+                    NumFramesInAnimation = Mathf.Clamp(Mathf.RoundToInt(numFramesF), 1, Int32.MaxValue);
                     currentClipName = clip.name;
+
+                    yield return CapturePerspectives(clipIndex);
                     AnimationGenerator.CreateAnimation($"Assets/Animations/{currentModelName}",
                         currentModelName, currentClipName, NumFramesInAnimation, clip.length, targetFramerate);
-                    
-
-                   yield return CapturePerspectives(clipIndex);
                 }
 
                 Debug.Log($"Finished with model {currentModelName}");
@@ -188,14 +198,29 @@ namespace UTJ.FrameCapturer
             int captured = 0;
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
             {
-                foreach (var frame in EnumerateClipFrames(clipIndex))
+                if (CaptureOnlyKeyframes && clipIndex >= 0)
                 {
-                    yield return new WaitForEndOfFrame();
-                    captured++;
-                    m_capture = true;
-                    var captured1 = captured;
-                    // Debug.Log("Waiting for capture");
-                    yield return new WaitUntil(() => !m_capture && captured1 == m_recordedFrames);
+                    Animator.Play(currentClipName, -1, 0);
+                    
+                    yield return new WaitForSeconds(Animator.runtimeAnimatorController.animationClips[clipIndex].length +1);
+                }
+                else
+                {
+                    foreach (var frame in EnumerateClipFrames(clipIndex))
+                    {
+                        yield return new WaitForEndOfFrame();
+                        captured++;
+
+                        if (!CaptureOnlyKeyframes
+                        ) //if capturing keyframes, the animation event will set this flag instead
+                        {
+                            m_capture = true;
+                        }
+
+                        var captured1 = captured;
+                        // Debug.Log("Waiting for capture");
+                        yield return new WaitUntil(() => !m_capture /*&& captured1 == m_recordedFrames*/);
+                    }
                 }
 
                 if (!dontReposition)
@@ -205,7 +230,24 @@ namespace UTJ.FrameCapturer
             }
 
             Debug.Log($"Finished with animation {currentClipName}");
+            if (CaptureOnlyKeyframes)
+            {
+                //NumFramesInAnimation = m_recordedFrames;
+            }
             EndRecording();
+
+            float normalizedGroundY = 0f;
+            float absoluteGroundY = 0f;
+            float boundsBottom = FourDBounds.min.y;
+            float boundsTop = FourDBounds.max.y;
+            if (boundsBottom > absoluteGroundY || boundsTop < absoluteGroundY) //ground is outside capture bounds
+            {
+                //do nothing?
+            }
+            else
+            {
+                normalizedGroundY = (absoluteGroundY - boundsBottom) / (boundsTop - boundsBottom);
+            }
 
             if (NumRotationsToCapture > 1)
             {
@@ -222,8 +264,10 @@ namespace UTJ.FrameCapturer
 
                 int columns = diffuse.width / FrameWidth;
                 int rows = diffuse.height / FrameHeight;
+
                 //store properties for this animation on this model
-                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns,
+                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName,
+                    normalizedGroundY, columns,
                     rows,
                     NumFramesInAnimation);
             }
@@ -243,11 +287,17 @@ namespace UTJ.FrameCapturer
                 int columns = diffuse.width / FrameWidth;
                 int rows = diffuse.height / FrameHeight;
                 //store properties for this animation on this model
-                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName, columns,
+                animationDictionary.AddPropertyBlock(diffuse, alpha, normal, currentModelName, currentClipName,
+                    normalizedGroundY, columns,
                     rows,
                     NumFramesInAnimation);
             }
+        }
 
+        public bool CaptureOnlyKeyframes
+        {
+            get => _captureOnlyKeyframes;
+            set => _captureOnlyKeyframes = value;
         }
 
         [SerializeField] public bool GenerateArrays = true;
@@ -262,8 +312,7 @@ namespace UTJ.FrameCapturer
 
             float frameDelay = 0.0f;
             AnimationClip clip = Animator.runtimeAnimatorController.animationClips[clipIndex];
-            frameDelay = clip.length / (float) (NumFramesInAnimation);
-
+            frameDelay = 1f / (float) (NumFramesInAnimation);
             for (int capture = 0; capture < NumFramesInAnimation; capture++)
             {
                 Animator.speed = 0.0f;
@@ -277,11 +326,12 @@ namespace UTJ.FrameCapturer
         private class BoxColliderBoundsProvider : IBoundsProvider
         {
             private Collider Collider { get; set; }
-            public BoxColliderBoundsProvider( Collider collider)
+
+            public BoxColliderBoundsProvider(Collider collider)
             {
                 Collider = collider;
             }
-            
+
             public Bounds GetBounds()
             {
                 return Collider.bounds;
@@ -291,20 +341,23 @@ namespace UTJ.FrameCapturer
         private class MeshRendererBoundsProvider : IBoundsProvider
         {
             private MeshRenderer _meshRenderer;
-            public MeshRendererBoundsProvider( MeshRenderer mesh)
+
+            public MeshRendererBoundsProvider(MeshRenderer mesh)
             {
                 _meshRenderer = mesh;
             }
-            
+
             public Bounds GetBounds()
             {
                 return _meshRenderer.bounds;
             }
         }
+
         private class SkinnedMeshRendererBoundsProvider : IBoundsProvider
         {
             private SkinnedMeshRenderer SkinnedMeshRenderer;
-            public SkinnedMeshRendererBoundsProvider( SkinnedMeshRenderer skm)
+
+            public SkinnedMeshRendererBoundsProvider(SkinnedMeshRenderer skm)
             {
                 SkinnedMeshRenderer = skm;
             }
@@ -324,17 +377,26 @@ namespace UTJ.FrameCapturer
                     var point = SkinnedMeshRenderer.transform.TransformPoint(vert);
                     bounds.Encapsulate(point);
                 }
-                        
+
                 skmTransform.localScale = oldScale;
                 return bounds;
             }
         }
-        
+
+        public void CaptureFrame()
+        {
+            Debug.Log("Received Message to capture frame");
+            if (CaptureOnlyKeyframes)
+            {
+                m_capture = true;
+            }
+        }
+
         private interface IBoundsProvider
         {
             Bounds GetBounds();
         }
-        
+
         private IEnumerator CalculateBounds(int clipIndex)
         {
             FrameWidth = 0;
@@ -354,9 +416,13 @@ namespace UTJ.FrameCapturer
             // List<SkinnedMeshRenderer> skinnedMeshRenderers = new List<SkinnedMeshRenderer>();
 
             var skms = TurnTable.GetComponentsInChildren<SkinnedMeshRenderer>();
-            foreach (var child in skms )
+            foreach (var child in skms)
             {
-                boundsProviders.Add(new SkinnedMeshRendererBoundsProvider(child));
+                if (UseMeshBounds)
+                {
+                    boundsProviders.Add(new SkinnedMeshRendererBoundsProvider(child));
+                }
+
                 // skinnedMeshRenderers.Add(child);
                 // child.updateWhenOffscreen = true; //for some reason, causes the bounding box to update every frame.
                 child.forceMatrixRecalculationPerRender = true;
@@ -364,19 +430,22 @@ namespace UTJ.FrameCapturer
                 child.skinnedMotionVectors = false;
                 Debug.Log("Found a skm");
             }
-            
-            var meshes = TurnTable.GetComponentsInChildren<MeshRenderer>();
-            foreach (var child in meshes)
+
+            if (UseMeshBounds)
             {
-                boundsProviders.Add(new MeshRendererBoundsProvider(child));
+                var meshes = TurnTable.GetComponentsInChildren<MeshRenderer>();
+                foreach (var child in meshes)
+                {
+                    boundsProviders.Add(new MeshRendererBoundsProvider(child));
+                }
             }
-            
+
             var boxes = TurnTable.GetComponentsInChildren<BoxCollider>();
             foreach (var child in boxes)
             {
                 boundsProviders.Add(new BoxColliderBoundsProvider(child));
             }
-    
+
             if (boundsProviders.Count == 0)
             {
                 Debug.LogError("No bounds provider found for " + currentModelName);
@@ -399,11 +468,13 @@ namespace UTJ.FrameCapturer
                     Debug.LogError("Unable to get Animator clip. Maybe you should set the Animator to null?");
                     yield break;
                 }
+
                 Animator.Play(currentClipName, -1, 0);
             }
 
             yield return new WaitForFixedUpdate();
 
+            bool defaultBounds = true;
             for (int perspective = 0; perspective < NumRotationsToCapture; perspective++)
             {
                 if (EncapsulateAnimatedBounds)
@@ -414,7 +485,15 @@ namespace UTJ.FrameCapturer
 
                         foreach (var provider in boundsProviders)
                         {
-                            bounds.Encapsulate(provider.GetBounds());
+                            if (defaultBounds)
+                            {
+                                defaultBounds = false;
+                                bounds = provider.GetBounds();
+                            }
+                            else
+                            {
+                                bounds.Encapsulate(provider.GetBounds());
+                            }
                         }
 
                         tester.center = bounds.center;
@@ -426,7 +505,15 @@ namespace UTJ.FrameCapturer
                 {
                     foreach (var provider in boundsProviders)
                     {
-                        bounds.Encapsulate(provider.GetBounds());
+                        if (defaultBounds)
+                        {
+                            defaultBounds = false;
+                            bounds = provider.GetBounds();
+                        }
+                        else
+                        {
+                            bounds.Encapsulate(provider.GetBounds());
+                        }
                     }
 
                     tester.center = bounds.center;
@@ -447,6 +534,7 @@ namespace UTJ.FrameCapturer
 
 
         public bool EncapsulateAnimatedBounds = true;
+        [SerializeField] public bool _captureOnlyKeyframes;
 
         private void SetCameraSizeToBounds()
         {

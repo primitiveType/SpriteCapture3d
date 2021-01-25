@@ -211,13 +211,6 @@ MonoBehaviour:
     alphaMap: {fileID: 18700000, guid: a1ef553aad717144fbf7648f631eebda, type: 2}
   - rows: 1
     columns: 1
-    animationName: EVIL_WATCHER_LEGACY_TPose
-    numFrames: 1
-    normalMap: {fileID: 18700000, guid: 584517ed54aaddd4d941b8444c6d6e5d, type: 2}
-    diffuseMap: {fileID: 18700000, guid: 5b0878403ffdf6c42ad61d42ba07bf17, type: 2}
-    alphaMap: {fileID: 18700000, guid: 25426c4cb13c2af4bb2226b844dba7ad, type: 2}
-  - rows: 1
-    columns: 1
     animationName: DARKNESS_SPIDER_LEGACY_TPose
     numFrames: 1
     normalMap: {fileID: 18700000, guid: 39862e820fb7ce940b1fd43f47286fd0, type: 2}
@@ -2050,3 +2043,150 @@ MonoBehaviour:
     normalMap: {fileID: 2800000, guid: d94e4619f40b5194593549df3812e606, type: 2}
     diffuseMap: {fileID: 2800000, guid: 6c79ecee87367fc49b60945cdf819000, type: 2}
     alphaMap: {fileID: 2800000, guid: 2f81623d1a8322e43995bb6d175fb842, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: TallPotionYellow_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: 7547748ed148b794ebc46d685299a00b, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d80faeae8584d65468c263d53aa83e7a, type: 2}
+    alphaMap: {fileID: 2800000, guid: 1a42c589ffcf9ec4d8501920af6d65da, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: chainsaw pickup_Idle
+    numFrames: 18
+    normalMap: {fileID: 2800000, guid: 940a7f5633220544ea1181d72c911be2, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 93de39edfd5f4f14291c5dd1fe598830, type: 2}
+    alphaMap: {fileID: 2800000, guid: 4bc284b182e90174ca689ea0ee799fa6, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: chainsaw pickup_Attack
+    numFrames: 20
+    normalMap: {fileID: 2800000, guid: f506fa0493d6b994783ecc502154dd13, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d93d94ab327aaa94badd81fd34d1fea7, type: 2}
+    alphaMap: {fileID: 2800000, guid: 81bc47efd69cf5b4c814016d786c8820, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: chainsaw pickup_Attacking
+    numFrames: 9
+    normalMap: {fileID: 2800000, guid: 27c2d2639a738ab4bafd7ac2dd2d1deb, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 900fad855fd5569469aefbeb5d0f3761, type: 2}
+    alphaMap: {fileID: 2800000, guid: f65725a7ebd17644ca2344351d6c492a, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: chainsaw pickup_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: e8a5302d98a626a438b1edce9f43d038, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d2a716b2cd02c824e9d2d915c191f54a, type: 2}
+    alphaMap: {fileID: 2800000, guid: 8226829176c650642a4eb4a0a173303a, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: chainsaw_TPose
+    numFrames: 1
+    normalMap: {fileID: 2800000, guid: e8a6d530fd8b42d46a63b28d8c6529f0, type: 2}
+    diffuseMap: {fileID: 2800000, guid: d5cf55876cf81e240afb258e36c2d417, type: 2}
+    alphaMap: {fileID: 2800000, guid: a5325bcfcf83cfb4e986776ead6db73e, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: chainsaw_Idle
+    numFrames: 18
+    normalMap: {fileID: 2800000, guid: 8a7b644df055f6442850c851d2c5f112, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 0f07080f593c4bc439a2c0fe7cb86d78, type: 2}
+    alphaMap: {fileID: 2800000, guid: 97df01efbec03cd409f7b138a5625767, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: chainsaw_Attack
+    numFrames: 20
+    normalMap: {fileID: 2800000, guid: 6474a07af30c7294ea069f50f68f864a, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 89e07b283144e974489b1e96c69ae4cb, type: 2}
+    alphaMap: {fileID: 2800000, guid: 3b856c1071a34e24ea0567f896ef8e93, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: chainsaw_Attacking
+    numFrames: 9
+    normalMap: {fileID: 2800000, guid: 8d5a92bae9a8d5c40af8e4d8ba1c7495, type: 2}
+    diffuseMap: {fileID: 2800000, guid: 24d59da3d091a0647a13ff1cf15093e2, type: 2}
+    alphaMap: {fileID: 2800000, guid: f56efa92ffb168b46b02cbdae874ed61, type: 2}
+  - rows: 1
+    columns: 1
+    animationName: EVIL_WATCHER_LEGACY_TPose
+    numFrames: 1
+    normalMap: {fileID: 18700000, guid: 584517ed54aaddd4d941b8444c6d6e5d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5b0878403ffdf6c42ad61d42ba07bf17, type: 2}
+    alphaMap: {fileID: 18700000, guid: 25426c4cb13c2af4bb2226b844dba7ad, type: 2}
+  - rows: 2
+    columns: 4
+    animationName: EVIL_WATCHER_LEGACY_attack1
+    numFrames: 7
+    normalMap: {fileID: 18700000, guid: 5433bb469bb7e60479829e871e8a1a04, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 5d5babac13e859c449c2ce8fac35c9c9, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9ad5a69bcc5daff4e87d15db99d62146, type: 2}
+  - rows: 3
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_attack2
+    numFrames: 9
+    normalMap: {fileID: 18700000, guid: 95ed39411df39a74ba127c10c3206e99, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 40bc6f27dcdf13f408aa3d1fd948bde7, type: 2}
+    alphaMap: {fileID: 18700000, guid: 94a27a1a273df09438ff535a265bf573, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_dashForward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2fd0f439dee9a4a49a12cef2b6b2e896, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 9bcfb067eb1d58840a47b24ac18b3a1e, type: 2}
+    alphaMap: {fileID: 18700000, guid: 9f7d73a2940cf284d8d9ac0fcd6e72a6, type: 2}
+  - rows: 3
+    columns: 5
+    animationName: EVIL_WATCHER_LEGACY_death
+    numFrames: 14
+    normalMap: {fileID: 18700000, guid: 92103a5f959c7fa40a1943d68b219853, type: 2}
+    diffuseMap: {fileID: 18700000, guid: dffb360c32476e045a38d03bc2b2e240, type: 2}
+    alphaMap: {fileID: 18700000, guid: cbf038b7bc8c3af4890af689924f707c, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_getHit
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 2fbc4ed4c61b628469516ae3e8a8fe03, type: 2}
+    diffuseMap: {fileID: 18700000, guid: d2e806c4e63371c47a6b8db0f1db9df5, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2b5a507988c21754f85eee77f005a94c, type: 2}
+  - rows: 7
+    columns: 9
+    animationName: EVIL_WATCHER_LEGACY_idleLookAround
+    numFrames: 60
+    normalMap: {fileID: 18700000, guid: 3d01f6d424deceb4eb8eac9f1277453f, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 827fa113fa721084e8e121fb1bf7f627, type: 2}
+    alphaMap: {fileID: 18700000, guid: 510155109fc53ec4288d5daad611147d, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_moveForward
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: f459530728c450644a318395610b552c, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7266a280d08032040bf72b0843815d86, type: 2}
+    alphaMap: {fileID: 18700000, guid: ae84876c7b2b274408d2cb59b2c6bef7, type: 2}
+  - rows: 4
+    columns: 5
+    animationName: EVIL_WATCHER_LEGACY_sleep
+    numFrames: 20
+    normalMap: {fileID: 18700000, guid: 1e241a7899d8ada47a53d919484aea88, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 4322b2e8317a43b4e9d75bd8e1304015, type: 2}
+    alphaMap: {fileID: 18700000, guid: 49c5814466beffb47a212e580f328f18, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_strafeLeft
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 5d481045d3c6b164d915ff15ab95fefb, type: 2}
+    diffuseMap: {fileID: 18700000, guid: f5fd1ce18064dab45a255b22d6b8b3e3, type: 2}
+    alphaMap: {fileID: 18700000, guid: 2c985ee0a7e1a5f409cb1f827fb00324, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_strafeRight
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 21c9a86d06f041c40b4ca5071fc1f7ec, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 7765807cbfa212b458f9c9c644690e08, type: 2}
+    alphaMap: {fileID: 18700000, guid: eb0d4b2645d646848a75dd82713bb6a2, type: 2}
+  - rows: 2
+    columns: 3
+    animationName: EVIL_WATCHER_LEGACY_wakeUp
+    numFrames: 5
+    normalMap: {fileID: 18700000, guid: 7cf2fc88d849e9848b2dbf8ccc880e4d, type: 2}
+    diffuseMap: {fileID: 18700000, guid: 05ee629ef37ab7241afb6cb01f2f1cd1, type: 2}
+    alphaMap: {fileID: 18700000, guid: b454b3a1e28e252429d7426899c215a7, type: 2}

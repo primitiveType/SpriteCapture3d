@@ -1,5 +1,7 @@
 ﻿using System.Globalization;
 using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 public static class AnimationGenerator
 {
@@ -22,7 +24,8 @@ public static class AnimationGenerator
         animationFile = animationFile.Replace("$NUM_FRAMES", (numFrames).ToString());
         animationFile = animationFile.Replace("$ANIMATION_DURATION", (duration).ToString(CultureInfo.InvariantCulture));
         animationFile = animationFile.Replace("$FRAMES_PER_SECOND", (framerate).ToString(CultureInfo.InvariantCulture));
-        animationFile = animationFile.Replace("$HALF_FRAMES_PER_SECOND", (framerate/2f).ToString(CultureInfo.InvariantCulture));
+        animationFile = animationFile.Replace("$HALF_FRAMES_PER_SECOND",
+            (framerate / 2f).ToString(CultureInfo.InvariantCulture));
         animationFile = animationFile.Replace("$MATERIAL_UPDATE_FUNCTION",
             (MaterialUpdateFunctionName).ToString(CultureInfo.InvariantCulture));
         Directory.CreateDirectory(path);
@@ -42,5 +45,24 @@ public static class AnimationGenerator
     public static string GetDirectory(string model)
     {
         return Path.Combine(CreationPath, model);
+    }
+
+    public static AnimationMaterialDictionary GetMaterialDictionary(string model)
+    {
+        var path = Path.Combine("Assets", "AnimationDictionaries", $"{model}_Dictionary.asset");
+        FileInfo fileInfo = new FileInfo(path);
+        if (!Directory.Exists(fileInfo.DirectoryName))
+        {
+            Directory.CreateDirectory(fileInfo.DirectoryName);
+        }
+
+        var result = AssetDatabase.LoadAssetAtPath<AnimationMaterialDictionary>(path);
+        if (result == null)
+        {
+            result = ScriptableObject.CreateInstance<AnimationMaterialDictionary>();
+            AssetDatabase.CreateAsset(result, path);
+        }
+
+        return result;
     }
 }

@@ -55,7 +55,7 @@ public static class TextureArrayGenerator
         }
 
         if (textures.Count != 1)
-        {
+        {    
             Debug.LogWarning($"Found {textures.Count} textures when we expected 1!");
         }
         
